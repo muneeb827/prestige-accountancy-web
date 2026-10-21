@@ -15,7 +15,8 @@ import {
   HelpCircle,
   Users,
   Banknote,
-  Workflow
+  Workflow,
+  MessageCircle
 } from "lucide-react";
 
 interface Props {
@@ -311,25 +312,26 @@ export default async function AccountancyServicePage({ params }: Props) {
                 <div className="space-y-3 pt-2">
                   <Link
                     href="/contact"
-                    className="w-full py-3 bg-[#00368C] hover:bg-blue-700 text-white font-bold text-xs uppercase tracking-wider rounded-lg shadow flex items-center justify-center gap-2 transition-all"
+                    className="w-full py-3 px-3 sm:px-4 bg-[#00368C] hover:bg-blue-700 text-white font-bold text-xs uppercase tracking-normal sm:tracking-wide rounded-lg shadow flex items-center justify-center gap-2 text-center leading-snug transition-all"
                   >
                     <span>{service.ctaText}</span>
-                    <ArrowRight className="w-4 h-4" />
+                    <ArrowRight className="w-4 h-4 shrink-0" />
                   </Link>
                   <a
                     href={siteConfig.whatsappLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider rounded-lg shadow flex items-center justify-center gap-2 transition-all"
+                    className="w-full py-3 px-3 sm:px-4 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-normal sm:tracking-wide rounded-lg shadow flex items-center justify-center gap-2 text-center leading-snug transition-all"
                   >
+                    <MessageCircle className="w-4 h-4 shrink-0 fill-current" />
                     <span>WhatsApp: {siteConfig.phone}</span>
                   </a>
                   <a
                     href={`tel:${siteConfig.landline.replace(/\s+/g, '')}`}
-                    className="w-full py-2.5 border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white font-semibold text-xs rounded-lg flex items-center justify-center gap-2 transition-all"
+                    className="w-full py-2.5 px-3 sm:px-4 border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white font-semibold text-xs rounded-lg flex items-center justify-center gap-2 text-center transition-all"
                   >
-                    <Phone className="w-3.5 h-3.5" />
-                    <span>Office: {siteConfig.landline}</span>
+                    <Phone className="w-3.5 h-3.5 shrink-0" />
+                    <span>Call: {siteConfig.landline}</span>
                   </a>
                 </div>
                 <div className="pt-2 border-t border-slate-800 text-[11px] text-slate-400">

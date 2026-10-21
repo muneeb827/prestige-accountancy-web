@@ -227,18 +227,18 @@ export default function VatCalculatorPage() {
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-3 shrink-0">
+              <div className="flex flex-col sm:flex-row gap-3 shrink-0 w-full sm:w-auto">
                 <Link
                   href="/contact"
-                  className="px-6 py-3 rounded-xl bg-white text-[#00368C] font-bold text-xs uppercase tracking-wider hover:bg-blue-50 transition-all text-center shadow"
+                  className="w-full sm:w-auto px-6 py-3 rounded-xl bg-white text-[#00368C] font-bold text-xs uppercase tracking-wide hover:bg-blue-50 transition-all text-center shadow"
                 >
                   Book Free Consultation
                 </Link>
                 <a
                   href={`tel:${siteConfig.landline.replace(/\s+/g, '')}`}
-                  className="px-5 py-3 rounded-xl border border-blue-300 hover:bg-white/10 text-white font-bold text-xs transition-all text-center flex items-center justify-center gap-1.5"
+                  className="w-full sm:w-auto px-5 py-3 rounded-xl border border-blue-300 hover:bg-white/10 text-white font-bold text-xs transition-all text-center flex items-center justify-center gap-1.5"
                 >
-                  <Phone className="w-3.5 h-3.5" />
+                  <Phone className="w-3.5 h-3.5 shrink-0" />
                   <span>Call {siteConfig.landline}</span>
                 </a>
               </div>
