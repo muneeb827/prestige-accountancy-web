@@ -64,7 +64,7 @@ export default function Footer() {
 
             {/* Social Icons (Facebook, Instagram, TikTok, LinkedIn) */}
             <div className="pt-2">
-              <div className="text-xs uppercase font-bold text-slate-400 tracking-wider mb-2.5">Follow Our Updates</div>
+              <div className="text-xs uppercase font-bold text-slate-400 tracking-wider mb-2.5">Follow For Updates</div>
               <div className="flex items-center gap-2.5">
                 <a 
                   href={siteConfig.socials.facebook} 
