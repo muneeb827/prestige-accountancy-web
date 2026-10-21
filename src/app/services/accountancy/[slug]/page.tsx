@@ -3,6 +3,10 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { servicesData, siteConfig } from "@/data/siteData";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import VatReturnsDeepContent from "@/components/services/VatReturnsDeepContent";
+import BookkeepingDeepContent from "@/components/services/BookkeepingDeepContent";
+import CisDeepContent from "@/components/services/CisDeepContent";
+import AnnualAccountsDeepContent from "@/components/services/AnnualAccountsDeepContent";
 import { 
   CheckCircle2, 
   ArrowRight, 
@@ -241,6 +245,12 @@ export default async function AccountancyServicePage({ params }: Props) {
                   {service.benefits}
                 </p>
               </div>
+
+              {/* Comprehensive Practical Guidance for Top Money Pages */}
+              {slug === "vat-returns-mtd" && <VatReturnsDeepContent />}
+              {slug === "bookkeeping" && <BookkeepingDeepContent />}
+              {slug === "cis-registration" && <CisDeepContent />}
+              {slug === "annual-accounts" && <AnnualAccountsDeepContent />}
 
               {/* Service Specific FAQs */}
               {service.faqs && service.faqs.length > 0 && (

@@ -224,6 +224,16 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/resources/vat-calculator" className="hover:text-white transition-colors">
+                  Free VAT Calculator
+                </Link>
+              </li>
+              <li>
+                <Link href="/resources/compliance-checklist" className="hover:text-white transition-colors">
+                  Compliance Checklist Tool
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact" className="hover:text-white transition-colors">
                   Contact & Location
                 </Link>
@@ -241,6 +251,27 @@ export default function Footer() {
             </div>
           </div>
 
+        </div>
+
+        {/* Local Town Coverage Footer Strip */}
+        <div className="py-6 border-b border-slate-800 text-xs">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div className="font-bold uppercase tracking-wider text-slate-400 text-[11px] flex items-center gap-1.5">
+              <MapPin className="w-3.5 h-3.5 text-[#2B7EFE]" />
+              <span>West Yorkshire Areas We Cover:</span>
+            </div>
+            <div className="flex flex-wrap items-center gap-3 text-slate-400">
+              <Link href="/locations/halifax" className="hover:text-white transition-colors">Halifax (HX1-HX3)</Link>
+              <span className="text-slate-700">•</span>
+              <Link href="/locations/brighouse" className="hover:text-white transition-colors">Brighouse (HD6)</Link>
+              <span className="text-slate-700">•</span>
+              <Link href="/locations/elland" className="hover:text-white transition-colors">Elland (HX5)</Link>
+              <span className="text-slate-700">•</span>
+              <Link href="/locations/holmfirth" className="hover:text-white transition-colors">Holmfirth (HD9)</Link>
+              <span className="text-slate-700">•</span>
+              <Link href="/locations/dewsbury" className="hover:text-white transition-colors">Dewsbury (WF12-WF13)</Link>
+            </div>
+          </div>
         </div>
 
         {/* Bottom Disclaimer & Legal Bar */}

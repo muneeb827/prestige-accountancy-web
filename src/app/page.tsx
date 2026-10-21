@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import LocalTownCoverage from "@/components/LocalTownCoverage";
 import { 
   siteConfig, 
   servicesData, 
@@ -529,6 +530,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* 6B. LOCAL WEST YORKSHIRE TOWN COVERAGE */}
+      <LocalTownCoverage />
 
       {/* 7. MINI FAQ SECTION (AEO & GOOGLE AI OPTIMIZED) */}
       <section className="py-20 bg-white">

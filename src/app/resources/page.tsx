@@ -9,7 +9,8 @@ import {
   Clock, 
   AlertCircle, 
   ArrowRight, 
-  ShieldCheck 
+  ShieldCheck,
+  Calculator
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -128,6 +129,55 @@ export default function ResourcesPage() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Interactive Accounting Tools Section */}
+          <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Tool 1: VAT Calculator */}
+            <div className="bg-gradient-to-br from-slate-900 to-[#00368C] rounded-2xl p-6 sm:p-7 text-white shadow-xl flex flex-col justify-between space-y-4">
+              <div className="space-y-2">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 bg-emerald-950/70 border border-emerald-800 px-3 py-1 rounded-full inline-block">
+                  Free Online Tool
+                </span>
+                <h3 className="text-xl font-bold">
+                  UK VAT Calculator (2026/27 Rates)
+                </h3>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Calculate 20% standard or 5% reduced VAT. Add or extract VAT with HMRC Making Tax Digital compliance guidance.
+                </p>
+              </div>
+              <Link
+                href="/resources/vat-calculator"
+                className="w-full py-3 rounded-xl bg-white text-[#00368C] font-bold text-xs uppercase tracking-wider hover:bg-blue-50 transition-all text-center flex items-center justify-center gap-2 shadow-lg"
+              >
+                <Calculator className="w-4 h-4 text-[#00368C]" />
+                <span>Launch Free VAT Calculator</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+
+            {/* Tool 2: Compliance Checklist */}
+            <div className="bg-gradient-to-br from-[#00368C] to-[#0A4BB5] rounded-2xl p-6 sm:p-7 text-white shadow-xl flex flex-col justify-between space-y-4">
+              <div className="space-y-2">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-blue-200 bg-blue-900/70 border border-blue-400/30 px-3 py-1 rounded-full inline-block">
+                  Interactive Generator
+                </span>
+                <h3 className="text-xl font-bold">
+                  Statutory Deadlines &amp; Checklist
+                </h3>
+                <p className="text-xs text-blue-100 leading-relaxed">
+                  Filter filing obligations for Ltd companies, VAT, CIS, and payroll. Print or save your custom compliance checklist.
+                </p>
+              </div>
+              <Link
+                href="/resources/compliance-checklist"
+                className="w-full py-3 rounded-xl bg-white text-[#00368C] font-bold text-xs uppercase tracking-wider hover:bg-blue-50 transition-all text-center flex items-center justify-center gap-2 shadow-lg"
+              >
+                <FileCheck className="w-4 h-4 text-[#00368C]" />
+                <span>Open Compliance Checklist</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
