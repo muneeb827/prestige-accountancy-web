@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { whoWeHelpAudience, siteConfig } from "@/data/siteData";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { 
   Building2, 
   CheckCircle2, 
@@ -13,23 +14,35 @@ import {
 export const metadata: Metadata = {
   title: "Who We Help | Accountants for Companies, Contractors & Charities",
   description: "Specialised accountancy workflows for UK Limited Companies, Sole Traders, Construction Contractors (CIS), Startups and Registered Charities.",
+  alternates: {
+    canonical: "https://prestigeaccountancy.com/who-we-help",
+  },
+  openGraph: {
+    title: "Who We Help | Prestige Accountancy Services",
+    description: "Specialised accountancy workflows for UK Limited Companies, Sole Traders, CIS Contractors, Startups and Charities.",
+    url: "https://prestigeaccountancy.com/who-we-help",
+    images: ["/og-image.png"]
+  }
 };
 
 export default function WhoWeHelpPage() {
   return (
     <div>
       {/* Header */}
-      <section className="bg-gradient-to-b from-[#EBF3FF] to-white py-16 lg:py-20 border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8 text-center max-w-3xl">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#00368C] bg-blue-50 border border-blue-200 px-3.5 py-1.5 rounded-full inline-block mb-3">
-            Tailored Sector Solutions
-          </span>
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
-            Accountancy Built for Your Specific World
-          </h1>
-          <p className="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed">
-            One size does not fit all in UK finance. Whether you are scaling a limited company, managing CIS subcontractors, or running a charity, we provide dedicated support tailored to your sector.
-          </p>
+      <section className="bg-gradient-to-b from-[#EBF3FF] to-white py-12 lg:py-16 border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8">
+          <Breadcrumbs items={[{ label: "Who We Help" }]} className="mb-4" />
+          <div className="text-center max-w-3xl mx-auto">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#00368C] bg-blue-50 border border-blue-200 px-3.5 py-1.5 rounded-full inline-block mb-3">
+              Tailored Sector Solutions
+            </span>
+            <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
+              Accountancy Built for Your Specific World
+            </h1>
+            <p className="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed">
+              One size does not fit all in UK finance. Whether you are scaling a limited company, managing CIS subcontractors, or running a charity, we provide dedicated support tailored to your sector.
+            </p>
+          </div>
         </div>
       </section>
 

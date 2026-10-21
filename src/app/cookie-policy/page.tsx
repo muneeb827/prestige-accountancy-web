@@ -4,6 +4,9 @@ import { siteConfig } from "@/data/siteData";
 export const metadata: Metadata = {
   title: "Cookie Policy | Prestige Accountancy Services Ltd",
   description: "Cookie policy explaining how Prestige Accountancy Services Ltd uses essential and analytics cookies.",
+  alternates: {
+    canonical: "https://prestigeaccountancy.com/cookie-policy",
+  },
 };
 
 export default function CookiePolicyPage() {

@@ -246,7 +246,7 @@ export default function Footer() {
         {/* Bottom Disclaimer & Legal Bar */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div>
-            © 2026 {siteConfig.name}. All rights reserved. Registered in England & Wales (CRN: {siteConfig.crn}).
+            © 2026 {siteConfig.name}. All rights reserved. Registered in England & Wales{siteConfig.crn ? ` (CRN: ${siteConfig.crn})` : ""}.
           </div>
           <div className="flex flex-wrap items-center gap-4 text-slate-400">
             <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>

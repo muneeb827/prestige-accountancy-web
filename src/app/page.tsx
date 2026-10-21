@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { 
   siteConfig, 
   servicesData, 
@@ -137,17 +138,39 @@ export default function Home() {
 
             {/* Right Card / Interactive Consultation Lead Form */}
             <div className="lg:col-span-5" id="consultation">
-              <div className="bg-white rounded-2xl shadow-xl border border-slate-200/80 p-6 sm:p-8 relative">
-                <div className="absolute top-0 right-0 bg-[#00368C] text-white text-[10px] font-bold uppercase tracking-wider px-3.5 py-1 rounded-bl-xl rounded-tr-xl">
-                  Fixed-Fee Quote
+              <div className="bg-white rounded-2xl shadow-xl border border-slate-200/80 overflow-hidden relative">
+                
+                {/* Hero Photograph Header */}
+                <div className="relative h-44 w-full">
+                  <Image 
+                    src="/images/hero-accountant.jpg"
+                    alt="Prestige Accountancy Services - Chartered & Professional Accountants in Huddersfield"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 500px"
+                    priority
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent" />
+                  <div className="absolute bottom-3 left-4 right-4 text-white">
+                    <div className="flex items-center gap-2">
+                      <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
+                      <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-300">Available For Direct Consultation</span>
+                    </div>
+                    <p className="text-xs font-semibold text-slate-100 mt-0.5">Huddersfield Practice • 9 Blackmoorfoot Road, HD4 5AQ</p>
+                  </div>
                 </div>
 
-                <h3 className="text-xl font-bold text-slate-900 mb-1">
-                  Request a Free Consultation
-                </h3>
-                <p className="text-xs text-slate-500 mb-5">
-                  Discuss your business requirements with an accountant. No obligations, no pushy sales.
-                </p>
+                <div className="p-6 sm:p-7 relative">
+                  <div className="absolute top-0 right-0 bg-[#00368C] text-white text-[10px] font-bold uppercase tracking-wider px-3.5 py-1 rounded-bl-xl">
+                    Fixed-Fee Quote
+                  </div>
+
+                  <h3 className="text-xl font-bold text-slate-900 mb-1">
+                    Request a Free Consultation
+                  </h3>
+                  <p className="text-xs text-slate-500 mb-5">
+                    Discuss your business requirements with an accountant. No obligations, no pushy sales.
+                  </p>
 
                 <form action="/contact" method="GET" className="space-y-3.5">
                   <div className="grid grid-cols-2 gap-3">
@@ -210,6 +233,7 @@ export default function Home() {
                     <span>Your privacy is 100% protected under UK GDPR</span>
                   </div>
                 </form>
+                </div>
               </div>
             </div>
 

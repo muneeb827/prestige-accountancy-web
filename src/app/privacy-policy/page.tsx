@@ -4,6 +4,9 @@ import { siteConfig } from "@/data/siteData";
 export const metadata: Metadata = {
   title: "Privacy Policy | Prestige Accountancy Services Ltd",
   description: "Privacy policy and UK GDPR compliance statement for Prestige Accountancy Services Ltd.",
+  alternates: {
+    canonical: "https://prestigeaccountancy.com/privacy-policy",
+  },
 };
 
 export default function PrivacyPolicyPage() {

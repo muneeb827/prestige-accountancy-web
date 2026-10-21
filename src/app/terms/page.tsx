@@ -4,6 +4,9 @@ import { siteConfig } from "@/data/siteData";
 export const metadata: Metadata = {
   title: "Terms of Engagement | Prestige Accountancy Services Ltd",
   description: "Terms and conditions of engagement for accountancy and business advisory services.",
+  alternates: {
+    canonical: "https://prestigeaccountancy.com/terms",
+  },
 };
 
 export default function TermsPage() {

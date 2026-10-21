@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { servicesData, siteConfig } from "@/data/siteData";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { 
   FileText, 
   Building2, 
@@ -14,6 +15,15 @@ import {
 export const metadata: Metadata = {
   title: "Accountancy & Business Services Hub | Prestige Accountancy",
   description: "Explore our 11 core financial services across Accountancy & Business Services. Fixed fees, Making Tax Digital compliance, and dedicated client support.",
+  alternates: {
+    canonical: "https://prestigeaccountancy.com/services",
+  },
+  openGraph: {
+    title: "Accountancy & Business Services Hub | Prestige Accountancy",
+    description: "Explore our 11 core financial services across Accountancy & Business Services.",
+    url: "https://prestigeaccountancy.com/services",
+    images: ["/og-image.png"]
+  }
 };
 
 export default function ServicesHubPage() {
@@ -23,17 +33,20 @@ export default function ServicesHubPage() {
   return (
     <div>
       {/* Header */}
-      <section className="bg-gradient-to-b from-[#EBF3FF] to-white py-16 lg:py-20 border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8 text-center max-w-3xl">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#00368C] bg-blue-50 border border-blue-200 px-3.5 py-1.5 rounded-full inline-block mb-3">
-            Our Services Hub
-          </span>
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
-            Accountancy & Business Services
-          </h1>
-          <p className="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed">
-            Tailored, technology-driven financial solutions for sole traders, limited companies, and charities. Built on clarity, punctuality, and transparent fixed-fee agreements.
-          </p>
+      <section className="bg-gradient-to-b from-[#EBF3FF] to-white py-12 lg:py-16 border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8">
+          <Breadcrumbs items={[{ label: "Services" }]} className="mb-4" />
+          <div className="text-center max-w-3xl mx-auto">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#00368C] bg-blue-50 border border-blue-200 px-3.5 py-1.5 rounded-full inline-block mb-3">
+              Our Services Hub
+            </span>
+            <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
+              Accountancy & Business Services
+            </h1>
+            <p className="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed">
+              Tailored, technology-driven financial solutions for sole traders, limited companies, and charities. Built on clarity, punctuality, and transparent fixed-fee agreements.
+            </p>
+          </div>
         </div>
       </section>
 

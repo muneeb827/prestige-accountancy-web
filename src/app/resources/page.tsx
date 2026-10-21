@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { siteConfig } from "@/data/siteData";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { 
   Calendar, 
   Download, 
@@ -14,6 +15,15 @@ import {
 export const metadata: Metadata = {
   title: "Key UK Tax & Filing Deadlines 2026/27 | Free Resources | Prestige",
   description: "Stay ahead of statutory UK filing deadlines for Companies House annual accounts, quarterly VAT returns, monthly CIS, and payroll compliance.",
+  alternates: {
+    canonical: "https://prestigeaccountancy.com/resources",
+  },
+  openGraph: {
+    title: "UK Tax & Statutory Filing Deadlines 2026/27 | Prestige Resources",
+    description: "Stay ahead of statutory UK filing deadlines for Companies House, VAT, CIS, and payroll compliance.",
+    url: "https://prestigeaccountancy.com/resources",
+    images: ["/og-image.png"]
+  }
 };
 
 export default function ResourcesPage() {
@@ -59,17 +69,20 @@ export default function ResourcesPage() {
   return (
     <div>
       {/* Header */}
-      <section className="bg-gradient-to-b from-[#EBF3FF] to-white py-16 lg:py-20 border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8 text-center max-w-3xl">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#00368C] bg-blue-50 border border-blue-200 px-3.5 py-1.5 rounded-full inline-block mb-3">
-            Free Tools &amp; Knowledge
-          </span>
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
-            Key UK Accounting &amp; Filing Deadlines (2026/27)
-          </h1>
-          <p className="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed">
-            Never miss an HMRC or Companies House deadline again. Keep this statutory reference handy to avoid costly financial penalties.
-          </p>
+      <section className="bg-gradient-to-b from-[#EBF3FF] to-white py-12 lg:py-16 border-b border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8">
+          <Breadcrumbs items={[{ label: "Resources" }]} className="mb-4" />
+          <div className="text-center max-w-3xl mx-auto">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#00368C] bg-blue-50 border border-blue-200 px-3.5 py-1.5 rounded-full inline-block mb-3">
+              Free Tools &amp; Knowledge
+            </span>
+            <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
+              Key UK Accounting &amp; Filing Deadlines (2026/27)
+            </h1>
+            <p className="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed">
+              Never miss an HMRC or Companies House deadline again. Keep this statutory reference handy to avoid costly financial penalties.
+            </p>
+          </div>
         </div>
       </section>
 
