@@ -204,7 +204,7 @@ export default async function BlogPostPage({ params }: Props) {
                 Muhammad Mujahid leads Prestige Accountancy Services Ltd, providing statutory compliance, cloud bookkeeping, VAT returns, and business structuring for UK companies, sole traders, and non-profits across Huddersfield and nationwide.
               </p>
               <div className="text-[11px] text-slate-500 pt-1">
-                📍 9 Blackmoorfoot Road, Huddersfield, HD4 5AQ • Tel: 01484 655560
+                📍 9 Blackmoorfoot Road, Huddersfield, HD4 5AQ • Tel: {siteConfig.phone}
               </div>
             </div>
           </div>

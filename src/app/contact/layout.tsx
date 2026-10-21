@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact Us & Free Consultation | Prestige Accountancy Services",
-  description: "Speak with a dedicated accountant at Prestige Accountancy Services. Huddersfield office: 01484 655560, direct mobile & WhatsApp: +44 7949 446368.",
+  description: "Speak with a dedicated accountant at Prestige Accountancy Services. Direct office phone & WhatsApp: +44 7949 446368.",
   alternates: {
     canonical: "https://prestigeaccountancy.com/contact",
   },

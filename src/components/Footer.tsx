@@ -52,7 +52,9 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#2B7EFE] shrink-0" />
-                <span>Office Landline: {siteConfig.landline}</span>
+                <a href={`tel:${siteConfig.landline.replace(/\s+/g, '')}`} className="hover:text-white transition-colors">
+                  Office Phone: <strong className="text-white">{siteConfig.landline}</strong>
+                </a>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#2B7EFE] shrink-0" />

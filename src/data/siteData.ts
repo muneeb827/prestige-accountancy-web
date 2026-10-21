@@ -34,7 +34,7 @@ export const siteConfig = {
   shortName: "Prestige Accountancy",
   tagline: "Guardians of Your Finances",
   phone: "+44 7949 446368",
-  landline: "01484 655560",
+  landline: "+44 7949 446368",
   whatsapp: "+447949446368",
   whatsappLink: "https://wa.me/447949446368?text=Hello%20Prestige%20Accountancy%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.",
   email: "info@prestigeaccountancy.com", // Placeholder until client sends official inbox

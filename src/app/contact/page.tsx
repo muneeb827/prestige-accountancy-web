@@ -146,18 +146,21 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                {/* Office Landline */}
+                {/* Office Phone */}
                 <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-4">
                   <div className="w-10 h-10 rounded-xl bg-slate-800 text-white flex items-center justify-center shrink-0">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
                     <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500">
-                      Huddersfield Landline
+                      Office Phone
                     </h3>
-                    <div className="text-base font-bold text-slate-900 mt-0.5">
+                    <a 
+                      href={`tel:${siteConfig.landline.replace(/\s+/g, '')}`}
+                      className="text-base font-bold text-slate-900 hover:text-[#00368C] block mt-0.5"
+                    >
                       {siteConfig.landline}
-                    </div>
+                    </a>
                   </div>
                 </div>
 

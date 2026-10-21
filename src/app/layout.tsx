@@ -93,21 +93,14 @@ export default function RootLayout({
         "url": "https://prestigeaccountancy.com",
         "logo": "https://prestigeaccountancy.com/prestige-logo.png",
         "description": "Prestige Accountancy Services Ltd provides professional bookkeeping, annual statutory accounts, VAT, CIS, charity accounts, and corporate structuring across Huddersfield and the UK.",
-        "telephone": [siteConfig.phone, siteConfig.landline],
+        "telephone": siteConfig.phone,
         "email": siteConfig.email,
         "priceRange": "££",
         "contactPoint": [
           {
             "@type": "ContactPoint",
-            "telephone": siteConfig.landline,
-            "contactType": "customer service & general enquiries",
-            "areaServed": "GB",
-            "availableLanguage": ["English", "Urdu", "Punjabi"]
-          },
-          {
-            "@type": "ContactPoint",
             "telephone": siteConfig.phone,
-            "contactType": "client support & direct advisory",
+            "contactType": "client support & general enquiries",
             "areaServed": "GB",
             "availableLanguage": ["English", "Urdu", "Punjabi"]
           }
