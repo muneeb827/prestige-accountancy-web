@@ -13,7 +13,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 text-slate-300 pt-16 pb-8 border-t-4 border-[#00368C]">
+    <footer className="bg-slate-950 text-slate-300 pt-16 pb-20 sm:pb-24 lg:pb-28 border-t-4 border-[#00368C]">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         {/* Main Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
@@ -257,12 +257,12 @@ export default function Footer() {
 
         {/* Local Town Coverage Footer Strip */}
         <div className="py-6 border-b border-slate-800 text-xs">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div className="font-bold uppercase tracking-wider text-slate-400 text-[11px] flex items-center gap-1.5">
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3 lg:pr-48">
+            <div className="font-bold uppercase tracking-wider text-slate-400 text-[11px] flex items-center gap-1.5 shrink-0">
               <MapPin className="w-3.5 h-3.5 text-[#2B7EFE]" />
               <span>West Yorkshire Areas We Cover:</span>
             </div>
-            <div className="flex flex-wrap items-center gap-3 text-slate-400">
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 text-slate-400">
               <Link href="/locations/halifax" className="hover:text-white transition-colors">Halifax (HX1-HX3)</Link>
               <span className="text-slate-700">•</span>
               <Link href="/locations/brighouse" className="hover:text-white transition-colors">Brighouse (HD6)</Link>
@@ -277,11 +277,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom Disclaimer & Legal Bar */}
-        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div className="pt-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 text-xs text-slate-500 lg:pr-48">
           <div>
             © 2026 {siteConfig.name}. All rights reserved. Registered in England & Wales{siteConfig.crn ? ` (CRN: ${siteConfig.crn})` : ""}.
           </div>
-          <div className="flex flex-wrap items-center gap-4 text-slate-400">
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-slate-400">
             <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <span>•</span>
             <Link href="/cookie-policy" className="hover:text-white transition-colors">Cookie Policy</Link>
