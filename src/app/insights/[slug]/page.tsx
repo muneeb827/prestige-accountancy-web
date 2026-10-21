@@ -17,6 +17,8 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
+export const dynamic = "force-static";
+
 export async function generateStaticParams() {
   return blogPosts.map(p => ({ slug: p.slug }));
 }
