@@ -257,7 +257,7 @@ export default function Footer() {
 
         {/* Local Town Coverage Footer Strip */}
         <div className="py-6 border-b border-slate-800 text-xs">
-          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3 lg:pr-48">
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
             <div className="font-bold uppercase tracking-wider text-slate-400 text-[11px] flex items-center gap-1.5 shrink-0">
               <MapPin className="w-3.5 h-3.5 text-[#2B7EFE]" />
               <span>West Yorkshire Areas We Cover:</span>
@@ -277,7 +277,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Disclaimer & Legal Bar */}
-        <div className="pt-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 text-xs text-slate-500 lg:pr-48">
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div>
             © 2026 {siteConfig.name}. All rights reserved. Registered in England & Wales{siteConfig.crn ? ` (CRN: ${siteConfig.crn})` : ""}.
           </div>
