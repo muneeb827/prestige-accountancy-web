@@ -912,7 +912,7 @@ export const blogPosts: BlogPost[] = [
 export const homeFaqs = [
   {
     q: "Do you work with businesses outside Huddersfield?",
-    a: "Yes — while our physical office is located at 9 Blackmoorfoot Road, Huddersfield, we support sole traders, limited companies, and charities across the entire United Kingdom digitally via cloud platforms such as Xero and QuickBooks Online."
+    a: "Yes. While our physical office is located at 9 Blackmoorfoot Road, Huddersfield, we support sole traders, limited companies, and charities across the entire United Kingdom digitally via cloud platforms such as Xero and QuickBooks Online."
   },
   {
     q: "How much do your services cost?",
@@ -951,7 +951,7 @@ export const coreValues = [
   },
   {
     title: "Forward-Looking Support",
-    desc: "Not just recording history — providing actionable forecasts, cash flow advice, and growth structuring."
+    desc: "Beyond recording history: providing actionable forecasts, cash flow advice, and growth structuring."
   },
   {
     title: "Continuous Learning",

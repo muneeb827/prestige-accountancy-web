@@ -44,7 +44,7 @@ export default function BookkeepingDeepContent() {
             <ul className="space-y-2 text-xs text-slate-700">
               <li className="flex items-start gap-2">
                 <span className="font-mono font-bold text-red-600">•</span>
-                <span><strong>Lost Hours:</strong> 8–15 hours every month lost on manual data entry instead of winning clients and growing revenue.</span>
+                <span><strong>Lost Hours:</strong> 8 to 15 hours every month lost on manual data entry instead of winning clients and growing revenue.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="font-mono font-bold text-red-600">•</span>

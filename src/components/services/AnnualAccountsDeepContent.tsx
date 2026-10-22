@@ -125,7 +125,7 @@ export default function AnnualAccountsDeepContent() {
           </div>
           <p>
             If your company files its accounts late for <strong>two consecutive financial years</strong>, Companies House legally <strong>doubles</strong> all the penalty amounts above (£300, £750, £1,500, and £3,000). 
-            Furthermore, directors who persistently fail to submit accounts face criminal prosecution and disqualification from acting as a company director for up to 15 years.
+            In addition, directors who persistently fail to submit accounts face criminal prosecution and disqualification from acting as a company director for up to 15 years.
           </p>
         </div>
       </div>

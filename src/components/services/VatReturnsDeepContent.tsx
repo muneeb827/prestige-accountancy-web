@@ -134,7 +134,7 @@ export default function VatReturnsDeepContent() {
                   You only pay VAT when customers pay you. Automatic bad debt relief if invoices remain unpaid.
                 </td>
                 <td className="py-3 px-4 font-medium text-slate-900">
-                  B2B consultants, contractors, and agencies with 30–60 day credit terms.
+                  B2B consultants, contractors, and agencies with 30 to 60-day credit terms.
                 </td>
               </tr>
               <tr className="hover:bg-slate-50">
@@ -200,11 +200,11 @@ export default function VatReturnsDeepContent() {
             <ul className="space-y-2 text-xs text-slate-700">
               <li className="flex items-start gap-2">
                 <span className="font-mono font-bold text-amber-600">•</span>
-                <span><strong>Days 1–15 overdue:</strong> 0% penalty if payment or Time-to-Pay arrangement is agreed.</span>
+                <span><strong>Days 1 to 15 overdue:</strong> 0% penalty if payment or Time-to-Pay arrangement is agreed.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="font-mono font-bold text-amber-600">•</span>
-                <span><strong>Days 16–30 overdue:</strong> 2% penalty calculated on the tax balance outstanding at day 15.</span>
+                <span><strong>Days 16 to 30 overdue:</strong> 2% penalty calculated on the tax balance outstanding at day 15.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="font-mono font-bold text-amber-600">•</span>

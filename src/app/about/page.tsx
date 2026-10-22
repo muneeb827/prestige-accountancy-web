@@ -58,13 +58,13 @@ export default function AboutPage() {
             {/* Left Narrative */}
             <div className="lg:col-span-7 space-y-5 text-slate-700 leading-relaxed">
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
-                Guardians of Your Finances — Built on Clarity &amp; Reliability
+                Guardians of Your Finances: Built on Clarity &amp; Reliability
               </h2>
               <p>
                 Prestige Accountancy Services Ltd is an accountancy and business advisory practice supporting individuals, sole traders, limited companies, and charitable organisations across Huddersfield and the wider United Kingdom.
               </p>
               <p>
-                We bridge the gap between traditional statutory compliance — such as year-end statutory accounts, Making Tax Digital VAT returns, and payroll/CIS filing — and the strategic reporting that helps business owners scale safely.
+                We bridge the gap between traditional statutory compliance (including year-end statutory accounts, Making Tax Digital VAT returns, and payroll or CIS filing) and the strategic reporting that helps business owners scale safely.
               </p>
               <p>
                 Our philosophy is simple: no confusing accounting jargon, no surprise invoices, and no automated silence. When you partner with Prestige, you work with real, accessible professionals who genuinely know your business and safeguard your position.

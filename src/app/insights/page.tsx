@@ -58,7 +58,7 @@ export default function InsightsHubPage() {
               Knowledge Hub
             </span>
             <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
-              Insights — News, Updates &amp; Tips
+              Insights: News, Updates &amp; Tips
             </h1>
             <p className="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed">
               Essential commentary on UK regulatory shifts, HMRC filing deadlines, cloud accounting habits, and business structuring tips.

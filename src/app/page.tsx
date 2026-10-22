@@ -83,7 +83,7 @@ export default function Home() {
 
               {/* Subtitle */}
               <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Accountancy, bookkeeping, VAT, and business support for individuals, sole traders, limited companies, partnerships, startups, and charities — across Huddersfield and the UK. Clear numbers, plain-English advice, and fixed fees.
+                Accountancy, bookkeeping, VAT, and business support for individuals, sole traders, limited companies, partnerships, startups, and charities across Huddersfield and the UK. Clear numbers, plain-English advice, and fixed fees.
               </p>
 
               {/* Bullet Points */}
@@ -292,7 +292,7 @@ export default function Home() {
               Clear Numbers, Dedicated Guidance & Compliance
             </h2>
             <p className="text-base text-slate-600 mt-3">
-              Structured into two dedicated service hubs — Accountancy & Business Services — built to handle your everyday operations and long-term milestones.
+              Structured into two dedicated service hubs, Accountancy and Business Services, built to handle your everyday operations and long-term milestones.
             </p>
           </div>
 
