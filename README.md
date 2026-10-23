@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Prestige Accountancy Services Ltd - Monorepo
 
-## Getting Started
+Complete Full-Stack codebase for Prestige Accountancy Services Ltd (`https://prestige-accountancy-web.vercel.app`).
 
-First, run the development server:
+## Project Structure
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+prestige-accountancy-web/
+├── frontend/                 # Next.js 16 Web Application
+│   ├── src/
+│   │   ├── app/              # Next.js App Router (41 pre-rendered pages & SEO metadata)
+│   │   ├── components/       # Responsive UI Components (Navbar, Footer, Calculators, Tools)
+│   │   └── data/             # Site Data, Services Details, and Location Coverage
+│   ├── public/               # Static Assets (Official SVG Logos, Optimized Images)
+│   ├── package.json
+│   ├── next.config.ts
+│   └── tsconfig.json
+│
+├── backend/                  # Node.js & Express API Server
+│   ├── src/
+│   │   ├── config/           # Server and SMTP Configuration
+│   │   ├── controllers/      # Contact & Quote Form Handlers
+│   │   ├── models/           # Inquiry Schema & TypeScript Interfaces
+│   │   ├── routes/           # RESTful Endpoints (/api/contact, /api/health)
+│   │   ├── services/         # Email Notification Service
+│   │   └── server.ts         # Express App Entrypoint
+│   ├── package.json
+│   ├── tsconfig.json
+│   └── README.md
+│
+└── README.md                 # Project Overview & Architecture Guide
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Quick Start
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1. Frontend (Next.js Website)
+```bash
+cd frontend
+npm install
+npm run dev
+# Website opens at http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To build for production:
+```bash
+npm run build
+```
 
-## Learn More
+### 2. Backend (Express API Server)
+```bash
+cd backend
+npm install
+npm run dev
+# API server runs at http://localhost:5000
+```
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+- **Frontend:** Hosted and automatically deployed to Vercel via GitHub `main` branch with Root Directory configured to `frontend`.
+- **Live URL:** [https://prestige-accountancy-web.vercel.app](https://prestige-accountancy-web.vercel.app)
