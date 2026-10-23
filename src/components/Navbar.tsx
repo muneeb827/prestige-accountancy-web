@@ -46,9 +46,9 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 w-full bg-white shadow-sm border-b border-slate-100 transition-all">
+      <header className={`fixed top-0 left-0 right-0 z-50 w-full bg-white shadow-sm border-b border-slate-100 flex flex-col ${mobileMenuOpen ? "h-[100dvh]" : "h-auto"}`}>
         {/* Top Bar with Deep Blue Background */}
-        <div className="bg-[#00368C] text-white text-xs py-2 px-4 sm:px-8 hidden md:block">
+        <div className="bg-[#00368C] text-white text-xs py-2 px-4 sm:px-8 hidden md:block shrink-0">
         <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-4">
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-1.5 text-blue-100">
@@ -82,8 +82,8 @@ export default function Navbar() {
       </div>
 
       {/* Main Navbar with White Background */}
-      <div className="bg-white text-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8 py-2 sm:py-2.5 flex items-center justify-between">
+      <div className="bg-white text-slate-800 flex flex-col flex-1 min-h-0">
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-8 py-2 sm:py-2.5 flex items-center justify-between shrink-0">
           
           {/* Brand Logo - Official Full-Color Approved Logo on White Background */}
           <Link href="/" className="flex items-center group py-0.5">
@@ -206,7 +206,7 @@ export default function Navbar() {
         {mobileMenuOpen && (
           <div 
             id="mobile-drawer"
-            className="lg:hidden bg-white border-t border-slate-100 px-4 pt-3 pb-12 space-y-4 text-slate-900 shadow-2xl max-h-[calc(100dvh-58px)] overflow-y-auto overscroll-contain"
+            className="lg:hidden bg-white border-t border-slate-100 px-4 sm:px-8 pt-3 pb-16 space-y-4 text-slate-900 shadow-2xl flex-1 min-h-0 overflow-y-auto overscroll-contain"
           >
             <div className="flex flex-col space-y-1">
               {navItems.map((item) => {
@@ -268,7 +268,7 @@ export default function Navbar() {
               })}
             </div>
 
-            <div className="pt-3 border-t border-slate-200 space-y-2.5">
+            <div className="pt-3 pb-6 border-t border-slate-200 space-y-2.5">
               <a 
                 href={`tel:${siteConfig.phone.replace(/\s+/g, '')}`} 
                 className="flex items-center justify-center gap-2 w-full py-3 border border-slate-300 rounded-xl text-sm font-semibold text-slate-800 hover:bg-slate-50 transition-colors"
