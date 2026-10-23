@@ -5,7 +5,7 @@ import { MessageCircle } from "lucide-react";
 
 export default function FloatingWhatsApp() {
   return (
-    <aside aria-label="WhatsApp quick chat" className="fixed bottom-6 right-6 z-50 group">
+    <aside id="floating-whatsapp" aria-label="WhatsApp quick chat" className="fixed bottom-6 right-6 z-40 group">
       <a
         href={siteConfig.whatsappLink}
         target="_blank"

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { siteConfig, navItems } from "@/data/siteData";
@@ -19,6 +19,30 @@ import {
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+
+  // Prevent background scrolling when mobile navigation drawer is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileMenuOpen]);
+
+  // Close mobile drawer on desktop resize
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024 && mobileMenuOpen) {
+        setMobileMenuOpen(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [mobileMenuOpen]);
 
   return (
     <>
@@ -180,46 +204,81 @@ export default function Navbar() {
 
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
-          <div className="lg:hidden bg-white border-t border-slate-100 px-4 pt-3 pb-6 space-y-3 text-slate-900 shadow-lg">
-            <div className="flex flex-col space-y-2">
-              {navItems.map((item) => (
-                <div key={item.label}>
-                  <Link
-                    href={item.href}
-                    className="block py-2 text-base font-semibold text-slate-900 hover:text-[#00368C]"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {item.label}
-                  </Link>
-                  {item.submenu && (
-                    <div className="pl-4 space-y-1 mb-2 border-l-2 border-blue-200">
-                      {item.submenu.flatMap(col => col.items).map((sub) => (
-                        <Link
-                          key={sub.href}
-                          href={sub.href}
-                          className="block py-1 text-sm text-slate-600 hover:text-[#00368C]"
-                          onClick={() => setMobileMenuOpen(false)}
-                        >
-                          {sub.label}
-                        </Link>
-                      ))}
+          <div 
+            id="mobile-drawer"
+            className="lg:hidden bg-white border-t border-slate-100 px-4 pt-3 pb-12 space-y-4 text-slate-900 shadow-2xl max-h-[calc(100dvh-58px)] overflow-y-auto overscroll-contain"
+          >
+            <div className="flex flex-col space-y-1">
+              {navItems.map((item) => {
+                if (item.submenu) {
+                  return (
+                    <div key={item.label} className="border-b border-slate-100 last:border-b-0 py-1">
+                      <button
+                        type="button"
+                        onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                        className="flex items-center justify-between w-full py-2.5 text-base font-semibold text-slate-900 hover:text-[#00368C] transition-colors"
+                        aria-expanded={mobileServicesOpen}
+                      >
+                        <span>{item.label}</span>
+                        <ChevronDown 
+                          className={`w-5 h-5 text-slate-400 transition-transform duration-200 ${
+                            mobileServicesOpen ? "rotate-180 text-[#00368C]" : ""
+                          }`} 
+                        />
+                      </button>
+                      {mobileServicesOpen && (
+                        <div className="pl-3 pr-2 py-1 space-y-1 mb-2 border-l-2 border-blue-200">
+                          <Link
+                            href={item.href}
+                            className="block py-1.5 text-sm font-bold text-[#00368C] hover:underline"
+                            onClick={() => {
+                              setMobileMenuOpen(false);
+                            }}
+                          >
+                            View All 11 Services →
+                          </Link>
+                          {item.submenu.flatMap(col => col.items).map((sub) => (
+                            <Link
+                              key={sub.href}
+                              href={sub.href}
+                              className="block py-1.5 text-sm text-slate-600 hover:text-[#00368C] transition-colors"
+                              onClick={() => {
+                                setMobileMenuOpen(false);
+                              }}
+                            >
+                              {sub.label}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
                     </div>
-                  )}
-                </div>
-              ))}
+                  );
+                }
+                return (
+                  <div key={item.label} className="border-b border-slate-100 last:border-b-0 py-1">
+                    <Link
+                      href={item.href}
+                      className="block py-2.5 text-base font-semibold text-slate-900 hover:text-[#00368C]"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  </div>
+                );
+              })}
             </div>
 
-            <div className="pt-4 border-t border-slate-100 space-y-2.5">
+            <div className="pt-3 border-t border-slate-200 space-y-2.5">
               <a 
                 href={`tel:${siteConfig.phone.replace(/\s+/g, '')}`} 
-                className="flex items-center justify-center gap-2 w-full py-2.5 border border-slate-300 rounded-xl text-sm font-semibold text-slate-800"
+                className="flex items-center justify-center gap-2 w-full py-3 border border-slate-300 rounded-xl text-sm font-semibold text-slate-800 hover:bg-slate-50 transition-colors"
               >
                 <Phone className="w-4 h-4 text-[#00368C]" />
                 Call {siteConfig.phone}
               </a>
               <Link
                 href="/contact"
-                className="flex items-center justify-center gap-2 w-full py-2.5 bg-[#00368C] text-white rounded-xl text-sm font-bold shadow"
+                className="flex items-center justify-center gap-2 w-full py-3 bg-[#00368C] hover:bg-[#002868] text-white rounded-xl text-sm font-bold shadow transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Book Free Consultation
