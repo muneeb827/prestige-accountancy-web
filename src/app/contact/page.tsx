@@ -228,7 +228,7 @@ export default function ContactPage() {
 
             {/* Interactive Form */}
             <div className="lg:col-span-7">
-              <div className="bg-white rounded-3xl border border-slate-200 p-8 sm:p-10 shadow-lg">
+              <div className="bg-white rounded-2xl sm:rounded-3xl border border-slate-200 p-5 sm:p-8 lg:p-10 shadow-lg">
                 <div className="mb-6">
                   <h2 className="text-2xl font-extrabold text-slate-900">
                     Send Us a Message
@@ -352,23 +352,23 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={status === "submitting"}
-                    className="w-full py-4 bg-[#00368C] hover:bg-[#002868] text-white font-bold text-sm uppercase tracking-wider rounded-xl shadow-md transition-all flex items-center justify-center gap-2 disabled:opacity-50"
+                    className="w-full py-3.5 sm:py-4 px-4 bg-[#00368C] hover:bg-[#002868] text-white font-bold text-xs sm:text-sm uppercase tracking-normal sm:tracking-wider rounded-xl shadow-md transition-all flex items-center justify-center text-center leading-snug disabled:opacity-50"
                   >
                     {status === "submitting" ? (
-                      <>
-                        <Loader2 className="w-5 h-5 animate-spin" />
+                      <span className="inline-flex items-center justify-center gap-2">
+                        <Loader2 className="w-4 h-4 animate-spin shrink-0" />
                         <span>Sending Message...</span>
-                      </>
+                      </span>
                     ) : (
-                      <>
-                        <Send className="w-4 h-4" />
+                      <span className="inline-block text-center">
+                        <Send className="w-4 h-4 inline-block -mt-0.5 mr-2 shrink-0" />
                         <span>Send Message &amp; Book Free Consultation</span>
-                      </>
+                      </span>
                     )}
                   </button>
 
-                  <div className="flex items-center justify-center gap-2 text-xs text-slate-500 pt-2">
-                    <ShieldCheck className="w-4 h-4 text-emerald-600" />
+                  <div className="flex items-center justify-center gap-2 text-xs text-slate-500 pt-2 text-center">
+                    <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0" />
                     <span>Your information is strictly confidential and never shared with third parties.</span>
                   </div>
                 </form>
