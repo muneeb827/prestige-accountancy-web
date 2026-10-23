@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "About Prestige Accountancy Services Ltd",
-    description: "Guardians of Your Finances. Tailored accountancy, bookkeeping, VAT compliance, and corporate structuring for UK businesses.",
+    description: "Guardians of Your Finances. Tailored accountancy, bookkeeping, VAT compliance and corporate structuring for UK businesses.",
     url: "https://prestigeaccountancy.com/about",
     images: ["/og-image.png"]
   }
@@ -61,13 +61,13 @@ export default function AboutPage() {
                 Guardians of Your Finances: Built on Clarity &amp; Reliability
               </h2>
               <p>
-                Prestige Accountancy Services Ltd is an accountancy and business advisory practice supporting individuals, sole traders, limited companies, and charitable organisations across Huddersfield and the wider United Kingdom.
+                Prestige Accountancy Services Ltd is an accountancy and business advisory practice supporting individuals, sole traders, limited companies and charitable organisations across Huddersfield and the wider United Kingdom.
               </p>
               <p>
-                We bridge the gap between traditional statutory compliance (including year-end statutory accounts, Making Tax Digital VAT returns, and payroll or CIS filing) and the strategic reporting that helps business owners scale safely.
+                We bridge the gap between traditional statutory compliance (including year-end statutory accounts, Making Tax Digital VAT returns and payroll or CIS filing) and the strategic reporting that helps business owners scale safely.
               </p>
               <p>
-                Our philosophy is simple: no confusing accounting jargon, no surprise invoices, and no automated silence. When you partner with Prestige, you work with real, accessible professionals who genuinely know your business and safeguard your position.
+                Our philosophy is simple: no confusing accounting jargon, no surprise invoices and no automated silence. When you partner with Prestige, you work with real, accessible professionals who genuinely know your business and safeguard your position.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-3">
@@ -121,7 +121,7 @@ export default function AboutPage() {
                   <h3 className="font-bold text-base">Our Mission</h3>
                 </div>
                 <p className="text-xs sm:text-sm text-blue-100 leading-relaxed">
-                  To eliminate compliance anxiety for UK small businesses and charities through meticulous financial governance, proactive communication, and fair, transparent pricing.
+                  To eliminate compliance anxiety for UK small businesses and charities through meticulous financial governance, proactive communication and fair, transparent pricing.
                 </p>
               </div>
             </div>
@@ -147,7 +147,7 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {teamMembers.map((member, idx) => {
-              // Use real photo for director, and clean styled portrait avatars for others
+              // Use real photo for director and clean styled portrait avatars for others
               const photoSrc = idx === 0 ? "/images/author-mujahid.jpg" : idx === 1 ? "/images/hero-accountant.jpg" : "/images/consultation.jpg";
               return (
                 <div 

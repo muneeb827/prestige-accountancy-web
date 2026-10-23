@@ -36,7 +36,7 @@ export default function Footer() {
               {siteConfig.tagline}
             </p>
             <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
-              Tailored accountancy, bookkeeping, VAT compliance, and corporate structuring for UK sole traders, limited companies, and charities.
+              Tailored accountancy, bookkeeping, VAT compliance and corporate structuring for UK sole traders, limited companies and charities.
             </p>
             
             <div className="space-y-2.5 text-sm text-slate-300 pt-2">

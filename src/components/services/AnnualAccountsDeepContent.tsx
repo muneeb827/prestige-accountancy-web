@@ -42,8 +42,8 @@ export default function AnnualAccountsDeepContent() {
             </div>
             <h4 className="font-bold text-slate-900 text-sm">Companies House (Public Register)</h4>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Companies House requires statutory financial statements (balance sheet, notes, and director signatures) for the public register. 
-              These accounts inform credit agencies, banks, suppliers, and potential clients about your company’s solvency.
+              Companies House requires statutory financial statements (balance sheet, notes and director signatures) for the public register. 
+              These accounts inform credit agencies, banks, suppliers and potential clients about your company’s solvency.
             </p>
             <div className="p-3 bg-blue-50/60 rounded-lg text-xs font-semibold text-[#00368C]">
               ⏳ Statutory Deadline: Exactly <strong>9 months</strong> after your Accounting Reference Date (ARD).
@@ -124,7 +124,7 @@ export default function AnnualAccountsDeepContent() {
             <span>Double Penalty Rule Warning:</span>
           </div>
           <p>
-            If your company files its accounts late for <strong>two consecutive financial years</strong>, Companies House legally <strong>doubles</strong> all the penalty amounts above (£300, £750, £1,500, and £3,000). 
+            If your company files its accounts late for <strong>two consecutive financial years</strong>, Companies House legally <strong>doubles</strong> all the penalty amounts above (£300, £750, £1,500 and £3,000). 
             In addition, directors who persistently fail to submit accounts face criminal prosecution and disqualification from acting as a company director for up to 15 years.
           </p>
         </div>
@@ -243,7 +243,7 @@ export default function AnnualAccountsDeepContent() {
         </h3>
         <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-3xl">
           At Prestige Accountancy, you never sign accounts you don’t understand. 
-          Once your draft accounts and Corporation Tax calculations are prepared, we conduct a plain-English review meeting to explain your profitability, gross margins, tax liabilities, and upcoming payment dates. 
+          Once your draft accounts and Corporation Tax calculations are prepared, we conduct a plain-English review meeting to explain your profitability, gross margins, tax liabilities and upcoming payment dates. 
           Only after your formal approval do we file electronically through our accredited gateway directly with Companies House and HMRC.
         </p>
       </div>

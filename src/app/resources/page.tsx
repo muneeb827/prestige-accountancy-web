@@ -15,13 +15,13 @@ import {
 
 export const metadata: Metadata = {
   title: "Key UK Tax & Filing Deadlines 2026/27 | Free Resources | Prestige",
-  description: "Stay ahead of statutory UK filing deadlines for Companies House annual accounts, quarterly VAT returns, monthly CIS, and payroll compliance.",
+  description: "Stay ahead of statutory UK filing deadlines for Companies House annual accounts, quarterly VAT returns, monthly CIS and payroll compliance.",
   alternates: {
     canonical: "https://prestigeaccountancy.com/resources",
   },
   openGraph: {
     title: "UK Tax & Statutory Filing Deadlines 2026/27 | Prestige Resources",
-    description: "Stay ahead of statutory UK filing deadlines for Companies House, VAT, CIS, and payroll compliance.",
+    description: "Stay ahead of statutory UK filing deadlines for Companies House, VAT, CIS and payroll compliance.",
     url: "https://prestigeaccountancy.com/resources",
     images: ["/og-image.png"]
   }
@@ -166,7 +166,7 @@ export default function ResourcesPage() {
                   Statutory Deadlines &amp; Checklist
                 </h3>
                 <p className="text-xs text-blue-100 leading-relaxed">
-                  Filter filing obligations for Ltd companies, VAT, CIS, and payroll. Print or save your custom compliance checklist.
+                  Filter filing obligations for Ltd companies, VAT, CIS and payroll. Print or save your custom compliance checklist.
                 </p>
               </div>
               <Link
@@ -204,7 +204,7 @@ export default function ResourcesPage() {
                   UK Business Startup Checklist
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed mb-4">
-                  The step-by-step 10-point checklist for setting up a company with Companies House, HMRC, and cloud banking.
+                  The step-by-step 10-point checklist for setting up a company with Companies House, HMRC and cloud banking.
                 </p>
               </div>
               <Link
@@ -225,7 +225,7 @@ export default function ResourcesPage() {
                   Sole Trader vs Ltd Decision Sheet
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed mb-4">
-                  A side-by-side comparison matrix of personal liability, accounting requirements, and credibility considerations.
+                  A side-by-side comparison matrix of personal liability, accounting requirements and credibility considerations.
                 </p>
               </div>
               <Link
@@ -246,7 +246,7 @@ export default function ResourcesPage() {
                   Charity Accounts Prep Checklist
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed mb-4">
-                  Guidelines for charity trustees preparing for annual reporting, fund separation, and independent examination.
+                  Guidelines for charity trustees preparing for annual reporting, fund separation and independent examination.
                 </p>
               </div>
               <Link

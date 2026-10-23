@@ -33,8 +33,8 @@ export default function PrivacyPolicyPage() {
             When you contact us, book a consultation, or engage our accountancy services, we may collect:
           </p>
           <ul className="list-disc pl-6 space-y-1 text-sm">
-            <li>Your name, business name, and job title.</li>
-            <li>Contact details including email address, phone number, and trading address.</li>
+            <li>Your name, business name and job title.</li>
+            <li>Contact details including email address, phone number and trading address.</li>
             <li>Financial and accounting records necessary to perform statutory duties (VAT, PAYE, annual accounts, CIS).</li>
             <li>Identity verification documents required under UK Anti-Money Laundering (AML) regulations.</li>
           </ul>
@@ -43,7 +43,7 @@ export default function PrivacyPolicyPage() {
         <section className="space-y-3">
           <h2 className="text-xl font-bold text-slate-900">3. How We Use Your Data</h2>
           <p>
-            We process your personal and business data strictly to fulfill our contractual accountancy obligations, comply with statutory filings (HMRC, Companies House, Charity Commission), and respond to direct inquiries. We do not sell your personal data.
+            We process your personal and business data strictly to fulfill our contractual accountancy obligations, comply with statutory filings (HMRC, Companies House, Charity Commission) and respond to direct inquiries. We do not sell your personal data.
           </p>
         </section>
 

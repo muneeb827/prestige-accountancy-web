@@ -23,14 +23,14 @@ export default function CookiePolicyPage() {
         <section className="space-y-3 pt-4">
           <h2 className="text-xl font-bold text-slate-900">1. What Are Cookies</h2>
           <p>
-            Cookies are small text files placed on your device to ensure websites function smoothly, remember user preferences, and collect anonymous aggregate analytics.
+            Cookies are small text files placed on your device to ensure websites function smoothly, remember user preferences and collect anonymous aggregate analytics.
           </p>
         </section>
 
         <section className="space-y-3">
           <h2 className="text-xl font-bold text-slate-900">2. Cookies We Use</h2>
           <p>
-            {siteConfig.name} uses strictly necessary cookies (to deliver website functionality, security, and session management) and performance cookies (to measure traffic and page interactions).
+            {siteConfig.name} uses strictly necessary cookies (to deliver website functionality, security and session management) and performance cookies (to measure traffic and page interactions).
           </p>
         </section>
 

@@ -32,7 +32,7 @@ export default function BookkeepingDeepContent() {
         </div>
         <p className="text-sm text-slate-700 leading-relaxed">
           Many UK business owners spend late Sunday evenings wrestling with spreadsheets and receipts, believing it saves money. 
-          In reality, un-reconciled bank feeds, miscategorized VAT, and unclaimed tax reliefs frequently cost businesses far more than professional monthly bookkeeping fees.
+          In reality, un-reconciled bank feeds, miscategorized VAT and unclaimed tax reliefs frequently cost businesses far more than professional monthly bookkeeping fees.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
@@ -73,7 +73,7 @@ export default function BookkeepingDeepContent() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="font-mono font-bold text-emerald-600">•</span>
-                <span><strong>Maximum Tax Shield:</strong> Every deductible supplier invoice, mobile bill, and business expense is captured and legally optimized.</span>
+                <span><strong>Maximum Tax Shield:</strong> Every deductible supplier invoice, mobile bill and business expense is captured and legally optimized.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="font-mono font-bold text-emerald-600">•</span>
@@ -107,7 +107,7 @@ export default function BookkeepingDeepContent() {
             </div>
             <h4 className="font-bold text-slate-900 text-sm">Xero Cloud Practice</h4>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Automated UK bank feeds, intuitive dashboard, customized quotes and professional PDF invoices with instant "Pay Now" Stripe/GoCardless buttons.
+              Automated UK bank feeds, intuitive dashboard, customized quotes and professional PDF invoices with instant "Pay Now" Stripe or GoCardless buttons.
             </p>
           </div>
 
@@ -117,7 +117,7 @@ export default function BookkeepingDeepContent() {
             </div>
             <h4 className="font-bold text-slate-900 text-sm">QuickBooks Online</h4>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Advanced inventory management, automated mileage tracking via mobile GPS, project profitability reports, and seamless payroll integration.
+              Advanced inventory management, automated mileage tracking via mobile GPS, project profitability reports and seamless payroll integration.
             </p>
           </div>
 
@@ -127,7 +127,7 @@ export default function BookkeepingDeepContent() {
             </div>
             <h4 className="font-bold text-slate-900 text-sm">Paperless Receipt Capture</h4>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Snap photos of paper receipts on your phone. OCR technology automatically extracts supplier name, date, amount, and VAT straight into the software.
+              Snap photos of paper receipts on your phone. OCR technology automatically extracts supplier name, date, amount and VAT straight into the software.
             </p>
           </div>
         </div>
@@ -163,7 +163,7 @@ export default function BookkeepingDeepContent() {
               </li>
               <li className="flex items-start gap-2">
                 <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                <span><strong>Protective Clothing & Uniform:</strong> Branded company uniform, steel toe-cap boots, hi-vis jackets, and PPE.</span>
+                <span><strong>Protective Clothing & Uniform:</strong> Branded company uniform, steel toe-cap boots, hi-vis jackets and PPE.</span>
               </li>
               <li className="flex items-start gap-2">
                 <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -209,7 +209,7 @@ export default function BookkeepingDeepContent() {
               </li>
               <li className="flex items-start gap-2">
                 <XCircle className="w-4 h-4 text-red-600 shrink-0 mt-0.5" />
-                <span><strong>Personal Drawings / Dividends:</strong> Withdrawing funds for director personal use is equity distribution, not an operating business expense.</span>
+                <span><strong>Personal Drawings or Dividends:</strong> Withdrawing funds for director personal use is equity distribution, not an operating business expense.</span>
               </li>
             </ul>
           </div>
@@ -231,14 +231,14 @@ export default function BookkeepingDeepContent() {
             <span className="text-[11px] font-mono font-bold text-[#00368C] uppercase">Week 1</span>
             <h5 className="text-xs font-bold text-slate-900">Receipt Capture</h5>
             <p className="text-[11px] text-slate-600 leading-normal">
-              Syncing incoming supplier bills, Dext receipt uploads, and reconciling electronic invoices.
+              Syncing incoming supplier bills, Dext receipt uploads and reconciling electronic invoices.
             </p>
           </div>
           <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-sm space-y-1">
             <span className="text-[11px] font-mono font-bold text-[#00368C] uppercase">Week 2</span>
             <h5 className="text-xs font-bold text-slate-900">Bank Reconciliations</h5>
             <p className="text-[11px] text-slate-600 leading-normal">
-              Reconciling every business debit card, PayPal, Stripe, and high street bank transaction line-by-line.
+              Reconciling every business debit card, PayPal, Stripe and high street bank transaction line-by-line.
             </p>
           </div>
           <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-sm space-y-1">

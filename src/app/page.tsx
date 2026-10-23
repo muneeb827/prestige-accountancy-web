@@ -83,7 +83,7 @@ export default function Home() {
 
               {/* Subtitle */}
               <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Accountancy, bookkeeping, VAT, and business support for individuals, sole traders, limited companies, partnerships, startups, and charities across Huddersfield and the UK. Clear numbers, plain-English advice, and fixed fees.
+                Accountancy, bookkeeping, VAT and business support for individuals, sole traders, limited companies, partnerships, startups and charities across Huddersfield and the UK. Clear numbers, plain-English advice and fixed fees.
               </p>
 
               {/* Bullet Points */}
@@ -127,8 +127,8 @@ export default function Home() {
               </div>
 
               {/* Trust Subtext */}
-              <div className="flex items-center justify-center lg:justify-start gap-3 text-xs text-slate-500 pt-1">
-                <div className="flex text-amber-400">
+              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-1.5 sm:gap-2.5 text-xs text-slate-500 pt-1 text-center sm:text-left">
+                <div className="flex items-center text-amber-400 shrink-0">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-4 h-4 fill-current" />
                   ))}
@@ -217,7 +217,7 @@ export default function Home() {
                       <option value="cis">CIS Registration & Monthly Returns</option>
                       <option value="startup">New Business Startup</option>
                       <option value="charity">Charity Accounts & Examination</option>
-                      <option value="other">Other / Full Practice Review</option>
+                      <option value="other">Other or Full Practice Review</option>
                     </select>
                   </div>
 
@@ -292,7 +292,7 @@ export default function Home() {
               Clear Numbers, Dedicated Guidance & Compliance
             </h2>
             <p className="text-base text-slate-600 mt-3">
-              Structured into two dedicated service hubs, Accountancy and Business Services, built to handle your everyday operations and long-term milestones.
+              Structured into two dedicated service hubs. Accountancy and Business Services are built to handle your everyday operations and long-term milestones.
             </p>
           </div>
 
@@ -352,7 +352,7 @@ export default function Home() {
                   Category Hub 2: Business Services
                 </h3>
                 <p className="text-sm text-slate-500">
-                  Launch planning, commercial formations, holding structures, and transaction due diligence.
+                  Launch planning, commercial formations, holding structures and transaction due diligence.
                 </p>
               </div>
             </div>
@@ -397,7 +397,7 @@ export default function Home() {
               Tailored Sector Expertise
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white mt-3">
-              Who We Help Across Huddersfield & The UK
+              Who We Help Across Huddersfield &amp; UK
             </h2>
             <p className="text-sm sm:text-base text-slate-400 mt-2">
               Every business structure has unique obligations. We deliver tailored workflows designed specifically for your stage and sector.
@@ -455,7 +455,7 @@ export default function Home() {
                   Thinking of Switching Accountants? It&apos;s Simpler Than You Think.
                 </h2>
                 <p className="text-sm sm:text-base text-blue-100 max-w-2xl leading-relaxed">
-                  Worried about gaps in your filing or difficult conversations? We manage the entire transition. We contact your previous accountant for professional clearance, import your cloud accounting data, and verify everything with zero disruption.
+                  Worried about gaps in your filing or difficult conversations? We manage the entire transition. We contact your previous accountant for professional clearance, import your cloud accounting data and verify everything with zero disruption.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 text-xs font-semibold">
                   <div className="bg-white/10 backdrop-blur rounded-lg p-3">

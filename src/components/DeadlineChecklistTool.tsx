@@ -36,7 +36,7 @@ const masterItems: ComplianceItem[] = [
     authority: "Companies House",
     deadlineRule: "Exactly 9 months after your financial year-end date (Accounting Reference Date).",
     penaltySummary: "Automatic late filing penalties starting at £150 up to £1,500 (doubled if late 2 years in a row).",
-    actionRequired: "Finalise general ledger, review balance sheet, and approve director sign-off before electronic filing."
+    actionRequired: "Finalise general ledger, review balance sheet and approve director sign-off before electronic filing."
   },
   {
     id: "ltd-tax-payment",
@@ -63,7 +63,7 @@ const masterItems: ComplianceItem[] = [
     authority: "Companies House",
     deadlineRule: "Within 14 days of your annual review confirmation date.",
     penaltySummary: "Criminal offence; failure to file can lead to compulsory company strike-off.",
-    actionRequired: "Verify directors, registered office address, PSC register, and share capital register."
+    actionRequired: "Verify directors, registered office address, PSC register and share capital register."
   },
   {
     id: "vat-quarterly",
@@ -72,7 +72,7 @@ const masterItems: ComplianceItem[] = [
     authority: "HMRC",
     deadlineRule: "1 calendar month and 7 days after the end of your quarterly VAT period.",
     penaltySummary: "1 penalty point per late return (4 points = £200 fine) + 2% to 4% late payment penalties.",
-    actionRequired: "Reconcile input/output VAT via digital links in Xero/QuickBooks and submit via MTD API."
+    actionRequired: "Reconcile input and output VAT via digital links in Xero or QuickBooks and submit via MTD API."
   },
   {
     id: "cis-monthly",
@@ -80,8 +80,8 @@ const masterItems: ComplianceItem[] = [
     title: "Monthly CIS300 Contractor Return",
     authority: "HMRC",
     deadlineRule: "By the 19th of each calendar month following the tax month (covers 6th to 5th).",
-    penaltySummary: "Instant £100 penalty for being 1 day late; £200 at 2 months; £300/5% at 6 months.",
-    actionRequired: "Verify all subcontractor UTR numbers, issue deduction certificates, and file return."
+    penaltySummary: "Instant £100 penalty for being 1 day late; £200 at 2 months; £300 or 5% at 6 months.",
+    actionRequired: "Verify all subcontractor UTR numbers, issue deduction certificates and file return."
   },
   {
     id: "payroll-paye",
@@ -99,7 +99,7 @@ const masterItems: ComplianceItem[] = [
     authority: "The Pensions Regulator",
     deadlineRule: "Contributions due by the 22nd of the following month (19th for paper). Triennial re-declaration.",
     penaltySummary: "Statutory compliance notices and escalating daily fines of £50 to £2,500/day from TPR.",
-    actionRequired: "Assess eligible staff, upload contribution schedules to NEST/People's Pension, and remit funds."
+    actionRequired: "Assess eligible staff, upload contribution schedules to NEST or The People's Pension and remit funds."
   },
   {
     id: "charity-return",
@@ -108,7 +108,7 @@ const masterItems: ComplianceItem[] = [
     authority: "Charity Commission",
     deadlineRule: "Within 10 months of charity financial year-end (for gross income > £10,000).",
     penaltySummary: "Charity marked as 'overdue' on public register, risking donor trust and grant eligibility.",
-    actionRequired: "Prepare trustees' report, apply charity SORP standards, and complete independent examination."
+    actionRequired: "Prepare trustees' report, apply charity SORP standards and complete independent examination."
   }
 ];
 
@@ -147,7 +147,7 @@ export default function DeadlineChecklistTool() {
           Custom UK Compliance &amp; Statutory Deadlines Generator
         </h3>
         <p className="text-xs sm:text-sm text-blue-100 mt-2 max-w-2xl leading-relaxed">
-          Select the operations that apply to your business. Our tool will instantly filter the exact Companies House, HMRC, and Pensions Regulator obligations and penalty traps you must monitor.
+          Select the operations that apply to your business. Our tool will instantly filter the exact Companies House, HMRC and Pensions Regulator obligations and penalty traps you must monitor.
         </p>
 
         {/* Filter Checkboxes */}
@@ -201,7 +201,7 @@ export default function DeadlineChecklistTool() {
             }`}
           >
             {selectedCategories.payroll ? <CheckSquare className="w-4 h-4 text-[#00368C]" /> : <Square className="w-4 h-4" />}
-            <span>Employers / Payroll</span>
+            <span>Employers &amp; Payroll</span>
           </button>
 
           <button
@@ -230,7 +230,7 @@ export default function DeadlineChecklistTool() {
           className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg border border-slate-300 bg-white hover:bg-slate-100 text-slate-800 text-xs font-semibold shadow-sm transition-all"
         >
           <Printer className="w-3.5 h-3.5 text-slate-600" />
-          <span>Print / Save as PDF Checklist</span>
+          <span>Print or Save as PDF Checklist</span>
         </button>
       </div>
 

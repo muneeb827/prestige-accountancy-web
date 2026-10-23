@@ -7,7 +7,7 @@ export async function POST(request: Request) {
 
     if (!firstName || !email || !message) {
       return NextResponse.json(
-        { error: "Please provide your name, email address, and a short message." },
+        { error: "Please provide your name, email address and a short message." },
         { status: 400 }
       );
     }

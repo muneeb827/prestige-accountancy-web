@@ -222,7 +222,7 @@ export default async function LocationPage({ params }: Props) {
                     </div>
                     <h4 className="font-bold text-slate-900 text-sm">VAT Returns &amp; MTD Submissions</h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Quarterly digital submissions, scheme optimization (Cash vs Standard), and making sure you never miss a deadline.
+                      Quarterly digital submissions, scheme optimization (Cash vs Standard) and making sure you never miss a deadline.
                     </p>
                   </Link>
 
@@ -236,7 +236,7 @@ export default async function LocationPage({ params }: Props) {
                     </div>
                     <h4 className="font-bold text-slate-900 text-sm">Xero &amp; QuickBooks Bookkeeping</h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Live bank feeds, paperless receipt scanning, monthly reconciliations, and tailored profit reports from £120/mo.
+                      Live bank feeds, paperless receipt scanning, monthly reconciliations and tailored profit reports from £120/mo.
                     </p>
                   </Link>
 
@@ -250,7 +250,7 @@ export default async function LocationPage({ params }: Props) {
                     </div>
                     <h4 className="font-bold text-slate-900 text-sm">Company Annual Accounts</h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      FRS 102/105 compliance, electronic submission to Companies House and HMRC, and transparent director walk-throughs.
+                      FRS 102/105 compliance, electronic submission to Companies House and HMRC with transparent director walk-throughs.
                     </p>
                   </Link>
 
@@ -264,7 +264,7 @@ export default async function LocationPage({ params }: Props) {
                     </div>
                     <h4 className="font-bold text-slate-900 text-sm">CIS Contractor &amp; Subcontractor Services</h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
-                      Instant HMRC UTR verifications, monthly deduction statements, CIS300 filing, and PAYE tax offsets.
+                      Instant HMRC UTR verifications, monthly deduction statements, CIS300 filing and PAYE tax offsets.
                     </p>
                   </Link>
                 </div>
@@ -321,7 +321,7 @@ export default async function LocationPage({ params }: Props) {
                   Book a Consultation in {location.town}
                 </h3>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  Speak directly with a qualified accountant. Available for in-person meetings at our Huddersfield office or via phone/video consultation.
+                  Speak directly with a qualified accountant. Available for in-person meetings at our Huddersfield office or via phone or video consultation.
                 </p>
 
                 <div className="space-y-3 pt-2">

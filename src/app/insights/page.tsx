@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Accounting & Compliance Insights | Prestige Accountancy",
-    description: "Stay ahead with practical UK accounting guides, Making Tax Digital updates, and financial best practices.",
+    description: "Stay ahead with practical UK accounting guides, Making Tax Digital updates and financial best practices.",
     url: "https://prestigeaccountancy.com/insights",
     images: ["/og-image.png"]
   }
@@ -23,7 +23,7 @@ export default function InsightsHubPage() {
     "@context": "https://schema.org",
     "@type": "Blog",
     "name": "Prestige Accountancy Insights & News",
-    "description": "Practical guides and updates on UK accounting, VAT, CIS, charity accounts, and business growth.",
+    "description": "Practical guides and updates on UK accounting, VAT, CIS, charity accounts and business growth.",
     "publisher": {
       "@type": "Organization",
       "name": siteConfig.name,
@@ -61,7 +61,7 @@ export default function InsightsHubPage() {
               Insights: News, Updates &amp; Tips
             </h1>
             <p className="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed">
-              Essential commentary on UK regulatory shifts, HMRC filing deadlines, cloud accounting habits, and business structuring tips.
+              Essential commentary on UK regulatory shifts, HMRC filing deadlines, cloud accounting habits and business structuring tips.
             </p>
           </div>
         </div>

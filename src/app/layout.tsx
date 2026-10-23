@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     url: "https://prestigeaccountancy.com",
     siteName: siteConfig.name,
     title: "Accountants in Huddersfield & UK-Wide | Prestige Accountancy",
-    description: "Guardians of Your Finances. Tailored accountancy, bookkeeping, VAT compliance, and corporate structuring for UK businesses.",
+    description: "Guardians of Your Finances. Tailored accountancy, bookkeeping, VAT compliance and corporate structuring for UK businesses.",
     images: [
       {
         url: "/og-image.png",
@@ -92,7 +92,7 @@ export default function RootLayout({
         "legalName": siteConfig.name,
         "url": "https://prestigeaccountancy.com",
         "logo": "https://prestigeaccountancy.com/prestige-logo.png",
-        "description": "Prestige Accountancy Services Ltd provides professional bookkeeping, annual statutory accounts, VAT, CIS, charity accounts, and corporate structuring across Huddersfield and the UK.",
+        "description": "Prestige Accountancy Services Ltd provides professional bookkeeping, annual statutory accounts, VAT, CIS, charity accounts and corporate structuring across Huddersfield and the UK.",
         "telephone": siteConfig.phone,
         "email": siteConfig.email,
         "priceRange": "££",

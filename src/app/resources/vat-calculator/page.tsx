@@ -15,7 +15,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Free UK VAT Calculator (2026/27) | Add or Remove VAT Online | Prestige",
-  description: "Free online UK VAT Calculator with 2026/27 rates (20% standard, 5% reduced). Calculate net, VAT, and gross totals. Expert Making Tax Digital support in Huddersfield & UK-wide.",
+  description: "Free online UK VAT Calculator with 2026/27 rates (20% standard, 5% reduced). Calculate net, VAT and gross totals. Expert Making Tax Digital support in Huddersfield & UK-wide.",
   alternates: {
     canonical: "https://prestigeaccountancy.com/resources/vat-calculator",
   },
@@ -173,7 +173,7 @@ export default function VatCalculatorPage() {
                   <span className="text-xs font-bold uppercase tracking-wider text-emerald-800">Voluntary Registration</span>
                   <h4 className="text-base font-bold text-slate-900">Reclaim Input VAT</h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Businesses under £90,000 can voluntarily register to reclaim VAT on significant startup equipment, commercial stock, and overheads.
+                    Businesses under £90,000 can voluntarily register to reclaim VAT on significant startup equipment, commercial stock and overheads.
                   </p>
                 </div>
               </div>
@@ -192,7 +192,7 @@ export default function VatCalculatorPage() {
                     What items qualify for the 5% reduced VAT rate?
                   </h4>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Reduced rate (5%) applies to domestic fuel and power (electricity, gas, heating oil), energy-saving materials installed in residential premises, children&apos;s car seats, and smoking cessation products.
+                    Reduced rate (5%) applies to domestic fuel and power (electricity, gas, heating oil), energy-saving materials installed in residential premises, children&apos;s car seats and smoking cessation products.
                   </p>
                 </div>
 
@@ -201,7 +201,7 @@ export default function VatCalculatorPage() {
                     What is the difference between Zero-Rated and Exempt goods?
                   </h4>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Zero-rated supplies (0%) are taxable goods where no VAT is charged to customers, but you can still reclaim input VAT on related business purchases. Exempt supplies (like financial services, insurance, and medical care) do not allow you to register for VAT or reclaim input VAT.
+                    Zero-rated supplies (0%) are taxable goods where no VAT is charged to customers, but you can still reclaim input VAT on related business purchases. Exempt supplies (like financial services, insurance and medical care) do not allow you to register for VAT or reclaim input VAT.
                   </p>
                 </div>
 
@@ -223,7 +223,7 @@ export default function VatCalculatorPage() {
                   Need Help With Your Quarterly VAT Returns?
                 </h3>
                 <p className="text-xs sm:text-sm text-blue-100 max-w-lg">
-                  Prestige Accountancy Services manages VAT registration, scheme optimisation (Flat Rate, Cash, Standard), and encrypted Making Tax Digital filings with fixed transparent fees.
+                  Prestige Accountancy Services manages VAT registration, scheme optimisation (Flat Rate, Cash, Standard) and encrypted Making Tax Digital filings with fixed transparent fees.
                 </p>
               </div>
 

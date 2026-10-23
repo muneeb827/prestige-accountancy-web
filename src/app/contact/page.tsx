@@ -95,7 +95,7 @@ export default function ContactPage() {
             Contact Prestige Accountancy Services
           </h1>
           <p className="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed">
-            Speak directly with a qualified accountant. Whether you are based in Huddersfield, West Yorkshire, or anywhere in the UK, we are ready to assist.
+            Speak directly with a qualified accountant. Whether you are based in Huddersfield, West Yorkshire or anywhere in the UK, we are ready to assist.
           </p>
         </div>
       </section>
@@ -112,7 +112,7 @@ export default function ContactPage() {
                   Practice Office &amp; Details
                 </h2>
                 <p className="text-sm text-slate-600">
-                  Clients are welcome to schedule an in-person meeting or connect with us via video call / telephone.
+                  Clients are welcome to schedule an in-person meeting or connect with us via video call or telephone.
                 </p>
               </div>
 
@@ -299,7 +299,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
-                        Phone / Mobile
+                        Phone or Mobile
                       </label>
                       <input 
                         type="tel"
@@ -331,7 +331,7 @@ export default function ContactPage() {
                       <option value="Business Startups">Business Startups &amp; Launch</option>
                       <option value="Company Formations">Company Formations &amp; Structuring</option>
                       <option value="Mergers & Acquisitions">Mergers, Acquisitions &amp; Demergers</option>
-                      <option value="General Consultation">Switching Accountants / General Inquiry</option>
+                      <option value="General Consultation">Switching Accountants or General Inquiry</option>
                     </select>
                   </div>
 
@@ -344,7 +344,7 @@ export default function ContactPage() {
                       required
                       value={formData.message}
                       onChange={e => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="Please tell us a bit about your business, current software (e.g. Xero/QuickBooks), or deadlines..."
+                      placeholder="Please tell us a bit about your business, current software (e.g. Xero or QuickBooks) or upcoming deadlines..."
                       className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#00368C]"
                     />
                   </div>

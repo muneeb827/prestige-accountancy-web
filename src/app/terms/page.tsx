@@ -30,7 +30,7 @@ export default function TermsPage() {
         <section className="space-y-3">
           <h2 className="text-xl font-bold text-slate-900">2. Professional Engagement</h2>
           <p>
-            All accountancy, bookkeeping, VAT, CIS, and corporate structuring engagements are conducted under formal UK professional standards and our standardized fixed-fee agreements.
+            All accountancy, bookkeeping, VAT, CIS and corporate structuring engagements are conducted under formal UK professional standards and our standardized fixed-fee agreements.
           </p>
         </section>
 

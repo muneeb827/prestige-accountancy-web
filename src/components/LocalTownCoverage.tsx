@@ -17,7 +17,7 @@ export default function LocalTownCoverage() {
             Accountancy Services in Huddersfield &amp; Surrounding Towns
           </h2>
           <p className="text-base text-slate-600 mt-3 leading-relaxed">
-            Headquartered at 9 Blackmoorfoot Road, Huddersfield (HD4 5AQ), we deliver hands-on, accessible accounting, bookkeeping, VAT, and CIS services across Calderdale and Kirklees.
+            Headquartered at 9 Blackmoorfoot Road, Huddersfield (HD4 5AQ), we deliver hands-on, accessible accounting, bookkeeping, VAT and CIS services across Calderdale and Kirklees.
           </p>
         </div>
 

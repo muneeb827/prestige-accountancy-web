@@ -14,7 +14,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Accountancy & Business Services Hub | Prestige Accountancy",
-  description: "Explore our 11 core financial services across Accountancy & Business Services. Fixed fees, Making Tax Digital compliance, and dedicated client support.",
+  description: "Explore our 11 core financial services across Accountancy & Business Services. Fixed fees, Making Tax Digital compliance and dedicated client support.",
   alternates: {
     canonical: "https://prestigeaccountancy.com/services",
   },
@@ -44,7 +44,7 @@ export default function ServicesHubPage() {
               Accountancy & Business Services
             </h1>
             <p className="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed">
-              Tailored, technology-driven financial solutions for sole traders, limited companies, and charities. Built on clarity, punctuality, and transparent fixed-fee agreements.
+              Tailored, technology-driven financial solutions for sole traders, limited companies and charities. Built on clarity, punctuality and transparent fixed-fee agreements.
             </p>
           </div>
         </div>
@@ -64,7 +64,7 @@ export default function ServicesHubPage() {
                 Accountancy Services
               </h2>
               <p className="text-sm text-slate-600 mt-1">
-                Core compliance, digital record keeping, statutory reporting, and regulatory submissions.
+                Core compliance, digital record keeping, statutory reporting and regulatory submissions.
               </p>
             </div>
 
@@ -109,7 +109,7 @@ export default function ServicesHubPage() {
                 Business Services
               </h2>
               <p className="text-sm text-slate-600 mt-1">
-                Commercial formations, group corporate structuring, and transaction due diligence.
+                Commercial formations, group corporate structuring and transaction due diligence.
               </p>
             </div>
 

@@ -203,7 +203,7 @@ export default async function BlogPostPage({ params }: Props) {
                 </span>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Muhammad Mujahid leads Prestige Accountancy Services Ltd, providing statutory compliance, cloud bookkeeping, VAT returns, and business structuring for UK companies, sole traders, and non-profits across Huddersfield and nationwide.
+                Muhammad Mujahid leads Prestige Accountancy Services Ltd, providing statutory compliance, cloud bookkeeping, VAT returns and business structuring for UK companies, sole traders and non-profits across Huddersfield and nationwide.
               </p>
               <div className="text-[11px] text-slate-500 pt-1">
                 📍 9 Blackmoorfoot Road, Huddersfield, HD4 5AQ • Tel: {siteConfig.phone}
@@ -218,7 +218,7 @@ export default async function BlogPostPage({ params }: Props) {
                 Need Professional Assistance With This?
               </h3>
               <p className="text-xs sm:text-sm text-blue-100 max-w-md">
-                Our accountants can review your filing schedule, set up your cloud software, and eliminate compliance stress.
+                Our accountants can review your filing schedule, set up your cloud software and eliminate compliance stress.
               </p>
             </div>
             <Link

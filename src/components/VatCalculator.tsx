@@ -184,7 +184,7 @@ export default function VatCalculator() {
               {formatCurrency(gross)}
             </div>
             <span className="text-[11px] text-emerald-700 mt-1 block">
-              Total invoice / customer price
+              Total invoice or customer price
             </span>
           </div>
 
@@ -201,7 +201,7 @@ export default function VatCalculator() {
               Approaching the £90,000 UK VAT Threshold?
             </h4>
             <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed">
-              We manage VAT registrations, quarterly Making Tax Digital filings, and optimal scheme selection (Flat Rate, Cash, or Standard) with fixed monthly pricing.
+              We manage VAT registrations, quarterly Making Tax Digital filings and optimal scheme selection (Flat Rate, Cash, or Standard) with fixed monthly pricing.
             </p>
           </div>
 
@@ -242,7 +242,7 @@ export default function VatCalculator() {
             </div>
             <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
               <span className="font-bold text-slate-900 block">Reduced (5%) &amp; Zero (0%)</span>
-              <p>5% applies to home energy and mobility aids; 0% applies to basic food, books, children’s clothing, and public transport.</p>
+              <p>5% applies to home energy and mobility aids; 0% applies to basic food, books, children’s clothing and public transport.</p>
             </div>
           </div>
         </div>

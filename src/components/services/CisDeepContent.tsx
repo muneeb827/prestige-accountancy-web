@@ -42,7 +42,7 @@ export default function CisDeepContent() {
             <h4 className="font-bold text-slate-900 text-sm">Contractor Responsibilities</h4>
             <p className="text-xs text-slate-600 leading-relaxed">
               You must register as a CIS contractor before paying any subcontractor. 
-              You are legally required to verify subcontractors with HMRC, deduct the correct tax percentage, issue monthly deduction statements, and file the CIS300 return by the 19th of each month.
+              You are legally required to verify subcontractors with HMRC, deduct the correct tax percentage, issue monthly deduction statements and file the CIS300 return by the 19th of each month.
             </p>
           </div>
 
@@ -97,7 +97,7 @@ export default function CisDeepContent() {
                 <td className="py-3 px-4 font-extrabold text-emerald-800">0% (Gross Payment)</td>
                 <td className="py-3 px-4 font-semibold text-slate-900">Gross Payment Status</td>
                 <td className="py-3 px-4 text-slate-600">
-                  Passes HMRC turnover test (£30k per director / £100k+ total), flawless tax compliance history, active UK bank account.
+                  Passes HMRC turnover test (£30k per director or £100k+ total), flawless tax compliance history, active UK bank account.
                 </td>
                 <td className="py-3 px-4 font-medium text-emerald-900">
                   Paid 100% gross. Huge cash flow advantage; company pays its own tax at year-end.
@@ -107,7 +107,7 @@ export default function CisDeepContent() {
                 <td className="py-3 px-4 font-extrabold text-[#00368C]">20% (Standard Rate)</td>
                 <td className="py-3 px-4 font-semibold text-slate-900">Registered Subcontractor</td>
                 <td className="py-3 px-4 text-slate-600">
-                  Subcontractor is registered for CIS with HMRC and has supplied a valid Unique Taxpayer Reference (UTR) and National Insurance number / CRN.
+                  Subcontractor is registered for CIS with HMRC and has supplied a valid Unique Taxpayer Reference (UTR) and National Insurance number or CRN.
                 </td>
                 <td className="py-3 px-4 font-medium text-slate-900">
                   20% deducted from labour and paid directly to HMRC on their behalf.
@@ -115,7 +115,7 @@ export default function CisDeepContent() {
               </tr>
               <tr className="hover:bg-slate-50 bg-red-50/30">
                 <td className="py-3 px-4 font-extrabold text-red-700">30% (Higher Rate)</td>
-                <td className="py-3 px-4 font-semibold text-slate-900">Unregistered / Unverified</td>
+                <td className="py-3 px-4 font-semibold text-slate-900">Unregistered or Unverified</td>
                 <td className="py-3 px-4 text-slate-600">
                   Worker has not registered for CIS or HMRC cannot verify their tax identity details upon contractor verification.
                 </td>
@@ -129,7 +129,7 @@ export default function CisDeepContent() {
 
         <div className="p-4 rounded-xl bg-slate-100 border-l-4 border-[#00368C] text-xs text-slate-700 leading-relaxed mt-2">
           <strong>The Materials Exemption Rule:</strong> CIS deductions are legally applied <em>only to the labour cost</em> of the invoice. 
-          The cost of materials genuinely purchased and paid for by the subcontractor (including plant hire, consumable fuel, and pre-fabricated components) must be deducted <em>before</em> calculating the 20% or 30% deduction. 
+          The cost of materials genuinely purchased and paid for by the subcontractor (including plant hire, consumable fuel and pre-fabricated components) must be deducted <em>before</em> calculating the 20% or 30% deduction. 
           Misapplying CIS to materials is one of the most common contractor mistakes.
         </div>
       </div>
@@ -144,7 +144,7 @@ export default function CisDeepContent() {
         </div>
         <p className="text-sm text-slate-700 leading-relaxed">
           The monthly CIS300 return must reach HMRC by the <strong>19th of every month</strong>. 
-          Unlike Corporation Tax, CIS penalties are automatic, instantaneous, and cumulative:
+          Unlike Corporation Tax, CIS penalties are automatic, instantaneous and cumulative:
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -208,7 +208,7 @@ export default function CisDeepContent() {
             </h4>
             <p className="text-xs text-slate-700 leading-relaxed">
               We declare the CIS deductions suffered by your company on your monthly <strong>Employer Payment Summary (EPS)</strong>. 
-              HMRC immediately offsets these deductions against your company’s PAYE, employee National Insurance, employer NI, and student loan deductions. 
+              HMRC immediately offsets these deductions against your company’s PAYE, employee National Insurance, employer NI and student loan deductions. 
               Instead of paying cash to HMRC for payroll, your CIS credits cover the bill!
             </p>
           </div>
@@ -220,7 +220,7 @@ export default function CisDeepContent() {
             </h4>
             <p className="text-xs text-slate-700 leading-relaxed">
               If your company suffered more CIS tax than its total annual PAYE liabilities, the excess credit can be offset against Corporation Tax or paid directly back to your business bank account as a <strong>cash refund</strong>. 
-              We compile your payment certificates, reconcile the EPS records, and liaise directly with HMRC’s specialist contractor repayment unit in Newcastle to expedite your payment.
+              We compile your payment certificates, reconcile the EPS records and liaise directly with HMRC’s specialist contractor repayment unit in Newcastle to expedite your payment.
             </p>
           </div>
         </div>

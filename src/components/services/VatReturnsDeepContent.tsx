@@ -134,7 +134,7 @@ export default function VatReturnsDeepContent() {
                   You only pay VAT when customers pay you. Automatic bad debt relief if invoices remain unpaid.
                 </td>
                 <td className="py-3 px-4 font-medium text-slate-900">
-                  B2B consultants, contractors, and agencies with 30 to 60-day credit terms.
+                  B2B consultants, contractors and agencies with 30 to 60-day credit terms.
                 </td>
               </tr>
               <tr className="hover:bg-slate-50">
@@ -220,7 +220,7 @@ export default function VatReturnsDeepContent() {
 
         <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-950 flex items-center gap-3">
           <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
-          <span><strong>The Prestige Guarantee:</strong> When you provide your records on time, our accountants guarantee your quarterly VAT is finalized, cross-checked, and submitted electronically days before the deadline, eliminating penalty risks entirely.</span>
+          <span><strong>The Prestige Guarantee:</strong> When you provide your records on time, our accountants guarantee your quarterly VAT is finalized, cross-checked and submitted electronically days before the deadline, eliminating penalty risks entirely.</span>
         </div>
       </div>
 
@@ -246,15 +246,15 @@ export default function VatReturnsDeepContent() {
             <ul className="space-y-2 text-xs text-slate-700">
               <li className="flex items-start gap-2">
                 <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                <span><strong>Commercial Vehicles & Vans:</strong> 100% VAT reclaimable on vans, lorries, and commercial pickups used for business.</span>
+                <span><strong>Commercial Vehicles & Vans:</strong> 100% VAT reclaimable on vans, lorries and commercial pickups used for business.</span>
               </li>
               <li className="flex items-start gap-2">
                 <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                <span><strong>Machinery, Tools & Stock:</strong> Materials, raw stock, and trade equipment bought exclusively for resale or operations.</span>
+                <span><strong>Machinery, Tools & Stock:</strong> Materials, raw stock and trade equipment bought exclusively for resale or operations.</span>
               </li>
               <li className="flex items-start gap-2">
                 <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                <span><strong>Professional Fees:</strong> Accountancy, legal fees, website development, marketing, and business insurance subscriptions.</span>
+                <span><strong>Professional Fees:</strong> Accountancy, legal fees, website development, marketing and business insurance subscriptions.</span>
               </li>
               <li className="flex items-start gap-2">
                 <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
@@ -292,7 +292,7 @@ export default function VatReturnsDeepContent() {
               </li>
               <li className="flex items-start gap-2">
                 <XCircle className="w-4 h-4 text-red-600 shrink-0 mt-0.5" />
-                <span><strong>Exempt Supplies & Zero-Rated Items:</strong> Books, public transport tickets, and zero-rated financial transactions contain no VAT to reclaim.</span>
+                <span><strong>Exempt Supplies & Zero-Rated Items:</strong> Books, public transport tickets and zero-rated financial transactions contain no VAT to reclaim.</span>
               </li>
             </ul>
           </div>
