@@ -4,7 +4,7 @@
   "description": "Backend API Server for Prestige Accountancy Services Ltd",
   "main": "dist/server.js",
   "scripts": {
-    "dev": "ts-node src/server.ts",
+    "dev": "tsx watch src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js"
   },
@@ -28,6 +28,7 @@
     "@types/node": "^22.10.2",
     "@types/nodemailer": "^6.4.17",
     "ts-node": "^10.9.2",
+    "tsx": "^4.23.15",
     "typescript": "^5.7.2"
   }
 }
