@@ -64,7 +64,7 @@ export default function BookkeepingDeepContent() {
           <div className="p-5 rounded-xl border border-emerald-200 bg-emerald-50/50 space-y-3">
             <h3 className="text-base font-bold text-emerald-950 flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-emerald-600" />
-              <span>The Prestige Advantage</span>
+              <span>The Actvise Advantage</span>
             </h3>
             <ul className="space-y-2 text-xs text-slate-700">
               <li className="flex items-start gap-2">
@@ -216,7 +216,7 @@ export default function BookkeepingDeepContent() {
         </div>
       </div>
 
-      {/* 4. The Monthly Prestige Bookkeeping Cycle */}
+      {/* 4. The Monthly Actvise Bookkeeping Cycle */}
       <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-4">
         <h3 className="text-xl font-bold text-slate-900 flex items-center gap-2">
           <Clock className="w-5 h-5 text-[#00368C]" />

@@ -3,7 +3,7 @@ import { servicesData, blogPosts, whoWeHelpAudience } from "@/data/siteData";
 import { locationsData } from "@/data/locationsData";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://prestigeaccountancy.com";
+  const baseUrl = "https://actvise.co.uk";
 
   // Static core routes
   const staticRoutes = [

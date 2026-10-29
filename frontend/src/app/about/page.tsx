@@ -13,15 +13,15 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Prestige Accountancy | Trusted UK Accountants",
-  description: "Prestige Accountancy Services is a UK accountancy & business advisory practice in Huddersfield. Tailored advice, accurate reporting and software-driven efficiency.",
+  title: "About Actvise Accountancy | Trusted UK Accountants",
+  description: "Actvise Accountancy Services is a UK accountancy & business advisory practice in Huddersfield. Tailored advice, accurate reporting and software-driven efficiency.",
   alternates: {
-    canonical: "https://prestigeaccountancy.com/about",
+    canonical: "https://actvise.co.uk/about",
   },
   openGraph: {
-    title: "About Prestige Accountancy Services Ltd",
+    title: "About Actvise Accountancy Services Ltd",
     description: "Guardians of Your Finances. Tailored accountancy, bookkeeping, VAT compliance and corporate structuring for UK businesses.",
-    url: "https://prestigeaccountancy.com/about",
+    url: "https://actvise.co.uk/about",
     images: ["/og-image.png"]
   }
 };
@@ -41,7 +41,7 @@ export default function AboutPage() {
               About Our Practice
             </span>
             <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
-              About Prestige Accountancy Services
+              About Actvise Accountancy Services
             </h1>
             <p className="text-base sm:text-lg text-slate-600 mt-4 leading-relaxed">
               A trusted UK accountancy and business advisory practice combining everyday compliance with the insight you need to make confident financial decisions.
@@ -61,13 +61,13 @@ export default function AboutPage() {
                 Guardians of Your Finances: Built on Clarity &amp; Reliability
               </h2>
               <p>
-                Prestige Accountancy Services Ltd is an accountancy and business advisory practice supporting individuals, sole traders, limited companies and charitable organisations across Huddersfield and the wider United Kingdom.
+                Actvise Accountancy Services Ltd is an accountancy and business advisory practice supporting individuals, sole traders, limited companies and charitable organisations across Huddersfield and the wider United Kingdom.
               </p>
               <p>
                 We bridge the gap between traditional statutory compliance (including year-end statutory accounts, Making Tax Digital VAT returns and payroll or CIS filing) and the strategic reporting that helps business owners scale safely.
               </p>
               <p>
-                Our philosophy is simple: no confusing accounting jargon, no surprise invoices and no automated silence. When you partner with Prestige, you work with real, accessible professionals who genuinely know your business and safeguard your position.
+                Our philosophy is simple: no confusing accounting jargon, no surprise invoices and no automated silence. When you partner with Actvise, you work with real, accessible professionals who genuinely know your business and safeguard your position.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-3">
@@ -96,7 +96,7 @@ export default function AboutPage() {
                 <div className="relative h-72 sm:h-80 w-full">
                   <Image
                     src="/images/office-team.jpg"
-                    alt="Prestige Accountancy team consultation in Huddersfield"
+                    alt="Actvise Accountancy team consultation in Huddersfield"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 500px"
@@ -138,7 +138,7 @@ export default function AboutPage() {
               Practice Leadership
             </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
-              Meet the Professionals Behind Prestige
+              Meet the Professionals Behind Actvise
             </h2>
             <p className="text-sm text-slate-600 mt-2">
               Accessible, qualified accountants who value personal relationships over call centres.
@@ -191,7 +191,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
-              The Prestige Standards of Conduct
+              The Actvise Standards of Conduct
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

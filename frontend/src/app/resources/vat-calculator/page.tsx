@@ -14,15 +14,15 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Free UK VAT Calculator (2026/27) | Add or Remove VAT Online | Prestige",
+  title: "Free UK VAT Calculator (2026/27) | Add or Remove VAT Online | Actvise",
   description: "Free online UK VAT Calculator with 2026/27 rates (20% standard, 5% reduced). Calculate net, VAT and gross totals. Expert Making Tax Digital support in Huddersfield & UK-wide.",
   alternates: {
-    canonical: "https://prestigeaccountancy.com/resources/vat-calculator",
+    canonical: "https://actvise.co.uk/resources/vat-calculator",
   },
   openGraph: {
-    title: "Free UK VAT Calculator (2026/27) | Prestige Accountancy Services",
+    title: "Free UK VAT Calculator (2026/27) | Actvise Accountancy Services",
     description: "Calculate UK VAT instantly. Add or remove VAT at 20% or 5% with full Making Tax Digital compliance guidance.",
-    url: "https://prestigeaccountancy.com/resources/vat-calculator",
+    url: "https://actvise.co.uk/resources/vat-calculator",
     images: ["/og-image.png"]
   }
 };
@@ -223,7 +223,7 @@ export default function VatCalculatorPage() {
                   Need Help With Your Quarterly VAT Returns?
                 </h3>
                 <p className="text-xs sm:text-sm text-blue-100 max-w-lg">
-                  Prestige Accountancy Services manages VAT registration, scheme optimisation (Flat Rate, Cash, Standard) and encrypted Making Tax Digital filings with fixed transparent fees.
+                  Actvise Accountancy Services manages VAT registration, scheme optimisation (Flat Rate, Cash, Standard) and encrypted Making Tax Digital filings with fixed transparent fees.
                 </p>
               </div>
 

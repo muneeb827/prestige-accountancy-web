@@ -145,7 +145,7 @@ export default function Home() {
                 <div className="relative h-44 w-full">
                   <Image 
                     src="/images/hero-accountant.jpg"
-                    alt="Prestige Accountancy Services - Chartered & Professional Accountants in Huddersfield"
+                    alt="Actvise Accountancy Services - Chartered & Professional Accountants in Huddersfield"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 500px"
@@ -250,7 +250,7 @@ export default function Home() {
               Our Principles
             </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">
-              The Six Values Guiding Every Prestige Client
+              The Six Values Guiding Every Actvise Client
             </h2>
             <p className="text-sm sm:text-base text-slate-600 mt-2">
               We combine everyday compliance with actionable guidance to help you navigate UK financial regulations with total confidence.
@@ -442,7 +442,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. SWITCHING TO PRESTIGE SECTION */}
+      {/* 5. SWITCHING TO ACTVISE SECTION */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="bg-gradient-to-r from-[#00368C] to-[#0A4BB5] rounded-3xl p-8 sm:p-14 text-white relative overflow-hidden shadow-2xl">

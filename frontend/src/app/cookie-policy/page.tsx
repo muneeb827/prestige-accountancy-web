@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/data/siteData";
 
 export const metadata: Metadata = {
-  title: "Cookie Policy | Prestige Accountancy Services Ltd",
-  description: "Cookie policy explaining how Prestige Accountancy Services Ltd uses essential and analytics cookies.",
+  title: "Cookie Policy | Actvise Accountancy Services Ltd",
+  description: "Cookie policy explaining how Actvise Accountancy Services Ltd uses essential and analytics cookies.",
   alternates: {
-    canonical: "https://prestigeaccountancy.com/cookie-policy",
+    canonical: "https://actvise.co.uk/cookie-policy",
   },
 };
 

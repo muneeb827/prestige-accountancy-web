@@ -1,4 +1,4 @@
-# Prestige Accountancy Services - Backend API
+# Actvise Accountancy Services - Backend API
 
 Express & TypeScript Backend API server for handling leads, inquiries, and future database/CRM integrations.
 
@@ -8,7 +8,7 @@ Express & TypeScript Backend API server for handling leads, inquiries, and futur
   - `POST /api/contact` - Captures inquiries from the frontend Contact form
   - `POST /api/quote` - Captures inquiries from hero quote forms
 - **CORS Configured:** Allows requests from `http://localhost:3000` and the production Vercel app.
-- **Email Notifications:** Ready for SMTP (Gmail, Outlook, SendGrid, Resend) to automatically email leads to `info@prestigeaccountancy.co.uk`.
+- **Email Notifications:** Ready for SMTP (Gmail, Outlook, SendGrid, Resend) to automatically email leads to `info@actvise.co.uk`.
 - **TypeScript:** Strict type-safe models and controllers.
 
 ## Quick Start

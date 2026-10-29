@@ -12,13 +12,13 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://prestigeaccountancy.com"),
+  metadataBase: new URL("https://actvise.co.uk"),
   alternates: {
-    canonical: "https://prestigeaccountancy.com",
+    canonical: "https://actvise.co.uk",
   },
   title: {
-    default: "Accountants in Huddersfield & UK-Wide | Prestige Accountancy Services",
-    template: "%s | Prestige Accountancy"
+    default: "Accountants in Huddersfield & UK-Wide | Actvise Accountancy Services",
+    template: "%s | Actvise Accountancy"
   },
   description: "Expert accountancy, bookkeeping, VAT & business support for individuals, companies, startups and charities. Clear numbers, plain-English advice. Free consultation.",
   keywords: [
@@ -36,22 +36,22 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_GB",
-    url: "https://prestigeaccountancy.com",
+    url: "https://actvise.co.uk",
     siteName: siteConfig.name,
-    title: "Accountants in Huddersfield & UK-Wide | Prestige Accountancy",
+    title: "Accountants in Huddersfield & UK-Wide | Actvise Accountancy",
     description: "Guardians of Your Finances. Tailored accountancy, bookkeeping, VAT compliance and corporate structuring for UK businesses.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Prestige Accountancy Services Ltd - Guardians of Your Finances"
+        alt: "Actvise Accountancy Services Ltd - Guardians of Your Finances"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Prestige Accountancy Services Ltd | Guardians of Your Finances",
+    title: "Actvise Accountancy Services Ltd | Guardians of Your Finances",
     description: "Expert accountancy, bookkeeping, VAT & business support across Huddersfield and the UK.",
     images: ["/og-image.png"]
   },
@@ -87,12 +87,12 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": ["AccountingService", "LocalBusiness", "Organization"],
-        "@id": "https://prestigeaccountancy.com/#organization",
+        "@id": "https://actvise.co.uk/#organization",
         "name": siteConfig.name,
         "legalName": siteConfig.name,
-        "url": "https://prestigeaccountancy.com",
-        "logo": "https://prestigeaccountancy.com/prestige-logo.png",
-        "description": "Prestige Accountancy Services Ltd provides professional bookkeeping, annual statutory accounts, VAT, CIS, charity accounts and corporate structuring across Huddersfield and the UK.",
+        "url": "https://actvise.co.uk",
+        "logo": "https://actvise.co.uk/prestige-logo.png",
+        "description": "Actvise Accountancy Services Ltd provides professional bookkeeping, annual statutory accounts, VAT, CIS, charity accounts and corporate structuring across Huddersfield and the UK.",
         "telephone": siteConfig.phone,
         "email": siteConfig.email,
         "priceRange": "££",

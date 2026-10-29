@@ -90,7 +90,7 @@ export default function Navbar() {
             <div className="flex items-center">
               <Image 
                 src="/prestige-logo.svg" 
-                alt="Prestige Accountancy Services Ltd" 
+                alt="Actvise Accountancy Services Ltd" 
                 width={260} 
                 height={74} 
                 className="h-10 sm:h-12 lg:h-14 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]"

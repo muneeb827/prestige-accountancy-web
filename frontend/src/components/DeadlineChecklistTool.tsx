@@ -279,7 +279,7 @@ export default function DeadlineChecklistTool() {
               </div>
 
               <div className="text-xs text-slate-600 pt-1">
-                <strong>Prestige Action Protocol:</strong> {item.actionRequired}
+                <strong>Actvise Action Protocol:</strong> {item.actionRequired}
               </div>
             </div>
           ))
@@ -293,7 +293,7 @@ export default function DeadlineChecklistTool() {
             Want 100% Guaranteed On-Time Filing?
           </h4>
           <p className="text-xs text-slate-400 max-w-xl">
-            Prestige Accountancy manages statutory compliance schedules for clients nationwide. We guarantee on-time submission when records are received on schedule.
+            Actvise Accountancy manages statutory compliance schedules for clients nationwide. We guarantee on-time submission when records are received on schedule.
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-3 shrink-0">

@@ -15,12 +15,12 @@ export const metadata: Metadata = {
   title: "Who We Help | Accountants for Companies, Contractors & Charities",
   description: "Specialised accountancy workflows for UK Limited Companies, Sole Traders, Construction Contractors (CIS), Startups and Registered Charities.",
   alternates: {
-    canonical: "https://prestigeaccountancy.com/who-we-help",
+    canonical: "https://actvise.co.uk/who-we-help",
   },
   openGraph: {
-    title: "Who We Help | Prestige Accountancy Services",
+    title: "Who We Help | Actvise Accountancy Services",
     description: "Specialised accountancy workflows for UK Limited Companies, Sole Traders, CIS Contractors, Startups and Charities.",
-    url: "https://prestigeaccountancy.com/who-we-help",
+    url: "https://actvise.co.uk/who-we-help",
     images: ["/og-image.png"]
   }
 };

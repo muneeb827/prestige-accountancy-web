@@ -30,19 +30,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: {
-      absolute: `${post.title} | Prestige Accountancy`,
+      absolute: `${post.title} | Actvise Accountancy`,
     },
     description: post.metaDescription,
     alternates: {
-      canonical: `https://prestigeaccountancy.com/insights/${slug}`,
+      canonical: `https://actvise.co.uk/insights/${slug}`,
     },
     openGraph: {
-      title: `${post.title} | Prestige Accountancy`,
+      title: `${post.title} | Actvise Accountancy`,
       description: post.metaDescription,
       type: "article",
       publishedTime: post.publishedDate,
       authors: ["Muhammad Mujahid"],
-      url: `https://prestigeaccountancy.com/insights/${slug}`,
+      url: `https://actvise.co.uk/insights/${slug}`,
       images: ["/og-image.png"]
     }
   };
@@ -62,7 +62,7 @@ export default async function BlogPostPage({ params }: Props) {
     "headline": post.title,
     "description": post.summary,
     "datePublished": post.publishedDate,
-    "image": "https://prestigeaccountancy.com/og-image.png",
+    "image": "https://actvise.co.uk/og-image.png",
     "author": {
       "@type": "Person",
       "name": "Muhammad Mujahid",
@@ -77,10 +77,10 @@ export default async function BlogPostPage({ params }: Props) {
       "name": siteConfig.name,
       "logo": {
         "@type": "ImageObject",
-        "url": "https://prestigeaccountancy.com/prestige-logo.png"
+        "url": "https://actvise.co.uk/prestige-logo.png"
       }
     },
-    "mainEntityOfPage": `https://prestigeaccountancy.com/insights/${post.slug}`
+    "mainEntityOfPage": `https://actvise.co.uk/insights/${post.slug}`
   };
 
   const otherPosts = blogPosts.filter(p => p.slug !== slug).slice(0, 3);
@@ -139,7 +139,7 @@ export default async function BlogPostPage({ params }: Props) {
                   Verified Practice Lead
                 </span>
               </div>
-              <div className="text-slate-500 text-[11px]">Managing Director, Prestige Accountancy Services Ltd</div>
+              <div className="text-slate-500 text-[11px]">Managing Director, Actvise Accountancy Services Ltd</div>
             </div>
           </div>
         </div>
@@ -203,7 +203,7 @@ export default async function BlogPostPage({ params }: Props) {
                 </span>
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Muhammad Mujahid leads Prestige Accountancy Services Ltd, providing statutory compliance, cloud bookkeeping, VAT returns and business structuring for UK companies, sole traders and non-profits across Huddersfield and nationwide.
+                Muhammad Mujahid leads Actvise Accountancy Services Ltd, providing statutory compliance, cloud bookkeeping, VAT returns and business structuring for UK companies, sole traders and non-profits across Huddersfield and nationwide.
               </p>
               <div className="text-[11px] text-slate-500 pt-1">
                 📍 9 Blackmoorfoot Road, Huddersfield, HD4 5AQ • Tel: {siteConfig.phone}

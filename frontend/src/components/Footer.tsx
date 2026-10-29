@@ -24,7 +24,7 @@ export default function Footer() {
               <div className="flex items-center">
                 <Image 
                   src="/prestige-logo.svg" 
-                  alt="Prestige Accountancy Services Ltd" 
+                  alt="Actvise Accountancy Services Ltd" 
                   width={260} 
                   height={74} 
                   className="h-10 sm:h-12 lg:h-14 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]"
@@ -73,7 +73,7 @@ export default function Footer() {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 hover:border-[#2B7EFE] hover:bg-[#00368C] flex items-center justify-center text-white transition-all text-sm font-bold"
-                  aria-label="Prestige Accountancy Facebook"
+                  aria-label="Actvise Accountancy Facebook"
                 >
                   f
                 </a>
@@ -82,7 +82,7 @@ export default function Footer() {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 hover:border-[#2B7EFE] hover:bg-[#00368C] flex items-center justify-center text-white transition-all text-sm font-bold"
-                  aria-label="Prestige Accountancy Instagram"
+                  aria-label="Actvise Accountancy Instagram"
                 >
                   ig
                 </a>
@@ -91,7 +91,7 @@ export default function Footer() {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 hover:border-[#2B7EFE] hover:bg-[#00368C] flex items-center justify-center text-white transition-all text-sm font-bold"
-                  aria-label="Prestige Accountancy TikTok"
+                  aria-label="Actvise Accountancy TikTok"
                 >
                   tk
                 </a>
@@ -100,7 +100,7 @@ export default function Footer() {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 hover:border-[#2B7EFE] hover:bg-[#00368C] flex items-center justify-center text-white transition-all text-sm font-bold"
-                  aria-label="Prestige Accountancy LinkedIn"
+                  aria-label="Actvise Accountancy LinkedIn"
                 >
                   in
                 </a>
@@ -212,7 +212,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/about" className="hover:text-white transition-colors">
-                  About Prestige
+                  About Actvise
                 </Link>
               </li>
               <li>
@@ -245,7 +245,7 @@ export default function Footer() {
             <div className="p-3.5 rounded-xl bg-slate-900 border border-slate-800 text-xs space-y-2 text-slate-300">
               <div className="flex items-center gap-1.5 font-bold text-white">
                 <ShieldCheck className="w-4 h-4 text-emerald-400" />
-                The Prestige Guarantee
+                The Actvise Guarantee
               </div>
               <p className="text-slate-400">
                 Transparent fixed-fee agreement. No hidden charges, no surprise invoices.

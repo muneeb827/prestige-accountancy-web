@@ -11,6 +11,6 @@ export const config = {
     port: parseInt(process.env.SMTP_PORT || "587", 10),
     user: process.env.SMTP_USER || "",
     pass: process.env.SMTP_PASS || "",
-    receiver: process.env.NOTIFICATION_RECEIVER || "info@prestigeaccountancy.co.uk",
+    receiver: process.env.NOTIFICATION_RECEIVER || "info@actvise.co.uk",
   },
 };

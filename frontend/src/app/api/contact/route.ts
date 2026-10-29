@@ -15,9 +15,9 @@ export async function POST(request: Request) {
     // In a full MERN production setup with MongoDB:
     // await dbConnect();
     // await Inquiry.create({ firstName, lastName, email, phone, service, message, createdAt: new Date() });
-    // Or send via Nodemailer / SendGrid to Prestige inbox
+    // Or send via Nodemailer / SendGrid to Actvise inbox
 
-    console.log("New Prestige Accountancy Lead Captured:", {
+    console.log("New Actvise Accountancy Lead Captured:", {
       name: `${firstName} ${lastName || ""}`.trim(),
       email,
       phone,
@@ -29,7 +29,7 @@ export async function POST(request: Request) {
     return NextResponse.json(
       { 
         success: true, 
-        message: "Thank you! Your message has been received by Prestige Accountancy Services. An accountant will contact you within 24 business hours." 
+        message: "Thank you! Your message has been received by Actvise Accountancy Services. An accountant will contact you within 24 business hours." 
       },
       { status: 200 }
     );

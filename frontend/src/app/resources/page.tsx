@@ -14,15 +14,15 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Key UK Tax & Filing Deadlines 2026/27 | Free Resources | Prestige",
+  title: "Key UK Tax & Filing Deadlines 2026/27 | Free Resources | Actvise",
   description: "Stay ahead of statutory UK filing deadlines for Companies House annual accounts, quarterly VAT returns, monthly CIS and payroll compliance.",
   alternates: {
-    canonical: "https://prestigeaccountancy.com/resources",
+    canonical: "https://actvise.co.uk/resources",
   },
   openGraph: {
-    title: "UK Tax & Statutory Filing Deadlines 2026/27 | Prestige Resources",
+    title: "UK Tax & Statutory Filing Deadlines 2026/27 | Actvise Resources",
     description: "Stay ahead of statutory UK filing deadlines for Companies House, VAT, CIS and payroll compliance.",
-    url: "https://prestigeaccountancy.com/resources",
+    url: "https://actvise.co.uk/resources",
     images: ["/og-image.png"]
   }
 };
@@ -101,7 +101,7 @@ export default function ResourcesPage() {
             </div>
             <div className="hidden sm:flex items-center gap-1.5 text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200">
               <ShieldCheck className="w-4 h-4 text-emerald-600" />
-              Prestige Managed Clients Never Miss a Deadline
+              Actvise Managed Clients Never Miss a Deadline
             </div>
           </div>
 
@@ -268,7 +268,7 @@ export default function ResourcesPage() {
             Worried about an upcoming statutory deadline?
           </h2>
           <p className="text-blue-100 text-sm max-w-lg mx-auto">
-            Contact Prestige Accountancy Services. We can review your records and ensure prompt filing to avoid late submission penalties.
+            Contact Actvise Accountancy Services. We can review your records and ensure prompt filing to avoid late submission penalties.
           </p>
           <div className="pt-2">
             <Link

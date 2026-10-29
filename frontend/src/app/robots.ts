@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://prestigeaccountancy.com/sitemap.xml",
+    sitemap: "https://actvise.co.uk/sitemap.xml",
   };
 }

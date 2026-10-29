@@ -34,17 +34,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: {
-      absolute: `${service.title} | Prestige Accountancy`,
+      absolute: `${service.title} | Actvise Accountancy`,
     },
     description: service.metaDescription,
     keywords: service.keywords,
     alternates: {
-      canonical: `https://prestigeaccountancy.com/services/business-services/${slug}`,
+      canonical: `https://actvise.co.uk/services/business-services/${slug}`,
     },
     openGraph: {
-      title: `${service.title} | Prestige Accountancy`,
+      title: `${service.title} | Actvise Accountancy`,
       description: service.metaDescription,
-      url: `https://prestigeaccountancy.com/services/business-services/${slug}`,
+      url: `https://actvise.co.uk/services/business-services/${slug}`,
       images: ["/og-image.png"]
     }
   };
@@ -65,14 +65,14 @@ export default async function BusinessServicePage({ params }: Props) {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": `https://prestigeaccountancy.com/services/business-services/${slug}#service`,
+    "@id": `https://actvise.co.uk/services/business-services/${slug}#service`,
     "name": service.title,
     "description": service.shortDesc,
     "provider": {
       "@type": "AccountingService",
       "name": siteConfig.name,
       "telephone": [siteConfig.phone, siteConfig.landline],
-      "url": "https://prestigeaccountancy.com",
+      "url": "https://actvise.co.uk",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "9 Blackmoorfoot Road, Crosland Moor",

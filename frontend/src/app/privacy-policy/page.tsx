@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/data/siteData";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Prestige Accountancy Services Ltd",
-  description: "Privacy policy and UK GDPR compliance statement for Prestige Accountancy Services Ltd.",
+  title: "Privacy Policy | Actvise Accountancy Services Ltd",
+  description: "Privacy policy and UK GDPR compliance statement for Actvise Accountancy Services Ltd.",
   alternates: {
-    canonical: "https://prestigeaccountancy.com/privacy-policy",
+    canonical: "https://actvise.co.uk/privacy-policy",
   },
 };
 
@@ -23,7 +23,7 @@ export default function PrivacyPolicyPage() {
         <section className="space-y-3 pt-4">
           <h2 className="text-xl font-bold text-slate-900">1. Who We Are</h2>
           <p>
-            {siteConfig.name} (&ldquo;Prestige Accountancy&rdquo;, &ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;) is an accountancy practice registered in England and Wales. We operate from {siteConfig.address}.
+            {siteConfig.name} (&ldquo;Actvise Accountancy&rdquo;, &ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;) is an accountancy practice registered in England and Wales. We operate from {siteConfig.address}.
           </p>
         </section>
 

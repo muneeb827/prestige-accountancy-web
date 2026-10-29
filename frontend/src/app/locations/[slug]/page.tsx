@@ -37,16 +37,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: {
-      absolute: `${location.metaTitle} | Prestige Accountancy`,
+      absolute: `${location.metaTitle} | Actvise Accountancy`,
     },
     description: location.metaDescription,
     alternates: {
-      canonical: `https://prestigeaccountancy.com/locations/${slug}`,
+      canonical: `https://actvise.co.uk/locations/${slug}`,
     },
     openGraph: {
-      title: `${location.metaTitle} | Prestige Accountancy`,
+      title: `${location.metaTitle} | Actvise Accountancy`,
       description: location.metaDescription,
-      url: `https://prestigeaccountancy.com/locations/${slug}`,
+      url: `https://actvise.co.uk/locations/${slug}`,
       images: ["/og-image.png"]
     }
   };
@@ -66,11 +66,11 @@ export default async function LocationPage({ params }: Props) {
   const localSchema = {
     "@context": "https://schema.org",
     "@type": "AccountingService",
-    "@id": `https://prestigeaccountancy.com/locations/${slug}#localbusiness`,
-    "name": `Prestige Accountancy Services - ${location.town}`,
-    "image": "https://prestigeaccountancy.com/og-image.png",
+    "@id": `https://actvise.co.uk/locations/${slug}#localbusiness`,
+    "name": `Actvise Accountancy Services - ${location.town}`,
+    "image": "https://actvise.co.uk/og-image.png",
     "telephone": [siteConfig.phone, siteConfig.landline],
-    "url": `https://prestigeaccountancy.com/locations/${slug}`,
+    "url": `https://actvise.co.uk/locations/${slug}`,
     "priceRange": "££",
     "address": {
       "@type": "PostalAddress",

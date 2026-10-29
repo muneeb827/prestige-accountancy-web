@@ -5,15 +5,15 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import InsightsFilterGrid from "@/components/InsightsFilterGrid";
 
 export const metadata: Metadata = {
-  title: "Accounting & Compliance News, Tips & Updates | Prestige Insights",
-  description: "Stay ahead with practical UK accounting guides, Making Tax Digital updates, Companies House deadlines and financial best practices from Prestige Accountancy.",
+  title: "Accounting & Compliance News, Tips & Updates | Actvise Insights",
+  description: "Stay ahead with practical UK accounting guides, Making Tax Digital updates, Companies House deadlines and financial best practices from Actvise Accountancy.",
   alternates: {
-    canonical: "https://prestigeaccountancy.com/insights",
+    canonical: "https://actvise.co.uk/insights",
   },
   openGraph: {
-    title: "Accounting & Compliance Insights | Prestige Accountancy",
+    title: "Accounting & Compliance Insights | Actvise Accountancy",
     description: "Stay ahead with practical UK accounting guides, Making Tax Digital updates and financial best practices.",
-    url: "https://prestigeaccountancy.com/insights",
+    url: "https://actvise.co.uk/insights",
     images: ["/og-image.png"]
   }
 };
@@ -22,12 +22,12 @@ export default function InsightsHubPage() {
   const blogSchema = {
     "@context": "https://schema.org",
     "@type": "Blog",
-    "name": "Prestige Accountancy Insights & News",
+    "name": "Actvise Accountancy Insights & News",
     "description": "Practical guides and updates on UK accounting, VAT, CIS, charity accounts and business growth.",
     "publisher": {
       "@type": "Organization",
       "name": siteConfig.name,
-      "logo": "https://prestigeaccountancy.com/prestige-logo.png"
+      "logo": "https://actvise.co.uk/prestige-logo.png"
     },
     "blogPost": blogPosts.map(post => ({
       "@type": "BlogPosting",
@@ -38,7 +38,7 @@ export default function InsightsHubPage() {
         "@type": "Person",
         "name": "Muhammad Mujahid"
       },
-      "url": `https://prestigeaccountancy.com/insights/${post.slug}`
+      "url": `https://actvise.co.uk/insights/${post.slug}`
     }))
   };
 

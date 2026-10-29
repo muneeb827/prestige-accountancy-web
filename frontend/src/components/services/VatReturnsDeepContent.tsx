@@ -107,7 +107,7 @@ export default function VatReturnsDeepContent() {
           </h2>
         </div>
         <p className="text-sm text-slate-700 leading-relaxed">
-          Operating under the incorrect VAT scheme can tie up thousands of pounds in working capital. At Prestige Accountancy, we review your billing cycle and customer profiles to select the most financially advantageous method:
+          Operating under the incorrect VAT scheme can tie up thousands of pounds in working capital. At Actvise Accountancy, we review your billing cycle and customer profiles to select the most financially advantageous method:
         </p>
 
         <div className="overflow-x-auto rounded-xl border border-slate-200 shadow-sm">
@@ -220,7 +220,7 @@ export default function VatReturnsDeepContent() {
 
         <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-950 flex items-center gap-3">
           <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
-          <span><strong>The Prestige Guarantee:</strong> When you provide your records on time, our accountants guarantee your quarterly VAT is finalized, cross-checked and submitted electronically days before the deadline, eliminating penalty risks entirely.</span>
+          <span><strong>The Actvise Guarantee:</strong> When you provide your records on time, our accountants guarantee your quarterly VAT is finalized, cross-checked and submitted electronically days before the deadline, eliminating penalty risks entirely.</span>
         </div>
       </div>
 
@@ -311,7 +311,7 @@ export default function VatReturnsDeepContent() {
         <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-3xl">
           HMRC’s Making Tax Digital regulations strictly prohibit manual copy-pasting between spreadsheets and tax portals. 
           Under MTD rules, every transaction must preserve a complete <strong>digital audit trail</strong> from the primary source receipt through to the final API submission. 
-          Prestige Accountancy manages direct API connections to HMRC, maintaining complete legal compliance without software confusion.
+          Actvise Accountancy manages direct API connections to HMRC, maintaining complete legal compliance without software confusion.
         </p>
         <div className="pt-2 flex flex-wrap gap-4">
           <div className="px-3.5 py-2 rounded-lg bg-white/10 border border-white/10 text-xs font-semibold">

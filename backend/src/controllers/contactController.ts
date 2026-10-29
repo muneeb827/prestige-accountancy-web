@@ -36,7 +36,7 @@ export async function handleContactSubmission(req: Request, res: Response) {
 
     return res.status(200).json({
       success: true,
-      message: "Thank you! Your message has been received by Prestige Accountancy Services. An accountant will contact you within 24 business hours.",
+      message: "Thank you! Your message has been received by Actvise Accountancy Services. An accountant will contact you within 24 business hours.",
       lead: {
         firstName: newInquiry.firstName,
         service: newInquiry.service,

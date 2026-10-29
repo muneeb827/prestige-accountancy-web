@@ -18,7 +18,7 @@ app.use(
 app.get("/api/health", (_req, res) => {
   res.status(200).json({
     status: "ok",
-    service: "Prestige Accountancy Backend API",
+    service: "Actvise Accountancy Backend API",
     uptime: process.uptime(),
     timestamp: new Date().toISOString(),
   });
@@ -29,14 +29,14 @@ app.use("/api", contactRoutes);
 
 // 404 Handler
 app.use((_req, res) => {
-  res.status(404).json({ error: "Endpoint not found on Prestige API" });
+  res.status(404).json({ error: "Endpoint not found on Actvise API" });
 });
 
 // Start Server
 if (process.env.NODE_ENV !== "test") {
   app.listen(config.port, () => {
     console.log(`===============================================`);
-    console.log(` Prestige Accountancy Services - Backend API `);
+    console.log(` Actvise Accountancy Services - Backend API `);
     console.log(` Running on port: ${config.port}`);
     console.log(` Environment: ${config.nodeEnv}`);
     console.log(` Health check: http://localhost:${config.port}/api/health`);

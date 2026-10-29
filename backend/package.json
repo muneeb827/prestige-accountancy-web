@@ -1,7 +1,7 @@
 {
-  "name": "prestige-accountancy-backend",
+  "name": "actvise-backend",
   "version": "1.0.0",
-  "description": "Backend API Server for Prestige Accountancy Services Ltd",
+  "description": "Backend API Server for Actvise Accountancy Services Ltd",
   "main": "dist/server.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
@@ -12,9 +12,9 @@
     "express",
     "typescript",
     "api",
-    "prestige-accountancy"
+    "actvise-accountancy"
   ],
-  "author": "Prestige Accountancy Services Ltd",
+  "author": "Actvise Accountancy Services Ltd",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

@@ -23,7 +23,7 @@ export const locationsData: LocationItem[] = [
     distanceFromOffice: "7 miles (approx. 15 minutes via A629)",
     travelDescription: "Direct 15-minute drive south along the A629 Calderdale Way. Free on-site client parking is available directly outside our practice on Blackmoorfoot Road.",
     heroTitle: "Chartered Accountants for Halifax & Calderdale Businesses",
-    metaTitle: "Accountants in Halifax | Prestige Accountancy Services",
+    metaTitle: "Accountants in Halifax | Actvise Accountancy Services",
     metaDescription: "Professional accountancy, bookkeeping, VAT returns, CIS and corporate filing for Halifax and Calderdale businesses. Fixed fees, free consultations.",
     shortDesc: "Comprehensive accountancy, Xero bookkeeping, VAT submissions and statutory annual accounts tailored for sole traders, SMEs and limited companies across Halifax.",
     localEconomyOverview: "Halifax boasts a rich commercial heritage spanning innovative manufacturing, logistics, tech startups at Dean Clough and independent retail. From growing family businesses around Copley to established service practices in the town centre, businesses in Halifax require accountants who combine local accessibility with modern cloud efficiency.",
@@ -36,7 +36,7 @@ export const locationsData: LocationItem[] = [
     ],
     localFaqs: [
       {
-        q: "Can Prestige Accountancy visit our business premises in Halifax?",
+        q: "Can Actvise Accountancy visit our business premises in Halifax?",
         a: "Yes. While our headquarters are in nearby Huddersfield (HD4), our team regularly visits clients across Halifax and Calderdale for on-site reviews and management accounts meetings."
       },
       {
@@ -57,7 +57,7 @@ export const locationsData: LocationItem[] = [
     distanceFromOffice: "5.5 miles (approx. 12 minutes via A641 / Bradford Rd)",
     travelDescription: "Convenient 12-minute journey down the A641 / Bradford Road directly into Crosland Moor. Quick access from M62 Junction 25.",
     heroTitle: "Accountancy & Bookkeeping Services in Brighouse",
-    metaTitle: "Accountants in Brighouse (HD6) | Prestige Accountancy",
+    metaTitle: "Accountants in Brighouse (HD6) | Actvise Accountancy",
     metaDescription: "Local accountants serving Brighouse (HD6) and surrounding areas. Specialist CIS, VAT, bookkeeping and company formations with transparent fixed fees.",
     shortDesc: "Dedicated local accounting services for Brighouse tradespeople, limited company directors and expanding retail businesses throughout HD6.",
     localEconomyOverview: "Positioned directly on the Calder Valley transport corridor near Junction 25 of the M62, Brighouse is home to a thriving community of industrial fabricators, commercial transport fleets, independent trades and bustling high street retailers. We provide Brighouse business owners with stress-free compliance, Making Tax Digital VAT management and corporate accounts.",
@@ -91,7 +91,7 @@ export const locationsData: LocationItem[] = [
     distanceFromOffice: "4 miles (approx. 8 minutes via Halifax Rd / Ainley Top)",
     travelDescription: "Under 10 minutes drive south via the Ainley Top roundabout onto Halifax Road. Ideal for businesses operating in Lowfields Business Park.",
     heroTitle: "Accountants for Elland & Lowfields Business Park",
-    metaTitle: "Accountants in Elland (HX5) | Prestige Accountancy",
+    metaTitle: "Accountants in Elland (HX5) | Actvise Accountancy",
     metaDescription: "Expert accountancy and cloud bookkeeping for Elland and Lowfields Business Park companies. Xero certified, VAT MTD compliant, fixed fees.",
     shortDesc: "Strategic accounting, payroll, VAT and statutory annual reporting for enterprises in Elland, Ainley Top and Lowfields Business Park.",
     localEconomyOverview: "Elland hosts one of West Yorkshire’s premier commercial centres: Lowfields Business Park, alongside a dense concentration of manufacturing, distribution, printing and automotive service companies. Our accountants provide the robust financial reporting, cash-flow modelling and statutory year-end filing that Elland’s fast-moving enterprises require.",
@@ -125,7 +125,7 @@ export const locationsData: LocationItem[] = [
     distanceFromOffice: "6 miles (approx. 14 minutes via Woodhead Rd / Meltham Rd)",
     travelDescription: "Direct 14-minute scenic journey along Meltham Road or Woodhead Road connecting the Holme Valley straight to our Crosland Moor office.",
     heroTitle: "Accountancy Services for Holmfirth & Holme Valley",
-    metaTitle: "Accountants in Holmfirth (HD9) | Prestige Accountancy",
+    metaTitle: "Accountants in Holmfirth (HD9) | Actvise Accountancy",
     metaDescription: "Trusted local accountants for Holmfirth hospitality, retail, sole traders and limited companies across the Holme Valley (HD9). Free initial consultation.",
     shortDesc: "Friendly, accessible accountancy, bookkeeping, VAT and startup advice for hospitality, tourism, creative businesses and trades across Holmfirth.",
     localEconomyOverview: "Famed for its vibrant culture, tourism, independent bistros, artisan makers and boutique retail, Holmfirth and the Holme Valley possess a unique entrepreneurial ecosystem. We help Holmfirth sole traders and limited companies keep on top of their day-to-day accounts, register for VAT efficiently and file compliant statutory accounts without stress.",
@@ -159,10 +159,10 @@ export const locationsData: LocationItem[] = [
     distanceFromOffice: "9 miles (approx. 18 minutes via Leeds Rd / A644)",
     travelDescription: "Straightforward 18-minute drive via the A644 or A62 Leeds Road into Huddersfield. Easily accessible with dedicated on-site parking.",
     heroTitle: "Accountants for Dewsbury & Heavy Woollen District",
-    metaTitle: "Accountants in Dewsbury (WF12, WF13) | Prestige Accountancy",
+    metaTitle: "Accountants in Dewsbury (WF12, WF13) | Actvise Accountancy",
     metaDescription: "Dedicated accountancy, CIS, VAT and business startup support for Dewsbury and Batley companies. Multilingual support (English, Urdu, Punjabi).",
     shortDesc: "Professional accountancy, CIS registration, VAT compliance and corporate structuring for Dewsbury businesses, contractors and family firms.",
-    localEconomyOverview: "Dewsbury and the Heavy Woollen District have an industrious commercial base spanning textile manufacturing, bed and mattress fabrication, vehicle logistics, trade wholesaling and independent family enterprises. Prestige Accountancy provides culturally attuned, multilingual accounting guidance (English, Urdu, Punjabi) with rock-solid compliance.",
+    localEconomyOverview: "Dewsbury and the Heavy Woollen District have an industrious commercial base spanning textile manufacturing, bed and mattress fabrication, vehicle logistics, trade wholesaling and independent family enterprises. Actvise Accountancy provides culturally attuned, multilingual accounting guidance (English, Urdu, Punjabi) with rock-solid compliance.",
     industriesServed: [
       "Textile, mattress and upholstery manufacturers",
       "Wholesale traders and international import/export",

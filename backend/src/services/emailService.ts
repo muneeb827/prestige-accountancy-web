@@ -21,7 +21,7 @@ export async function sendLeadNotification(inquiry: IInquiry) {
   });
 
   const mailOptions = {
-    from: `"Prestige Web Inquiries" <${config.email.user}>`,
+    from: `"Actvise Web Inquiries" <${config.email.user}>`,
     to: config.email.receiver,
     replyTo: inquiry.email,
     subject: `New Lead: ${inquiry.firstName} ${inquiry.lastName || ""} - ${inquiry.service || "General Inquiry"}`,

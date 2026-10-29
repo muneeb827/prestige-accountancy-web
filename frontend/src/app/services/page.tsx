@@ -13,15 +13,15 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Accountancy & Business Services Hub | Prestige Accountancy",
+  title: "Accountancy & Business Services Hub | Actvise Accountancy",
   description: "Explore our 11 core financial services across Accountancy & Business Services. Fixed fees, Making Tax Digital compliance and dedicated client support.",
   alternates: {
-    canonical: "https://prestigeaccountancy.com/services",
+    canonical: "https://actvise.co.uk/services",
   },
   openGraph: {
-    title: "Accountancy & Business Services Hub | Prestige Accountancy",
+    title: "Accountancy & Business Services Hub | Actvise Accountancy",
     description: "Explore our 11 core financial services across Accountancy & Business Services.",
-    url: "https://prestigeaccountancy.com/services",
+    url: "https://actvise.co.uk/services",
     images: ["/og-image.png"]
   }
 };

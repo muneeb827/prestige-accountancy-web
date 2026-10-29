@@ -183,7 +183,7 @@ export default function CisDeepContent() {
 
         <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-950 flex items-center gap-3">
           <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
-          <span><strong>Nil Return Protection:</strong> Even when you have not hired any subcontractors in a specific tax month, you must notify HMRC or submit a "Nil Return". Prestige Accountancy automatically handles your monthly nil returns to prevent rogue £100 fines.</span>
+          <span><strong>Nil Return Protection:</strong> Even when you have not hired any subcontractors in a specific tax month, you must notify HMRC or submit a "Nil Return". Actvise Accountancy automatically handles your monthly nil returns to prevent rogue £100 fines.</span>
         </div>
       </div>
 
@@ -239,7 +239,7 @@ export default function CisDeepContent() {
           Since March 2021, VAT-registered subcontractors supplying services under CIS to VAT-registered contractors must <strong>not</strong> charge output VAT to their client. 
           Instead, the contractor self-accounts for the VAT under the Domestic Reverse Charge. 
           Charging VAT on reverse-charge invoices results in customer disputes and rejected VAT returns. 
-          Prestige Accountancy ensures all your construction invoices carry the mandatory statutory legal wording and proper software tax codes.
+          Actvise Accountancy ensures all your construction invoices carry the mandatory statutory legal wording and proper software tax codes.
         </p>
       </div>
 

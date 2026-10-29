@@ -30,14 +30,14 @@ export interface BlogPost {
 }
 
 export const siteConfig = {
-  name: "Prestige Accountancy Services Ltd",
-  shortName: "Prestige Accountancy",
+  name: "Actvise Accountancy Services Ltd",
+  shortName: "Actvise Accountancy",
   tagline: "Guardians of Your Finances",
   phone: "+44 7949 446368",
   landline: "+44 7949 446368",
   whatsapp: "+447949446368",
-  whatsappLink: "https://wa.me/447949446368?text=Hello%20Prestige%20Accountancy%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.",
-  email: "info@prestigeaccountancy.com", // Placeholder until client sends official inbox
+  whatsappLink: "https://wa.me/447949446368?text=Hello%20Actvise%20Accountancy%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.",
+  email: "info@actvise.co.uk", // Placeholder until client sends official inbox
   address: "9 Blackmoorfoot Road, Crosland Moor, Huddersfield, HD4 5AQ, United Kingdom",
   city: "Huddersfield",
   county: "West Yorkshire",
@@ -47,10 +47,10 @@ export const siteConfig = {
   foundedYear: 2026,
   hours: "Monday - Friday: 9:00 AM - 5:30 PM",
   socials: {
-    facebook: "https://facebook.com/prestigeaccountancy",
-    instagram: "https://instagram.com/prestigeaccountancy",
-    tiktok: "https://tiktok.com/@prestigeaccountancy",
-    linkedin: "https://linkedin.com/company/prestige-accountancy-services"
+    facebook: "https://facebook.com/actviseaccountancy",
+    instagram: "https://instagram.com/actviseaccountancy",
+    tiktok: "https://tiktok.com/@actviseaccountancy",
+    linkedin: "https://linkedin.com/company/actvise-accountancy-services"
   },
   colors: {
     navy: "#00368C",
@@ -102,7 +102,7 @@ export const servicesData: ServiceItem[] = [
     slug: "bookkeeping",
     category: "accountancy",
     title: "Bookkeeping Services",
-    metaTitle: "Bookkeeping Services (Xero & QuickBooks) | Prestige Accountancy",
+    metaTitle: "Bookkeeping Services (Xero & QuickBooks) | Actvise Accountancy",
     metaDescription: "Professional ongoing bookkeeping, bank reconciliations and financial reporting in Xero & QuickBooks for UK sole traders, companies and startups.",
     shortDesc: "Ongoing record-keeping, bank reconciliations and tailored monthly reporting powered by Xero and QuickBooks Online.",
     keywords: ["bookkeeping services", "online bookkeeping", "Xero bookkeeping", "QuickBooks bookkeeping", "Huddersfield bookkeeper"],
@@ -158,7 +158,7 @@ export const servicesData: ServiceItem[] = [
     slug: "annual-accounts",
     category: "accountancy",
     title: "Company Annual Accounts & Filing",
-    metaTitle: "Company Annual Accounts & Companies House Filing | Prestige Accountancy",
+    metaTitle: "Company Annual Accounts & Companies House Filing | Actvise Accountancy",
     metaDescription: "Preparation and electronic submission of statutory year-end accounts and balance sheets to Companies House and HMRC with full compliance.",
     shortDesc: "Comprehensive preparation, verification and timely electronic submission of statutory year-end financial statements.",
     keywords: ["annual accounts", "year-end accounts", "Companies House filing", "statutory accounts", "corporate accounts UK"],
@@ -214,7 +214,7 @@ export const servicesData: ServiceItem[] = [
     slug: "management-accounts",
     category: "accountancy",
     title: "Management Accounts & Reporting",
-    metaTitle: "Management Accounts & Financial Reporting | Prestige Accountancy",
+    metaTitle: "Management Accounts & Financial Reporting | Actvise Accountancy",
     metaDescription: "Periodic financial insights, KPI tracking, cash-flow forecasts and budget variance analysis for business owners, lenders and investors.",
     shortDesc: "Regular monthly or quarterly financial insights, KPI tracking and forecasting for owners, managers, investors and lenders.",
     keywords: ["management accounts", "financial reporting", "budgets and forecasts", "KPI reporting", "cash flow analysis"],
@@ -270,7 +270,7 @@ export const servicesData: ServiceItem[] = [
     slug: "vat-returns-mtd",
     category: "accountancy",
     title: "VAT Returns & MTD Compliance",
-    metaTitle: "VAT Returns & Making Tax Digital (MTD) Compliance | Prestige Accountancy",
+    metaTitle: "VAT Returns & Making Tax Digital (MTD) Compliance | Actvise Accountancy",
     metaDescription: "HMRC Making Tax Digital (MTD) compliant VAT returns, VAT registration, scheme advice (Standard, Flat Rate, Cash Accounting).",
     shortDesc: "Complete VAT registration, scheme advisory and digital quarterly submissions in full alignment with HMRC Making Tax Digital.",
     keywords: ["VAT returns", "Making Tax Digital", "MTD compliance", "VAT registration", "HMRC VAT submission"],
@@ -326,7 +326,7 @@ export const servicesData: ServiceItem[] = [
     slug: "cis-registration",
     category: "accountancy",
     title: "CIS Registration & Returns",
-    metaTitle: "CIS Registration & Monthly Returns for Contractors | Prestige Accountancy",
+    metaTitle: "CIS Registration & Monthly Returns for Contractors | Actvise Accountancy",
     metaDescription: "Construction Industry Scheme (CIS) support for UK contractors and subcontractors. Subcontractor verification, deductions and monthly returns.",
     shortDesc: "Dedicated Construction Industry Scheme support for contractors and subcontractors in Huddersfield and across the UK.",
     keywords: ["CIS registration", "Construction Industry Scheme", "CIS returns", "contractor accountant", "CIS subcontractor verification"],
@@ -382,7 +382,7 @@ export const servicesData: ServiceItem[] = [
     slug: "pension-registration",
     category: "accountancy",
     title: "Workplace Pension Registration & Auto-Enrolment",
-    metaTitle: "Workplace Pension Setup & Auto-Enrolment | Prestige Accountancy",
+    metaTitle: "Workplace Pension Setup & Auto-Enrolment | Actvise Accountancy",
     metaDescription: "Workplace pension scheme setup, auto-enrolment compliance, employee assessment and ongoing provider communications (NEST, The People's Pension).",
     shortDesc: "End-to-end setup and administration of workplace pensions and auto-enrolment employer duties.",
     keywords: ["workplace pension", "auto-enrolment", "pension registration", "employer duties", "NEST pension setup"],
@@ -438,7 +438,7 @@ export const servicesData: ServiceItem[] = [
     slug: "charity-accounts",
     category: "accountancy",
     title: "Charity Accounts & Independent Examination",
-    metaTitle: "Charity Accounts & Independent Examination | Prestige Accountancy",
+    metaTitle: "Charity Accounts & Independent Examination | Actvise Accountancy",
     metaDescription: "Specialist charity accounting, SORP compliance, Receipts & Payments or Accrual accounts and Charity Commission submissions.",
     shortDesc: "Specialist statutory accounting, Statement of Financial Activities (SOFA) and independent examination for UK charitable bodies.",
     keywords: ["charity accounts", "charity accountants", "independent examination", "Charity Commission filing", "SORP accounting"],
@@ -494,7 +494,7 @@ export const servicesData: ServiceItem[] = [
     slug: "charity-registration",
     category: "accountancy",
     title: "Charity Registration Support",
-    metaTitle: "Charity Registration Support & Guidance | Prestige Accountancy",
+    metaTitle: "Charity Registration Support & Guidance | Actvise Accountancy",
     metaDescription: "Expert guidance for organisations seeking charitable status. Eligibility review, governing documents and Charity Commission application management.",
     shortDesc: "Structured guidance and preparation for organisations establishing charitable status with the Charity Commission.",
     keywords: ["charity registration", "register a charity", "charitable status", "Charity Commission application", "CIO formation"],
@@ -552,7 +552,7 @@ export const servicesData: ServiceItem[] = [
     slug: "business-startups",
     category: "business-services",
     title: "Business Startup Support",
-    metaTitle: "Startup Accountants & Business Launch Setup | Prestige Accountancy",
+    metaTitle: "Startup Accountants & Business Launch Setup | Actvise Accountancy",
     metaDescription: "Everything new UK entrepreneurs need: business plans, company registration, HMRC setup, accounting software onboarding and cash flow planning.",
     shortDesc: "Everything you need to launch your venture on solid financial, legal and operational footing.",
     keywords: ["startup accountant", "business setup", "company registration", "business plan help", "start up accountants UK"],
@@ -608,7 +608,7 @@ export const servicesData: ServiceItem[] = [
     slug: "company-formations",
     category: "business-services",
     title: "Company Formations & Corporate Structuring",
-    metaTitle: "Company Formation & Group Structuring Advice | Prestige Accountancy",
+    metaTitle: "Company Formation & Group Structuring Advice | Actvise Accountancy",
     metaDescription: "Strategic corporate structures, group holding companies, property portfolio incorporation and shareholding arrangements.",
     shortDesc: "Strategic advice on the optimal corporate structure for your commercial enterprise or property portfolio.",
     keywords: ["company formation", "company structuring", "group structure", "property company setup", "holding company formation"],
@@ -664,7 +664,7 @@ export const servicesData: ServiceItem[] = [
     slug: "mergers-acquisitions",
     category: "business-services",
     title: "Mergers, Acquisitions & Demergers Support",
-    metaTitle: "Mergers, Acquisitions & Demergers Financial Support | Prestige Accountancy",
+    metaTitle: "Mergers, Acquisitions & Demergers Financial Support | Actvise Accountancy",
     metaDescription: "Financial due diligence, independent business valuation, transaction modeling and post-merger integration alongside legal advisers.",
     shortDesc: "Rigorous financial intelligence, valuation and advisory support through corporate combinations and separations.",
     keywords: ["mergers and acquisitions", "business valuation", "financial due diligence", "demerger", "corporate buyout support"],
@@ -791,7 +791,7 @@ export const blogPosts: BlogPost[] = [
     slug: "making-tax-digital-vat-2026",
     category: "Tax & Compliance News",
     title: "Making Tax Digital for VAT in 2026: What UK Businesses Must Do",
-    metaTitle: "Making Tax Digital for VAT in 2026: UK Compliance Guide | Prestige",
+    metaTitle: "Making Tax Digital for VAT in 2026: UK Compliance Guide | Actvise",
     metaDescription: "Everything UK small businesses, sole traders and companies need to know about HMRC Making Tax Digital (MTD) rules, digital record keeping and penalties.",
     summary: "HMRC requires all VAT-registered businesses to maintain digital records and submit returns using compatible software. Here is the practical checklist for 2026.",
     readingTime: "5 min read",
@@ -804,14 +804,14 @@ export const blogPosts: BlogPost[] = [
     content: [
       "Making Tax Digital (MTD) is now the universal standard for UK VAT reporting. Every VAT-registered enterprise, regardless of turnover threshold, is legally obligated to keep digital records and file via functional compatible software.",
       "The days of typing figures manually into the HMRC online portal are permanently gone. If your business relies on manual paper ledgers or standalone disconnected spreadsheets, you risk falling foul of digital link requirements.",
-      "At Prestige Accountancy Services, we set up and integrate Xero and QuickBooks Online for our clients, ensuring that every sales invoice, expense receipt and bank feed synchronizes without manual error."
+      "At Actvise Accountancy Services, we set up and integrate Xero and QuickBooks Online for our clients, ensuring that every sales invoice, expense receipt and bank feed synchronizes without manual error."
     ]
   },
   {
     slug: "key-uk-filing-deadlines-2026-27",
     category: "Tax & Compliance News",
     title: "Key UK Accounting & Filing Deadlines for 2026/27",
-    metaTitle: "UK Accounting & Statutory Filing Deadlines 2026/27 | Prestige",
+    metaTitle: "UK Accounting & Statutory Filing Deadlines 2026/27 | Actvise",
     metaDescription: "Essential statutory deadlines for UK Limited Companies, VAT returns, PAYE and Companies House annual accounts filing to avoid penalties.",
     summary: "A concise reference calendar of statutory filing dates for UK Limited Companies, employers and VAT-registered businesses.",
     readingTime: "4 min read",
@@ -824,14 +824,14 @@ export const blogPosts: BlogPost[] = [
     content: [
       "Missing a statutory filing date in the UK triggers automatic, escalating financial penalties. Companies House issues an immediate £150 fine if accounts are just 1 day late, doubling if repeated in consecutive years.",
       "For employers, PAYE and National Insurance must be paid by the 22nd of the month (electronically). For construction contractors, the 19th of each month is the rigid deadline for CIS submissions.",
-      "Prestige Accountancy maintains a proactive filing schedule for all our clients, alerting you well in advance so your books are reconciled, signed off and filed weeks before any deadline."
+      "Actvise Accountancy maintains a proactive filing schedule for all our clients, alerting you well in advance so your books are reconciled, signed off and filed weeks before any deadline."
     ]
   },
   {
     slug: "sole-trader-vs-limited-company",
     category: "Small Business Tips",
     title: "Sole Trader vs Limited Company: Which Is Right for You?",
-    metaTitle: "Sole Trader vs Limited Company: Practical Guide | Prestige Accountancy",
+    metaTitle: "Sole Trader vs Limited Company: Practical Guide | Actvise Accountancy",
     metaDescription: "Comparing Sole Trader vs Limited Company in the UK: liability protection, administrative burden, tax efficiency and growth capacity.",
     summary: "Choosing between Sole Trader and Limited Company status affects your personal legal liability, accounting obligations and business reputation.",
     readingTime: "6 min read",
@@ -851,7 +851,7 @@ export const blogPosts: BlogPost[] = [
     slug: "charity-accounts-explained-receipts-accruals",
     category: "Charity Sector Updates",
     title: "Charity Accounts Explained: Receipts & Payments vs Accruals",
-    metaTitle: "Charity Accounts Explained: Receipts & Payments vs Accruals | Prestige",
+    metaTitle: "Charity Accounts Explained: Receipts & Payments vs Accruals | Actvise",
     metaDescription: "Understand UK Charity Commission accounting rules: gross income thresholds, Receipts and Payments, Accruals SOFA and independent examination requirements.",
     summary: "How UK charity trustees can determine whether their charity needs simplified Receipts and Payments accounts or full SORP Accruals reporting.",
     readingTime: "5 min read",
@@ -864,14 +864,14 @@ export const blogPosts: BlogPost[] = [
     content: [
       "Charity accounting in the UK is governed by strict regulatory rules enforced by the Charity Commission. Trustees are legally responsible for maintaining accurate accounts, but the required format depends on your constitution and gross income.",
       "Receipts and Payments is a cash-based approach suitable for smaller, unincorporated charities, simply tracking cash entering and leaving bank accounts.",
-      "In contrast, Accruals accounting (Statement of Recommended Practice / SORP) requires adjusting for debtors, creditors, depreciation and detailed fund categorisation (restricted, unrestricted, endowment). Prestige Accountancy provides specialist guidance and independent examinations for trustees."
+      "In contrast, Accruals accounting (Statement of Recommended Practice / SORP) requires adjusting for debtors, creditors, depreciation and detailed fund categorisation (restricted, unrestricted, endowment). Actvise Accountancy provides specialist guidance and independent examinations for trustees."
     ]
   },
   {
     slug: "cis-for-contractors-plain-english-guide",
     category: "Small Business Tips",
     title: "CIS for Contractors: A Plain-English Guide",
-    metaTitle: "CIS for Contractors: UK Construction Scheme Explained | Prestige",
+    metaTitle: "CIS for Contractors: UK Construction Scheme Explained | Actvise",
     metaDescription: "How the Construction Industry Scheme works: contractor registration, verifying subcontractors with HMRC, making monthly deductions and avoiding penalties.",
     summary: "A practical guide for UK construction businesses navigating CIS deductions, HMRC verification and monthly return obligations.",
     readingTime: "5 min read",
@@ -884,16 +884,16 @@ export const blogPosts: BlogPost[] = [
     content: [
       "The Construction Industry Scheme (CIS) is an HMRC system designed to collect tax at source from subcontractors in the mainstream building trades. If your business hires subcontractors for construction work, you are legally classified as a CIS contractor.",
       "Before paying any subcontractor, you must verify them through HMRC to ascertain their deduction rate. Making payments without verification or applying the wrong rate creates significant retrospective liability.",
-      "Prestige Accountancy manages the entire CIS pipeline: we verify your subcontractors instantly, calculate deductions, generate compliant payment deduction statements and file your monthly return by the 19th."
+      "Actvise Accountancy manages the entire CIS pipeline: we verify your subcontractors instantly, calculate deductions, generate compliant payment deduction statements and file your monthly return by the 19th."
     ]
   },
   {
     slug: "switching-accountants-how-it-works",
     category: "Firm News",
     title: "Switching Accountants: How It Works & Why It's Easier Than You Think",
-    metaTitle: "How to Switch Accountants in the UK Seamlessly | Prestige Accountancy",
+    metaTitle: "How to Switch Accountants in the UK Seamlessly | Actvise Accountancy",
     metaDescription: "Step-by-step guide on how to switch your accountant in the UK without service disruption, missed deadlines or awkward conversations.",
-    summary: "Thinking of changing accountants? Learn how Prestige handles the complete professional clearance process with zero downtime.",
+    summary: "Thinking of changing accountants? Learn how Actvise handles the complete professional clearance process with zero downtime.",
     readingTime: "4 min read",
     publishedDate: "August 30, 2026",
     keyTakeaways: [
@@ -903,7 +903,7 @@ export const blogPosts: BlogPost[] = [
     ],
     content: [
       "Many business owners stay with an unresponsive or overpriced accountant simply because they fear the transition will cause gaps, missed deadlines or administrative headaches. In reality, switching accountants is a standard, highly regulated procedure.",
-      "Once you decide to join Prestige Accountancy, we send a formal Professional Clearance Letter to your previous accountant requesting your trial balances, historical tax records and client files. By professional code, they are required to respond promptly.",
+      "Once you decide to join Actvise Accountancy, we send a formal Professional Clearance Letter to your previous accountant requesting your trial balances, historical tax records and client files. By professional code, they are required to respond promptly.",
       "We then transfer your Xero or QuickBooks subscription seamlessly. You experience zero downtime, zero missed deadlines and immediately gain access to our attentive, proactive financial team."
     ]
   }
@@ -964,7 +964,7 @@ export const teamMembers = [
     name: "Muhammad Mujahid",
     role: "Managing Director & Practice Principal",
     credentials: "ACCA / Qualified Practice Leader",
-    bio: "Leads Prestige Accountancy Services with a vision for modern, reliable and accessible accountancy. Over a decade of expertise advising SMEs, startups and non-profit organisations across the UK.",
+    bio: "Leads Actvise Accountancy Services with a vision for modern, reliable and accessible accountancy. Over a decade of expertise advising SMEs, startups and non-profit organisations across the UK.",
     photo: "/team-placeholder-1.jpg"
   },
   {
@@ -992,19 +992,19 @@ export const teamMembers = [
 
 export const clientTestimonials = [
   {
-    quote: "Switching to Prestige Accountancy was the best decision we made for our company. Our annual accounts and VAT returns are handled seamlessly and their fixed-fee model gives us complete peace of mind.",
+    quote: "Switching to Actvise Accountancy was the best decision we made for our company. Our annual accounts and VAT returns are handled seamlessly and their fixed-fee model gives us complete peace of mind.",
     author: "David H.",
     business: "Managing Director, West Yorkshire Logistics Ltd",
     rating: 5
   },
   {
-    quote: "As a construction contractor, CIS paperwork used to give me headaches every single month. The team at Prestige verifies my subcontractors immediately and files without a hitch. Outstanding service!",
+    quote: "As a construction contractor, CIS paperwork used to give me headaches every single month. The team at Actvise verifies my subcontractors immediately and files without a hitch. Outstanding service!",
     author: "Tariq M.",
     business: "Director, Apex Build & Civils",
     rating: 5
   },
   {
-    quote: "Prestige prepared our charity's annual SOFA accounts and guided our trustees through the independent examination with utmost patience and professional clarity.",
+    quote: "Actvise prepared our charity's annual SOFA accounts and guided our trustees through the independent examination with utmost patience and professional clarity.",
     author: "Sarah K.",
     business: "Trustee, Community Youth Initiative",
     rating: 5

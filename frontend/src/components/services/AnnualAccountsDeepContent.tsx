@@ -228,7 +228,7 @@ export default function AnnualAccountsDeepContent() {
 
         <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-950 flex items-center gap-3">
           <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
-          <span><strong>Prestige Proactive Review:</strong> Before finalizing your year-end balance sheet, our accountants review all director drawings and formulate a compliant remuneration mix (salary vs dividends vs loan clearance) that eliminates s455 tax exposure legally.</span>
+          <span><strong>Actvise Proactive Review:</strong> Before finalizing your year-end balance sheet, our accountants review all director drawings and formulate a compliant remuneration mix (salary vs dividends vs loan clearance) that eliminates s455 tax exposure legally.</span>
         </div>
       </div>
 
@@ -242,7 +242,7 @@ export default function AnnualAccountsDeepContent() {
           Plain-English Director Consultation Before Any Submission
         </h3>
         <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-3xl">
-          At Prestige Accountancy, you never sign accounts you don’t understand. 
+          At Actvise Accountancy, you never sign accounts you don’t understand. 
           Once your draft accounts and Corporation Tax calculations are prepared, we conduct a plain-English review meeting to explain your profitability, gross margins, tax liabilities and upcoming payment dates. 
           Only after your formal approval do we file electronically through our accredited gateway directly with Companies House and HMRC.
         </p>
