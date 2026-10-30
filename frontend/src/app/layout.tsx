@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     canonical: "https://actvise.co.uk",
   },
   title: {
-    default: "Accountants in Huddersfield & UK-Wide | Actvise Accountancy Services",
+    default: "Accountants in Huddersfield & UK-Wide | Actvise Accountancy & Tax Services",
     template: "%s | Actvise Accountancy"
   },
   description: "Expert accountancy, bookkeeping, VAT & business support for individuals, companies, startups and charities. Clear numbers, plain-English advice. Free consultation.",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
       { url: "/icon.png", type: "image/png" }
     ],
     apple: [
-      { url: "/icon.png" }
+      { url: "/apple-icon.png" }
     ]
   },
   robots: {
@@ -91,7 +91,7 @@ export default function RootLayout({
         "name": siteConfig.name,
         "legalName": siteConfig.name,
         "url": "https://actvise.co.uk",
-        "logo": "https://actvise.co.uk/prestige-logo.png",
+        "logo": "https://actvise.co.uk/actvise-logo.png",
         "description": "Actvise Accountancy Services Ltd provides professional bookkeeping, annual statutory accounts, VAT, CIS, charity accounts and corporate structuring across Huddersfield and the UK.",
         "telephone": siteConfig.phone,
         "email": siteConfig.email,

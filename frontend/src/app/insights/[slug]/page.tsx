@@ -77,7 +77,7 @@ export default async function BlogPostPage({ params }: Props) {
       "name": siteConfig.name,
       "logo": {
         "@type": "ImageObject",
-        "url": "https://actvise.co.uk/prestige-logo.png"
+        "url": "https://actvise.co.uk/actvise-logo.png"
       }
     },
     "mainEntityOfPage": `https://actvise.co.uk/insights/${post.slug}`

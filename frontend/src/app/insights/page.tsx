@@ -27,7 +27,7 @@ export default function InsightsHubPage() {
     "publisher": {
       "@type": "Organization",
       "name": siteConfig.name,
-      "logo": "https://actvise.co.uk/prestige-logo.png"
+      "logo": "https://actvise.co.uk/actvise-logo.png"
     },
     "blogPost": blogPosts.map(post => ({
       "@type": "BlogPosting",

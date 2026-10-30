@@ -23,9 +23,9 @@ export default function Footer() {
             <Link href="/" className="inline-block bg-white px-4 py-2 rounded-xl shadow-sm hover:shadow transition-all group">
               <div className="flex items-center">
                 <Image 
-                  src="/prestige-logo.svg" 
-                  alt="Actvise Accountancy Services Ltd" 
-                  width={260} 
+                  src="/actvise-logo.svg" 
+                  alt="Actvise Accountancy & Tax Services Ltd" 
+                  width={271} 
                   height={74} 
                   className="h-10 sm:h-12 lg:h-14 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]"
                   unoptimized

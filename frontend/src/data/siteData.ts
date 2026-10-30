@@ -30,7 +30,7 @@ export interface BlogPost {
 }
 
 export const siteConfig = {
-  name: "Actvise Accountancy Services Ltd",
+  name: "Actvise Accountancy & Tax Services Ltd",
   shortName: "Actvise Accountancy",
   tagline: "Guardians of Your Finances",
   phone: "+44 7949 446368",

@@ -89,9 +89,9 @@ export default function Navbar() {
           <Link href="/" className="flex items-center group py-0.5">
             <div className="flex items-center">
               <Image 
-                src="/prestige-logo.svg" 
-                alt="Actvise Accountancy Services Ltd" 
-                width={260} 
+                src="/actvise-logo.svg" 
+                alt="Actvise Accountancy & Tax Services Ltd" 
+                width={271} 
                 height={74} 
                 className="h-10 sm:h-12 lg:h-14 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]"
                 priority
