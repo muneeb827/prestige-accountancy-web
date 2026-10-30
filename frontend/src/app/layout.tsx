@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import DynamicFavicon from "@/components/DynamicFavicon";
 import { siteConfig } from "@/data/siteData";
 
 export const viewport: Viewport = {
@@ -178,6 +179,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <FloatingWhatsApp />
+        <DynamicFavicon />
       </body>
     </html>
   );
