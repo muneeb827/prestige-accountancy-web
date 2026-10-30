@@ -2,35 +2,15 @@
 <svg version="1.1" id="Actvise_Favicon" xmlns="http://www.w3.org/2000/svg"
 	 viewBox="570 150 780 780" style="enable-background:new 570 150 780 780;" xml:space="preserve">
 <style type="text/css">
-	.navy-part {
-		fill: #00368C;
-		stroke: #FFFFFF;
-		stroke-width: 24;
-		stroke-linejoin: round;
-		stroke-linecap: round;
-		paint-order: stroke fill;
-	}
-	.blue-part {
-		fill: #2B7EFE;
-		stroke: #FFFFFF;
-		stroke-width: 24;
-		stroke-linejoin: round;
-		stroke-linecap: round;
-		paint-order: stroke fill;
-	}
+	.emblem-main { fill: #00368C; }
+	.emblem-tri { fill: #2B7EFE; }
 	@media (prefers-color-scheme: dark) {
-		.navy-part {
-			fill: #FFFFFF;
-			stroke: #FFFFFF;
-		}
-		.blue-part {
-			fill: #2B7EFE;
-			stroke: #2B7EFE;
-		}
+		.emblem-main { fill: #FFFFFF !important; }
+		.emblem-tri { fill: #FFFFFF !important; }
 	}
 </style>
 <g>
-	<path class="navy-part" d="M617.5,884.4c128.8-229.8,257.7-459.5,387-690.2c1.9,3.9,3.4,6.8,4.7,9.7c12,26.8,24,53.6,36.1,80.3
+	<path class="emblem-main" d="M617.5,884.4c128.8-229.8,257.7-459.5,387-690.2c1.9,3.9,3.4,6.8,4.7,9.7c12,26.8,24,53.6,36.1,80.3
 		c1.1,2.3,0.7,4.1-0.5,6.2c-17.7,31.5-35.4,62.9-53,94.5c-15.8,28.4-31.6,56.8-47.4,85.2c-15.4,27.6-30.9,55-46.3,82.6
 		c-24,42.8-47.8,85.6-71.8,128.4c-19.2,34.2-38.4,68.4-57.7,102.7c-1.1,2-2.2,4-3.5,6.6c1.7,0.2,2.7,0.4,3.8,0.4
 		c13.9,0,27.7,0,41.6,0.1c2.6,0,3.9-0.9,5.2-3.1c24.6-44,49.3-88,73.8-132c1.5-2.7,3.3-3.6,6.3-3.6c87.9,0.1,175.9,0.2,263.8,0.2
@@ -39,7 +19,7 @@
 		c-3.7-8.7-7.3-17.4-10.7-26.2c-1.2-3.2-2.9-4.3-6.4-4.3c-70.7,0.1-141.4,0.1-212.1-0.1c-6.1,0-9.3,1.5-12.4,7.1
 		c-15.4,28.1-31.4,55.8-47.1,83.7c-9,16-18.1,32-27.1,48.1c-1.1,1.9-2.4,2.5-4.5,2.5c-74.4-0.1-148.9-0.1-223.3-0.2
 		c-3.3,0-6.7,0-10,0C617.9,885.1,617.7,884.8,617.5,884.4z"/>
-	<path class="blue-part" d="M1068.1,333.6c38.6,90.5,77.1,180.9,116,272.1c-89.6-0.1-178.5-0.1-268.3-0.2c50.4-91,100.6-181.5,150.7-272
+	<path class="emblem-tri" d="M1068.1,333.6c38.6,90.5,77.1,180.9,116,272.1c-89.6-0.1-178.5-0.1-268.3-0.2c50.4-91,100.6-181.5,150.7-272
 		C1067,333.5,1067.6,333.6,1068.1,333.6z"/>
 </g>
 </svg>
