@@ -58,9 +58,8 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/icon.svg", type: "image/svg+xml" },
-      { url: "/icon-dark.png", media: "(prefers-color-scheme: dark)", type: "image/png" },
-      { url: "/icon.png", media: "(prefers-color-scheme: light)", type: "image/png" },
-      { url: "/favicon.ico" },
+      { url: "/icon-dark.png?v=white_clean", media: "(prefers-color-scheme: dark)", type: "image/png" },
+      { url: "/icon.png?v=color_clean", media: "(prefers-color-scheme: light)", type: "image/png" },
     ],
     apple: [
       { url: "/apple-icon.png" }
@@ -162,6 +161,11 @@ export default function RootLayout({
   return (
     <html lang="en-GB" className="scroll-smooth">
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var m=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)');function setIcon(dark){var old=document.querySelectorAll("link[rel*='icon']");for(var i=0;i<old.length;i++){if(!old[i].hasAttribute('data-next'))old[i].remove();}var l=document.createElement('link');l.rel='icon';l.type='image/png';l.href=dark?'/icon-dark.png?v=white_clean':'/icon.png?v=color_clean';document.head.appendChild(l);}setIcon(m?m.matches:false);if(m&&m.addEventListener){m.addEventListener('change',function(e){setIcon(e.matches);});}}catch(e){}})();`
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
