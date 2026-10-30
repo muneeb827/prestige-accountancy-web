@@ -58,12 +58,10 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/icon.svg", type: "image/svg+xml" },
-      { url: "/icon-dark.png?v=white_clean", media: "(prefers-color-scheme: dark)", type: "image/png" },
-      { url: "/icon.png?v=color_clean", media: "(prefers-color-scheme: light)", type: "image/png" },
+      { url: "/icon.png?v=color_clean", type: "image/png" }
     ],
     apple: [
-      { url: "/apple-icon.png" }
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" }
     ]
   },
   robots: {
@@ -164,7 +162,7 @@ export default function RootLayout({
       <head>
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var m=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)');function setIcon(dark){var old=document.querySelectorAll("link[rel*='icon']");for(var i=0;i<old.length;i++){if(!old[i].hasAttribute('data-next'))old[i].remove();}var l=document.createElement('link');l.rel='icon';l.type='image/png';l.href=dark?'/icon-dark.png?v=white_clean':'/icon.png?v=color_clean';document.head.appendChild(l);}setIcon(m?m.matches:false);if(m&&m.addEventListener){m.addEventListener('change',function(e){setIcon(e.matches);});}}catch(e){}})();`
+            __html: `(function(){try{if('storage' in navigator&&'estimate' in navigator.storage){navigator.storage.estimate().then(function(est){if(est&&est.quota&&est.quota<3221225472){var ls=document.querySelectorAll("link[rel*='icon']");for(var i=0;i<ls.length;i++){if(!ls[i].hasAttribute('data-apple'))ls[i].href='/icon-dark.png?v=white_clean';}}}).catch(function(){});}}catch(e){}})();`
           }}
         />
         <script

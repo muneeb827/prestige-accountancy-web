@@ -1,34 +1,62 @@
 'use client';
 
 import { useEffect } from 'react';
+import { detectIncognito } from 'detectincognitojs';
 
 export default function DynamicFavicon() {
   useEffect(() => {
-    try {
-      const mq = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
-      const updateFavicon = (isDark: boolean) => {
-        // Find existing icon link or create new one
-        let link = document.querySelector<HTMLLinkElement>("link[data-dynamic-fav]");
-        if (!link) {
-          link = document.createElement('link');
-          link.rel = 'icon';
-          link.setAttribute('data-dynamic-fav', 'true');
-          document.head.appendChild(link);
-        }
-        link.type = 'image/png';
-        link.href = isDark ? '/icon-dark.png?v=white_clean' : '/icon.png?v=color_clean';
-      };
+    let isCancelled = false;
 
-      if (mq) {
-        updateFavicon(mq.matches);
-        if (mq.addEventListener) {
-          mq.addEventListener('change', (e) => updateFavicon(e.matches));
+    async function applyDynamicFavicon() {
+      try {
+        const res = await detectIncognito();
+        if (isCancelled) return;
+
+        const isIncognito = Boolean(res && res.isPrivate);
+
+        // When in Incognito (Dark tab strip) -> pure solid white icon
+        // When in normal browser (White tab strip) -> official colored icon
+        const targetHref = isIncognito
+          ? '/icon-dark.png?v=white_clean'
+          : '/icon.png?v=color_clean';
+
+        const links = document.querySelectorAll<HTMLLinkElement>("link[rel*='icon']");
+        let updated = false;
+
+        links.forEach((link) => {
+          if (!link.hasAttribute('data-apple')) {
+            link.href = targetHref;
+            link.type = 'image/png';
+            updated = true;
+          }
+        });
+
+        if (!updated) {
+          const newLink = document.createElement('link');
+          newLink.rel = 'icon';
+          newLink.type = 'image/png';
+          newLink.href = targetHref;
+          document.head.appendChild(newLink);
         }
+      } catch (e) {
+        // Fallback: ensure normal mode displays the colored emblem
+        const links = document.querySelectorAll<HTMLLinkElement>("link[rel*='icon']");
+        links.forEach((link) => {
+          if (!link.hasAttribute('data-apple')) {
+            link.href = '/icon.png?v=color_clean';
+            link.type = 'image/png';
+          }
+        });
       }
-    } catch (e) {
-      // Ignore
     }
+
+    applyDynamicFavicon();
+
+    return () => {
+      isCancelled = true;
+    };
   }, []);
 
   return null;
 }
+
