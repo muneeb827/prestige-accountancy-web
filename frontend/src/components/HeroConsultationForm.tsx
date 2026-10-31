@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { siteConfig } from "@/data/siteData";
+import { validateUKPhoneNumber } from "@/lib/validation";
 import { 
   ArrowRight, 
   CheckCircle2, 
@@ -27,6 +28,14 @@ export default function HeroConsultationForm() {
     e.preventDefault();
     setStatus("submitting");
     setErrorMsg("");
+
+    // Strict UK phone validation
+    const phoneValidation = validateUKPhoneNumber(formData.phone);
+    if (!phoneValidation.isValid) {
+      setStatus("error");
+      setErrorMsg(phoneValidation.error || "Please enter a valid UK phone number (e.g. +44 1234 567890).");
+      return;
+    }
 
     try {
       const res = await fetch("/api/contact", {
@@ -154,7 +163,7 @@ export default function HeroConsultationForm() {
             </div>
             <div>
               <label htmlFor="hero-phone" className="block text-xs font-semibold text-slate-700 mb-1">
-                Phone Number *
+                UK Phone Number *
               </label>
               <input 
                 id="hero-phone" 
@@ -162,7 +171,7 @@ export default function HeroConsultationForm() {
                 required 
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                placeholder="Your Phone Number" 
+                placeholder="+44 1234 567890" 
                 disabled={status === "submitting"}
                 className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#00368C] disabled:bg-slate-50" 
               />

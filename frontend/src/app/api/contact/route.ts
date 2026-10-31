@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { sendInquiryNotification } from "@/lib/email";
+import { validateUKPhoneNumber } from "@/lib/validation";
 
 // Simple in-memory rate limiting map (IP -> Array of timestamps)
 const rateLimitMap = new Map<string, number[]>();
@@ -69,6 +70,15 @@ export async function POST(request: Request) {
       );
     }
 
+    // Validate UK Phone Number (Mandatory for UK business consultations)
+    const phoneValidation = validateUKPhoneNumber(phone);
+    if (!phoneValidation.isValid) {
+      return NextResponse.json(
+        { error: phoneValidation.error || "Please enter a valid UK phone number (e.g. +44 1234 567890 or 07123 456789)." },
+        { status: 400 }
+      );
+    }
+
     if (!message || typeof message !== "string" || message.trim().length === 0) {
       return NextResponse.json(
         { error: "Please enter a brief message describing your requirements." },
@@ -103,7 +113,7 @@ export async function POST(request: Request) {
       firstName: firstName.trim(),
       lastName: lastName ? String(lastName).trim() : "",
       email: email.trim().toLowerCase(),
-      phone: phone ? String(phone).trim() : "",
+      phone: phoneValidation.formatted || String(phone).trim(),
       service: service ? String(service).trim() : "General Consultation",
       message: message.trim(),
       ip,

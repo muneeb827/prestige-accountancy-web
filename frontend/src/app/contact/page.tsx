@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { siteConfig } from "@/data/siteData";
+import { validateUKPhoneNumber } from "@/lib/validation";
 import { 
   Phone, 
   Mail, 
@@ -51,6 +52,14 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("submitting");
+
+    // Strict UK phone validation
+    const phoneValidation = validateUKPhoneNumber(formData.phone);
+    if (!phoneValidation.isValid) {
+      setStatus("error");
+      setResponseMsg(phoneValidation.error || "Please enter a valid UK phone number (e.g. +44 1234 567890).");
+      return;
+    }
 
     try {
       const res = await fetch("/api/contact", {
@@ -347,13 +356,14 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
-                        Phone or Mobile
+                        UK Phone or Mobile *
                       </label>
                       <input 
                         type="tel"
+                        required
                         value={formData.phone}
                         onChange={e => setFormData({ ...formData, phone: e.target.value })}
-                        placeholder="Your Phone Number"
+                        placeholder="+44 1234 567890"
                         className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#00368C]"
                       />
                     </div>
