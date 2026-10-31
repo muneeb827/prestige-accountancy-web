@@ -1,33 +1,30 @@
 # Actvise Accountancy & Tax Services Ltd
-## Final Production Hosting & Email Activation Guide
+## Final Production Hosting & Email Activation Guide (Roman Urdu)
 
 > [!NOTE]
-> **Purpose of this Document:**  
-> This guide is a complete, step-by-step handover and execution reference for when you deploy the **Actvise Accountancy Services** website onto the client's real production hosting (Hostinger, cPanel, VPS, or Cloud). It outlines the exact steps to connect the official inbox (`info@actvise.co.uk`) via Nodemailer while keeping all confidential credentials 100% secure.
+> **Is Document Ka Maqsad:**  
+> Jab client aapko unki real hosting (Hostinger, cPanel, ya VPS) ka login dega aur website ko final live domain (`https://actvise.co.uk`) par chalana hoga, to email aur deployment ke liye kya kya steps karne hain, yeh document aapko step-by-step guide karega. Is tarike se client ki sensitive information (passwords) bhi 100% secure rahegi aur website bhi smoothly live ho jayegi.
 
 ---
 
-## 1. Executive Summary & Current Status
+## 1. Codebase Ki Current Position (Sab Kuch Already Ready Hai)
 
-The website codebase is already **100% prepared and pre-wired for Nodemailer**. No code modifications are needed. When moving to the client's live hosting, email delivery only requires creating a secure `.env` file with their credentials.
+Website ke code ke andar Nodemailer aur security ka saara setup **already 100% complete** ho chuka hai. Code me aapko ek line bhi change nahi karni padegi:
 
-### What is Already Completed in Code:
-- ✅ **Built-in Nodemailer Dispatch:** Located in `frontend/src/lib/email.ts` and `frontend/src/app/api/contact/route.ts`.
-- ✅ **Branded Email Template:** Sends rich HTML emails styled in Actvise corporate colors (`#00368C` Corporate Navy + `#2B7EFE` Electric Blue).
-- ✅ **1-Click Reply-To:** Client's inquiry email is automatically set as `replyTo`, allowing Actvise staff to click "Reply" directly in their mail client.
-- ✅ **Security & Anti-Abuse:**
-  - Strict RFC email validation.
-  - HTML character escaping to prevent injection attacks.
-  - Header newline stripping to prevent email header injection.
-  - Hidden honeypot field (`company_website_url`) to block automated bot spam.
-  - Rate limiting (maximum 5 submissions per 10 minutes per IP).
-- ✅ **Gmail Web Compose Redirect:** All email text links (`info@actvise.co.uk`) on the website redirect directly to Gmail Web Compose in a new tab.
+- ✅ **Nodemailer Service Ready:** Code direct `info@actvise.co.uk` par email bhejne ke liye set hai.
+- ✅ **Actvise Branded Email Design:** Lead notification ka email Actvise ke official Navy Blue (`#00368C`) aur Electric Blue (`#2B7EFE`) colors me designed hai, jisme client ka name, phone, email, service aur message table form me aata hai.
+- ✅ **1-Click Direct Reply:** Email me `replyTo` customer ka email set hota hai. Actvise team apne inbox me sirf "Reply" ka button dabayegi to direct customer ko jawab chala jayega.
+- ✅ **Spam & Hacker Protection:** 
+  - Fake emails ko rokne ke liye strict validation.
+  - Bots ko block karne ke liye invisible honeypot field.
+  - Spamming rokne ke liye Rate Limiting (har IP par 10 minutes me maximum 5 messages).
+- ✅ **Gmail Web Compose:** Website par email text par click karne se direct Gmail Compose open hota hai.
 
 ---
 
-## 2. The 5 Production Environment Variables
+## 2. Wo 5 Variables Jo Production Server Par Chahiye Honge
 
-When deploying on the client's live hosting, these 5 variables must be defined in the production environment:
+Jab aap client ke server par website deploy karenge, to server ke `.env` file me sirf yeh **5 lines** add karni hain:
 
 ```env
 # ===================================================
@@ -36,143 +33,126 @@ When deploying on the client's live hosting, these 5 variables must be defined i
 SMTP_HOST=mail.actvise.co.uk
 SMTP_PORT=465
 SMTP_USER=info@actvise.co.uk
-SMTP_PASS=YOUR_ACTVISE_EMAIL_PASSWORD_HERE
+SMTP_PASS=Aapka_Email_Password_Yahan_Aayega
 NOTIFICATION_RECEIVER=info@actvise.co.uk
 ```
 
-### Parameter Reference Table:
+### In 5 Lines Ka Matlab:
 
-| Key | Value | Purpose |
+| Key (Naam) | Value (Setting) | Asaan Matlab |
 | :--- | :--- | :--- |
-| `SMTP_HOST` | `mail.actvise.co.uk` | The outgoing cPanel Exim mail server for the domain. |
-| `SMTP_PORT` | `465` | SSL secure encrypted connection port. |
-| `SMTP_USER` | `info@actvise.co.uk` | Official authorized mailbox user. |
-| `SMTP_PASS` | *(Client's email password)* | The mailbox password created in cPanel / Hostinger. |
-| `NOTIFICATION_RECEIVER` | `info@actvise.co.uk` | Destination address where new client leads are delivered. |
+| **`SMTP_HOST`** | `mail.actvise.co.uk` | Yeh Hostinger cPanel ka outgoing mail server hai. |
+| **`SMTP_PORT`** | `465` | Yeh secure SSL encrypted port hai (emails safe transfer hoti hain). |
+| **`SMTP_USER`** | `info@actvise.co.uk` | Official email address jiske zariye email send hogi. |
+| **`SMTP_PASS`** | *(Client ka password)* | Wahi password jo email banate waqt cPanel me lagaya gaya tha. |
+| **`NOTIFICATION_RECEIVER`** | `info@actvise.co.uk` | Wo email jahan website ki saari leads pohnchengi. |
 
 ---
 
-## 3. Step-by-Step Deployment Instructions
+## 3. Client Ke Hostinger / cPanel Par Deploy Karne Ka Step-by-Step Tarika
 
-### Scenario A: cPanel / Hostinger Cloud (Setup via Node.js App)
-
-If deploying to cPanel or Hostinger hPanel Node.js Selector:
-
-1. **Upload Project Files:**
-   - Upload the project build files to the client's `public_html` or application directory.
-   - Ensure the `.git` folder and sensitive files are **not** publicly accessible.
-2. **Setup Node.js Environment:**
-   - In cPanel, click **"Setup Node.js App"**.
-   - Select Node.js version **20.x** or **22.x LTS**.
-   - Application Root: e.g. `/home/username/actvise-web`
-   - Application URL: `https://actvise.co.uk`
-3. **Configure Environment Variables Securely:**
-   - In the cPanel Node.js App dashboard, locate **"Environment Variables"** section.
-   - Add the 5 keys (`SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `NOTIFICATION_RECEIVER`).
-   - *Alternative:* Create a `.env` file in the application root directory (above `public_html` so it can never be downloaded by web visitors).
-4. **Run Production Build:**
-   - Open Terminal or cPanel SSH:
-     ```bash
-     npm install --production=false
-     npm run build
-     ```
-5. **Restart Application:**
-   - Click **"Restart"** in the cPanel Node.js manager.
+### Step 1: cPanel Me Node.js App Setup Karein
+1. Client ke **cPanel** me login karein.
+2. **Software** section me ja kar **"Setup Node.js App"** par click karein.
+3. **"Create Application"** ka button dabayein:
+   - **Node.js Version:** `20.x` ya `22.x` select karein.
+   - **Application Mode:** `Production` select karein.
+   - **Application Root:** e.g. `actvise-web` (ya jo folder name aap rakhein).
+   - **Application URL:** `actvise.co.uk` select karein.
+4. **Create** par click kar dein.
 
 ---
 
-### Scenario B: Cloud Platform (Vercel / Railway / Render on Client's Account)
+### Step 2: Website Files Upload Karein
+1. cPanel ke **File Manager** me jayein.
+2. Apne project folder me website ka build aur files upload karein.
+3. **Khas Khayal:** `.git` folder upload na karein taake size light rahe aur secure rahe.
 
-If the client prefers managed cloud hosting:
+---
 
-1. Import the repository into the client's team account.
-2. Go to **Project Settings** $\rightarrow$ **Environment Variables**.
-3. Add the 5 variables:
+### Step 3: Secure `.env` File Banayein (Password Yahan Save Hoga)
+1. Project ke main root folder me ek new file create karein jiska naam rakhein: **`.env`**
+2. Is file ke andar Section 2 wali 5 lines paste kar dein:
+   ```env
+   SMTP_HOST=mail.actvise.co.uk
+   SMTP_PORT=465
+   SMTP_USER=info@actvise.co.uk
+   SMTP_PASS=client_ka_real_password
+   NOTIFICATION_RECEIVER=info@actvise.co.uk
+   ```
+3. File **Save** kar dein.
+
+> [!IMPORTANT]
+> **Client Data Security Tip:**  
+> Yeh `.env` file server ke andar private rehti hai. Bahir se koi bhi visitor ya browser is file ko open ya download nahi kar sakta. Aur kyunki yeh file Git me commit nahi hoti, is liye password internet par kahin leak nahi hoga.
+
+---
+
+### Step 4: Dependencies Install Aur Run Karein
+1. cPanel Node.js App page par wapas jayein.
+2. Top par jo **"Enter to the virtual environment"** wali command di hoti hai, use cPanel Terminal me run karein.
+3. Yeh commands chalayein:
+   ```bash
+   npm install --production
+   npm run build
+   ```
+4. cPanel Node.js page par **"Restart"** ka button daba dein.
+5. Ab website `https://actvise.co.uk` par live start ho jayegi!
+
+---
+
+## 4. Agar Client Vercel / Cloud Account Use Karein (Doosra Tarika)
+
+Agar client chahe ke website Vercel par hi unke apne account se live ho:
+
+1. Client ke Vercel account me project import karein.
+2. Project ke **Settings** $\rightarrow$ **Environment Variables** me jayein.
+3. Wahan yeh 5 variables daal dein:
    - `SMTP_HOST` = `mail.actvise.co.uk`
    - `SMTP_PORT` = `465`
    - `SMTP_USER` = `info@actvise.co.uk`
-   - `SMTP_PASS` = *(Client's password)*
+   - `SMTP_PASS` = *(Client ka password)*
    - `NOTIFICATION_RECEIVER` = `info@actvise.co.uk`
-4. Trigger a **Redeploy**.
+4. Domain settings me ja kar client ka official domain `actvise.co.uk` connect kar dein.
+5. **Redeploy** dabayein, website unke official domain par live ho jayegi.
 
 ---
 
-### Scenario C: Linux VPS (Ubuntu / Nginx / PM2)
+## 5. Email Deliverability Check (Spam Me Na Jaye)
 
-If deploying on a dedicated VPS:
+Hostinger cPanel me ensure karein ke website se bheji gayi emails Inbox me hi jayein:
 
-1. Create a secure `.env.production` file:
-   ```bash
-   nano /var/www/actvise-web/.env.production
-   ```
-2. Paste the 5 environment variables.
-3. Lock down file permissions so only the Node user can read it:
-   ```bash
-   chmod 600 /var/www/actvise-web/.env.production
-   ```
-4. Start Next.js with PM2:
-   ```bash
-   pm2 start npm --name "actvise-web" -- start
-   pm2 save
-   ```
+1. cPanel me **Email** section me jayein $\rightarrow$ **Email Deliverability** par click karein.
+2. Wahan `actvise.co.uk` ke samne check karein ke **DKIM** aur **SPF** ke aage green color me **"Valid"** likha ho.
+3. Agar green "Valid" likha hai, to iska matlab hai Hostinger se bheji gayi saari emails 100% direct Primary Inbox me jayengi, Spam folder me nahi jayengi!
 
 ---
 
-## 4. Security & Confidentiality Best Practices
+## 6. Live Testing Ka Quick Checklist (Deployment Ke Baad)
 
-> [!IMPORTANT]
-> **Zero Credential Exposure Guarantee:**
-> - **Never commit `.env` to Git:** The `.gitignore` file is already configured to prevent `.env`, `.env.local`, and `.env.production` from ever being pushed to GitHub.
-> - **Client Handover Protocol:** When handing over to the client, you can either:
->   1. Ask the client to type their password directly into the cPanel / hosting environment settings screen during a screen-share session.
->   2. Or enter the password once on their live hosting and immediately delete any temporary notes.
-> - **Change Password After Setup:** The client can always change their mailbox password in cPanel if they ever suspect credentials were shared.
+Jab aap final live server par yeh setup kar lein, to check karne ke liye:
 
----
-
-## 5. DNS Deliverability Checklist (Prevent Emails Going to Spam)
-
-To ensure notifications and outgoing emails achieve **100% inbox delivery** (and never end up in the Spam / Junk folder), verify these DNS records in Hostinger / cPanel Zone Editor for `actvise.co.uk`:
-
-| Record Type | Host | Value | Purpose |
-| :--- | :--- | :--- | :--- |
-| **MX** | `@` | `mail.actvise.co.uk` (Priority 0) | Directs incoming mail to the Hostinger server. |
-| **TXT (SPF)** | `@` | `v=spf1 +a +mx +ip4:149.255.62.171 ~all` | Authorizes the server IP (`149.255.62.171`) to send mail for the domain. |
-| **TXT (DKIM)** | `default._domainkey` | *(Generated automatically by cPanel Email Deliverability tool)* | Cryptographically signs outgoing emails. |
-| **TXT (DMARC)** | `_dmarc` | `v=DMARC1; p=none; sp=none; rua=mailto:info@actvise.co.uk` | Email authentication protocol. |
-
-> [!TIP]
-> In cPanel, navigate to **Email** $\rightarrow$ **Email Deliverability**. If you see a green badge saying **"Valid"** next to `actvise.co.uk`, SPF and DKIM are already working perfectly!
-
----
-
-## 6. Post-Deployment Verification & Testing Plan
-
-Once the variables are configured and the site is live:
-
-1. Navigate to `https://actvise.co.uk/contact`.
-2. Fill out the consultation form with test data:
-   - **Name:** Test Inquirer
-   - **Email:** your personal email
+1. Apni website open karein: `https://actvise.co.uk/contact`
+2. Form me test data dalein:
+   - **First Name:** Test User
+   - **Email:** Apna koi personal email (e.g. Gmail)
    - **Phone:** +44 7949 446368
-   - **Service:** Company Annual Accounts
-   - **Message:** "This is a live deployment verification test for Actvise email dispatch."
-3. Click **"Send Message"**.
-4. Check the following:
-   - Website displays green success banner: *"Thank you! Your inquiry has been sent to Actvise Accountancy & Tax Services."*
-   - Within 5-15 seconds, check `info@actvise.co.uk` inbox (on webmail or mobile).
-   - Confirm receipt of the branded HTML lead email.
-   - Click "Reply" in the mail client to confirm the reply-to address points to the inquirer's email.
+   - **Message:** "Live deployment testing lead."
+3. **Submit Inquiry** dabayein.
+4. Green message show hoga: *"Thank you! Your inquiry has been sent to Actvise Accountancy & Tax Services."*
+5. Apne mobile ya Webmail par **`info@actvise.co.uk`** ka inbox refresh karein.
+6. **Result:** 10 se 15 seconds ke andar Actvise ke branded format me lead ka email receive ho jayega!
+7. Email ke andar **"Reply Directly to Client"** par click karein aur check karein ke wo customer ko reply bhej raha hai.
 
 ---
 
-## 7. Quick Reference Card for Final Handover
+## 7. Short Summary (Quick Yad-Dihani)
 
 ```
-Website Domain:     https://actvise.co.uk
-Staging / Demo URL: https://actvise-accountancy-web.vercel.app
-Business Inbox:     info@actvise.co.uk
-Mail Server (SMTP): mail.actvise.co.uk (Port 465 SSL)
-Codebase Status:    100% Ready (Nodemailer pre-configured)
-Action Required:    Inject the 5 SMTP environment variables upon final hosting deployment.
+Official Website Domain:  https://actvise.co.uk
+Demo / Testing URL:       https://actvise-accountancy-web.vercel.app
+Official Business Inbox:  info@actvise.co.uk
+Outgoing Mail Server:     mail.actvise.co.uk (Port 465 SSL)
+Code Ka Status:           100% Complete & Ready
+Hosting Pe Kaam:          Sirf 5 lines .env file me add karke restart karna hai.
 ```
