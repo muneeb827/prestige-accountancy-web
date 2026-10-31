@@ -1,17 +1,18 @@
-# Actvise Accountancy Services Ltd - Monorepo
+# Actvise Accountancy & Tax Services Ltd - Monorepo
 
-Complete Full-Stack codebase for Actvise Accountancy Services Ltd (`https://prestige-accountancy-web.vercel.app`).
+Complete Full-Stack codebase for Actvise Accountancy & Tax Services Ltd (`https://actvise-accountancy-web.vercel.app`).
 
 ## Project Structure
 
 ```
-prestige-accountancy-web/
+actvise-accountancy-web/
 ├── frontend/                 # Next.js 16 Web Application
 │   ├── src/
 │   │   ├── app/              # Next.js App Router (41 pre-rendered pages & SEO metadata)
-│   │   ├── components/       # Responsive UI Components (Navbar, Footer, Calculators, Tools)
+│   │   ├── components/       # Responsive UI Components (Navbar, Footer, DynamicFavicon, Tools)
+│   │   ├── lib/              # Email Dispatch Service (Nodemailer)
 │   │   └── data/             # Site Data, Services Details, and Location Coverage
-│   ├── public/               # Static Assets (Official SVG Logos, Optimized Images)
+│   ├── public/               # Static Assets (Official SVG Logos, Favicons, Brand Identity)
 │   ├── package.json
 │   ├── next.config.ts
 │   └── tsconfig.json
@@ -19,10 +20,10 @@ prestige-accountancy-web/
 ├── backend/                  # Node.js & Express API Server
 │   ├── src/
 │   │   ├── config/           # Server and SMTP Configuration
-│   │   ├── controllers/      # Contact & Quote Form Handlers
+│   │   ├── controllers/      # Contact & Lead Form Handlers
 │   │   ├── models/           # Inquiry Schema & TypeScript Interfaces
 │   │   ├── routes/           # RESTful Endpoints (/api/contact, /api/health)
-│   │   ├── services/         # Email Notification Service
+│   │   ├── services/         # Email Notification Service (Nodemailer)
 │   │   └── server.ts         # Express App Entrypoint
 │   ├── package.json
 │   ├── tsconfig.json
@@ -54,6 +55,9 @@ npm run dev
 # API server runs at http://localhost:5000
 ```
 
-## Deployment
+## Production Deployment
 - **Frontend:** Hosted and automatically deployed to Vercel via GitHub `main` branch with Root Directory configured to `frontend`.
-- **Live URL:** [https://prestige-accountancy-web.vercel.app](https://prestige-accountancy-web.vercel.app)
+- **Live URLs:** 
+  - Production: [https://actvise.co.uk](https://actvise.co.uk)
+  - Vercel Deployment: [https://actvise-accountancy-web.vercel.app](https://actvise-accountancy-web.vercel.app)
+  - Secondary Alias: [https://actvise-accountancy-services.vercel.app](https://actvise-accountancy-services.vercel.app)

@@ -840,7 +840,7 @@ export const blogPosts: BlogPost[] = [
     keyTakeaways: [
       "Sole Trader status has simpler accounting and low admin, but unlimited personal liability.",
       "Limited Companies provide a legal 'corporate veil', protecting personal assets from company debts.",
-      "Companies often benefit from commercial prestige and preferred supplier status with corporate buyers."
+      "Companies often benefit from elevated commercial credibility and preferred supplier status with corporate buyers."
     ],
     content: [
       "One of the first critical crossroads an entrepreneur encounters is selecting their legal trading structure. While operating as a Sole Trader is quick to start with minimal public filings, your personal assets (including your home) are liable for commercial debt.",

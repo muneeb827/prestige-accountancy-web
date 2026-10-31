@@ -9,7 +9,13 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: [config.clientUrl, "https://prestige-accountancy-web.vercel.app", "http://localhost:3000"],
+    origin: [
+      config.clientUrl,
+      "https://actvise-accountancy-web.vercel.app",
+      "https://actvise-accountancy-services.vercel.app",
+      "https://actvise.co.uk",
+      "http://localhost:3000"
+    ],
     credentials: true,
   })
 );
