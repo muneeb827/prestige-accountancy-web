@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { siteConfig, coreValues, teamMembers } from "@/data/siteData";
+import { siteConfig, coreValues } from "@/data/siteData";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { 
   ShieldCheck, 
@@ -126,62 +126,6 @@ export default function AboutPage() {
               </div>
             </div>
 
-          </div>
-        </div>
-      </section>
-
-      {/* Leadership & Practice Team with Real Photography */}
-      <section className="py-16 bg-slate-50 border-t border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#00368C] bg-blue-100/70 px-3 py-1 rounded-full inline-block mb-2">
-              Practice Leadership
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
-              Meet the Professionals Behind Actvise
-            </h2>
-            <p className="text-sm text-slate-600 mt-2">
-              Accessible, qualified accountants who value personal relationships over call centres.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {teamMembers.map((member, idx) => {
-              // Use real photo for director and clean styled portrait avatars for others
-              const photoSrc = idx === 0 ? "/images/author-mujahid.jpg" : idx === 1 ? "/images/hero-accountant.jpg" : "/images/consultation.jpg";
-              return (
-                <div 
-                  key={idx}
-                  className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between hover:shadow-md transition-all"
-                >
-                  <div className="p-6">
-                    <div className="relative w-20 h-20 rounded-full overflow-hidden border-2 border-[#00368C]/20 mb-4 shadow-inner">
-                      <Image
-                        src={photoSrc}
-                        alt={member.name}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                    <h3 className="text-base font-bold text-slate-900">
-                      {member.name}
-                    </h3>
-                    <div className="text-xs font-bold text-[#2B7EFE] mb-1">
-                      {member.role}
-                    </div>
-                    <div className="inline-block px-2 py-0.5 rounded bg-slate-100 text-[11px] font-semibold text-slate-600 mb-3">
-                      {member.credentials}
-                    </div>
-                    <p className="text-xs text-slate-600 leading-relaxed">
-                      {member.bio}
-                    </p>
-                  </div>
-                  <div className="bg-slate-50 px-6 py-3 border-t border-slate-100 text-[11px] font-semibold text-slate-500">
-                    📍 9 Blackmoorfoot Road, Huddersfield
-                  </div>
-                </div>
-              );
-            })}
           </div>
         </div>
       </section>
