@@ -313,7 +313,7 @@ export default function ContactPage() {
                         required
                         value={formData.firstName}
                         onChange={e => setFormData({ ...formData, firstName: e.target.value })}
-                        placeholder="e.g. David"
+                        placeholder="First Name"
                         className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#00368C]"
                       />
                     </div>
@@ -325,7 +325,7 @@ export default function ContactPage() {
                         type="text"
                         value={formData.lastName}
                         onChange={e => setFormData({ ...formData, lastName: e.target.value })}
-                        placeholder="e.g. Smith"
+                        placeholder="Last Name"
                         className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#00368C]"
                       />
                     </div>
@@ -341,7 +341,7 @@ export default function ContactPage() {
                         required
                         value={formData.email}
                         onChange={e => setFormData({ ...formData, email: e.target.value })}
-                        placeholder="name@company.co.uk"
+                        placeholder="email@gmail.com"
                         className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#00368C]"
                       />
                     </div>
@@ -353,7 +353,7 @@ export default function ContactPage() {
                         type="tel"
                         value={formData.phone}
                         onChange={e => setFormData({ ...formData, phone: e.target.value })}
-                        placeholder="07123 456789"
+                        placeholder="Your Phone Number"
                         className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#00368C]"
                       />
                     </div>

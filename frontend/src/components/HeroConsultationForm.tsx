@@ -147,7 +147,7 @@ export default function HeroConsultationForm() {
                 required 
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                placeholder="e.g. David" 
+                placeholder="Your Name" 
                 disabled={status === "submitting"}
                 className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#00368C] disabled:bg-slate-50" 
               />
@@ -162,7 +162,7 @@ export default function HeroConsultationForm() {
                 required 
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                placeholder="07123 456789" 
+                placeholder="Your Phone Number" 
                 disabled={status === "submitting"}
                 className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#00368C] disabled:bg-slate-50" 
               />
@@ -179,7 +179,7 @@ export default function HeroConsultationForm() {
               required 
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              placeholder="name@company.co.uk" 
+              placeholder="email@gmail.com" 
               disabled={status === "submitting"}
               className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#00368C] disabled:bg-slate-50" 
             />
