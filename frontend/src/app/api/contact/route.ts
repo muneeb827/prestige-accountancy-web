@@ -2,10 +2,11 @@ import { NextResponse } from "next/server";
 import { sendInquiryNotification } from "@/lib/email";
 import { validateUKPhoneNumber } from "@/lib/validation";
 
-// Simple in-memory rate limiting map (IP -> Array of timestamps)
+// In-memory rate limiting map (IP -> Array of timestamps)
+// Set to 20 requests per 1 minute so bots are blocked, but genuine testing is never interrupted
 const rateLimitMap = new Map<string, number[]>();
-const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000; // 10 minutes
-const MAX_REQUESTS_PER_WINDOW = 5;
+const RATE_LIMIT_WINDOW_MS = 60 * 1000; // 1 minute
+const MAX_REQUESTS_PER_WINDOW = 20;
 
 function isRateLimited(ip: string): boolean {
   const now = Date.now();
