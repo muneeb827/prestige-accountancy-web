@@ -46,7 +46,7 @@ export const siteConfig = {
   country: "United Kingdom",
   crn: "", // Real Companies House number pending from client
   foundedYear: 2026,
-  hours: "Monday - Friday: 9:00 AM - 5:30 PM",
+  hours: "Monday - Friday: 9:00 AM - 5:00 PM",
   socials: {
     facebook: "https://facebook.com/actviseaccountancy",
     instagram: "https://instagram.com/actviseaccountancy",
