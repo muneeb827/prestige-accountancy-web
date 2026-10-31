@@ -57,7 +57,7 @@ export default function ContactPage() {
     const phoneValidation = validateUKPhoneNumber(formData.phone);
     if (!phoneValidation.isValid) {
       setStatus("error");
-      setResponseMsg(phoneValidation.error || "Please enter a valid UK phone number (e.g. +44 1234 567890).");
+      setResponseMsg(phoneValidation.error || "Please enter a valid UK mobile number (e.g. +44 7123 456789 or 07123 456789).");
       return;
     }
 
@@ -356,14 +356,14 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
-                        UK Phone or Mobile *
+                        UK Mobile Number *
                       </label>
                       <input 
                         type="tel"
                         required
                         value={formData.phone}
                         onChange={e => setFormData({ ...formData, phone: e.target.value })}
-                        placeholder="+44 1234 567890"
+                        placeholder="+44 7123 456789"
                         className="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#00368C]"
                       />
                     </div>

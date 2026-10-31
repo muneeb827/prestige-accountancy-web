@@ -33,7 +33,7 @@ export default function HeroConsultationForm() {
     const phoneValidation = validateUKPhoneNumber(formData.phone);
     if (!phoneValidation.isValid) {
       setStatus("error");
-      setErrorMsg(phoneValidation.error || "Please enter a valid UK phone number (e.g. +44 1234 567890).");
+      setErrorMsg(phoneValidation.error || "Please enter a valid UK mobile number (e.g. +44 7123 456789 or 07123 456789).");
       return;
     }
 
@@ -163,7 +163,7 @@ export default function HeroConsultationForm() {
             </div>
             <div>
               <label htmlFor="hero-phone" className="block text-xs font-semibold text-slate-700 mb-1">
-                UK Phone Number *
+                UK Mobile Number *
               </label>
               <input 
                 id="hero-phone" 
@@ -171,7 +171,7 @@ export default function HeroConsultationForm() {
                 required 
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                placeholder="+44 1234 567890" 
+                placeholder="+44 7123 456789" 
                 disabled={status === "submitting"}
                 className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#00368C] disabled:bg-slate-50" 
               />

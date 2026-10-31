@@ -75,7 +75,7 @@ export async function POST(request: Request) {
     const phoneValidation = validateUKPhoneNumber(phone);
     if (!phoneValidation.isValid) {
       return NextResponse.json(
-        { error: phoneValidation.error || "Please enter a valid UK phone number (e.g. +44 1234 567890 or 07123 456789)." },
+        { error: phoneValidation.error || "Please enter a valid UK mobile number (e.g. +44 7123 456789 or 07123 456789)." },
         { status: 400 }
       );
     }
