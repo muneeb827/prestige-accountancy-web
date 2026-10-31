@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { siteConfig } from "@/data/siteData";
 import { 
   Phone, 
@@ -27,6 +27,26 @@ export default function ContactPage() {
   });
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [responseMsg, setResponseMsg] = useState("");
+
+  // Pre-fill from URL query parameters if provided
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const name = params.get("name") || "";
+      const email = params.get("email") || "";
+      const phone = params.get("phone") || "";
+      const service = params.get("service") || "";
+      if (name || email || phone || service) {
+        setFormData((prev) => ({
+          ...prev,
+          firstName: name || prev.firstName,
+          email: email || prev.email,
+          phone: phone || prev.phone,
+          service: service || prev.service
+        }));
+      }
+    }
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

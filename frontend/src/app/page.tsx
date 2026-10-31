@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import LocalTownCoverage from "@/components/LocalTownCoverage";
+import HeroConsultationForm from "@/components/HeroConsultationForm";
 import { 
   siteConfig, 
   servicesData, 
@@ -161,80 +162,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="p-6 sm:p-7 relative">
-                  <div className="absolute top-0 right-0 bg-[#00368C] text-white text-[10px] font-bold uppercase tracking-wider px-3.5 py-1 rounded-bl-xl">
-                    Fixed-Fee Quote
-                  </div>
-
-                  <h3 className="text-xl font-bold text-slate-900 mb-1">
-                    Request a Free Consultation
-                  </h3>
-                  <p className="text-xs text-slate-500 mb-5">
-                    Discuss your business requirements with an accountant. No obligations, no pushy sales.
-                  </p>
-
-                <form action="/contact" method="GET" className="space-y-3.5">
-                  <div className="grid grid-cols-2 gap-3">
-                    <div>
-                      <label htmlFor="hero-name" className="block text-xs font-semibold text-slate-700 mb-1">Your Name</label>
-                      <input 
-                        id="hero-name"
-                        type="text" 
-                        required 
-                        placeholder="John Smith" 
-                        className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#00368C]" 
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="hero-phone" className="block text-xs font-semibold text-slate-700 mb-1">Phone Number</label>
-                      <input 
-                        id="hero-phone" 
-                        type="tel" 
-                        required 
-                        placeholder="07123 456789" 
-                        className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#00368C]" 
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label htmlFor="hero-email" className="block text-xs font-semibold text-slate-700 mb-1">Email Address</label>
-                    <input 
-                      id="hero-email"
-                      type="email" 
-                      required 
-                      placeholder="john@example.com" 
-                      className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#00368C]" 
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="hero-service" className="block text-xs font-semibold text-slate-700 mb-1">Service You Need</label>
-                    <select id="hero-service" className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#00368C]">
-                      <option value="annual-accounts">Company Annual Accounts</option>
-                      <option value="bookkeeping">Bookkeeping & Reconciliations</option>
-                      <option value="vat">VAT Returns & MTD</option>
-                      <option value="cis">CIS Registration & Monthly Returns</option>
-                      <option value="startup">New Business Startup</option>
-                      <option value="charity">Charity Accounts & Examination</option>
-                      <option value="other">Other or Full Practice Review</option>
-                    </select>
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="w-full py-3 bg-[#00368C] hover:bg-[#002868] text-white font-bold text-sm rounded-lg shadow-md transition-all duration-150 flex items-center justify-center gap-2 mt-2"
-                  >
-                    <span>Get Your Tailored Quote</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </button>
-
-                  <div className="flex items-center justify-center gap-2 text-[11px] text-slate-500 pt-1">
-                    <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Your privacy is 100% protected under UK GDPR</span>
-                  </div>
-                </form>
-                </div>
+                <HeroConsultationForm />
               </div>
             </div>
 
