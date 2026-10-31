@@ -37,7 +37,8 @@ export const siteConfig = {
   landline: "+44 7949 446368",
   whatsapp: "+447949446368",
   whatsappLink: "https://wa.me/447949446368?text=Hello%20Actvise%20Accountancy%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.",
-  email: "info@actvise.co.uk", // Placeholder until client sends official inbox
+  email: "info@actvise.co.uk", // Official verified business inbox
+  gmailComposeUrl: "https://mail.google.com/mail/?view=cm&fs=1&to=info@actvise.co.uk&su=Inquiry%20-%20Actvise%20Accountancy%20%26%20Tax%20Services",
   address: "9 Blackmoorfoot Road, Crosland Moor, Huddersfield, HD4 5AQ, United Kingdom",
   city: "Huddersfield",
   county: "West Yorkshire",

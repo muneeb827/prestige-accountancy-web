@@ -6,6 +6,7 @@ import Image from "next/image";
 import { siteConfig, navItems } from "@/data/siteData";
 import { 
   Phone, 
+  Mail, 
   MapPin, 
   Clock, 
   Menu, 
@@ -61,6 +62,16 @@ export default function Navbar() {
             </span>
           </div>
           <div className="flex items-center gap-5">
+            <a 
+              href={siteConfig.gmailComposeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden lg:flex items-center gap-1.5 font-semibold text-blue-100 hover:text-white transition-colors"
+              title="Compose email directly in Gmail"
+            >
+              <Mail className="w-3.5 h-3.5 text-[#2B7EFE]" />
+              <span>{siteConfig.email}</span>
+            </a>
             <a 
               href={`tel:${siteConfig.phone.replace(/\s+/g, '')}`} 
               className="flex items-center gap-1.5 font-semibold text-white hover:text-blue-200 transition-colors"
@@ -269,6 +280,16 @@ export default function Navbar() {
             </div>
 
             <div className="pt-3 pb-6 border-t border-slate-200 space-y-2.5">
+              <a 
+                href={siteConfig.gmailComposeUrl}
+                target="_blank"
+                rel="noopener noreferrer" 
+                className="flex items-center justify-center gap-2 w-full py-2.5 border border-blue-200 bg-blue-50/50 rounded-xl text-xs font-semibold text-[#00368C] hover:bg-blue-100/50 transition-colors"
+                title="Compose email directly in Gmail"
+              >
+                <Mail className="w-4 h-4 text-[#2B7EFE]" />
+                Email: {siteConfig.email}
+              </a>
               <a 
                 href={`tel:${siteConfig.phone.replace(/\s+/g, '')}`} 
                 className="flex items-center justify-center gap-2 w-full py-3 border border-slate-300 rounded-xl text-sm font-semibold text-slate-800 hover:bg-slate-50 transition-colors"

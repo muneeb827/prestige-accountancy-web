@@ -22,7 +22,8 @@ export default function ContactPage() {
     email: "",
     phone: "",
     service: "Company Annual Accounts",
-    message: ""
+    message: "",
+    honeypot: ""
   });
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [responseMsg, setResponseMsg] = useState("");
@@ -48,7 +49,8 @@ export default function ContactPage() {
           email: "",
           phone: "",
           service: "Company Annual Accounts",
-          message: ""
+          message: "",
+          honeypot: ""
         });
       } else {
         setStatus("error");
@@ -174,10 +176,23 @@ export default function ContactPage() {
                       Email Inquiries
                     </h3>
                     <a 
-                      href={`mailto:${siteConfig.email}`} 
+                      href={siteConfig.gmailComposeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-sm font-bold text-slate-900 hover:text-[#00368C] block mt-0.5"
+                      title="Click to compose in Gmail"
                     >
                       {siteConfig.email}
+                    </a>
+                    <a
+                      href={siteConfig.gmailComposeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-[#00368C] bg-blue-50 border border-blue-200 px-2.5 py-1 rounded-md mt-2 hover:bg-blue-100 transition-colors"
+                      title="Compose email directly in Gmail"
+                    >
+                      <Mail className="w-3.5 h-3.5" />
+                      <span>Open in Gmail</span>
                     </a>
                   </div>
                 </div>
@@ -255,6 +270,19 @@ export default function ContactPage() {
                 )}
 
                 <form onSubmit={handleSubmit} className="space-y-4">
+                  {/* Invisible Honeypot Field for Bot Spam Prevention */}
+                  <div className="hidden" aria-hidden="true" style={{ display: "none" }}>
+                    <label htmlFor="company_website_url">Company Website</label>
+                    <input
+                      type="text"
+                      id="company_website_url"
+                      name="company_website_url"
+                      value={formData.honeypot}
+                      onChange={(e) => setFormData({ ...formData, honeypot: e.target.value })}
+                      tabIndex={-1}
+                      autoComplete="off"
+                    />
+                  </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
