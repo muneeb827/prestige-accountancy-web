@@ -2,14 +2,11 @@
  * Strict UK Phone Number Validator for Actvise Accountancy & Tax Services
  * Actvise provides services strictly to UK-based clients, businesses and charities.
  * 
- * Accepted formats:
- * - International format: +44 7949 446368, +44 1234 567890, +447123456789, 0044 7949 446368
- * - Domestic UK format: 07949 446368, 01484 123456, 020 7946 0919, 0300 123 4567, 0800 123 4567
- * 
- * Rejects:
- * - Non-UK country codes (+92, +1, +91, +971, etc.)
- * - Incomplete or short inputs (e.g. 123, 123456)
- * - Invalid prefixes or lengths
+ * Rules:
+ * - If using international format (+44 or 0044): MUST have EXACTLY 10 digits after +44 (e.g. +44 7949 446368 or +44 1234 567890).
+ * - If using domestic UK format (starts with 0): MUST have EXACTLY 11 digits (e.g. 07949 446368 or 01234 567891).
+ * - If even 1 single digit is missing or extra, an informative validation error is returned.
+ * - Rejects any foreign country code (+92, +1, +91, +971, etc.) or random short inputs (123, 123456).
  */
 export function validateUKPhoneNumber(phone?: string | null): { isValid: boolean; error?: string; formatted?: string } {
   if (!phone || typeof phone !== "string") {
@@ -45,62 +42,88 @@ export function validateUKPhoneNumber(phone?: string | null): { isValid: boolean
   // Strip spaces, dashes, brackets, dots
   const clean = trimmed.replace(/[\s\-\(\)\.]/g, "");
 
-  // Convert to domestic UK format starting with 0
-  let normalized = clean;
-  if (normalized.startsWith("+44")) {
-    normalized = "0" + normalized.slice(3);
-  } else if (normalized.startsWith("0044")) {
-    normalized = "0" + normalized.slice(4);
-  } else if (normalized.startsWith("44") && (normalized.length === 12 || normalized.length === 13)) {
-    normalized = "0" + normalized.slice(2);
+  // 1. International UK format (+44 or 0044) -> EXACTLY 10 digits required after country code
+  if (clean.startsWith("+44") || clean.startsWith("0044")) {
+    const prefixLen = clean.startsWith("+44") ? 3 : 4;
+    let digitsAfterPrefix = clean.slice(prefixLen);
+    
+    // In case someone wrote +44 07949... remove redundant leading 0
+    if (digitsAfterPrefix.startsWith("0")) {
+      digitsAfterPrefix = digitsAfterPrefix.slice(1);
+    }
+
+    if (!/^\d+$/.test(digitsAfterPrefix)) {
+      return {
+        isValid: false,
+        error: "Phone number contains invalid characters. Numbers only (e.g. +44 1234 567890)."
+      };
+    }
+
+    if (digitsAfterPrefix.length < 10) {
+      return {
+        isValid: false,
+        error: `UK phone number is incomplete (${digitsAfterPrefix.length} digits entered). After +44, exactly 10 digits are required (e.g. +44 1234 567890).`
+      };
+    }
+
+    if (digitsAfterPrefix.length > 10) {
+      return {
+        isValid: false,
+        error: `UK phone number has too many digits (${digitsAfterPrefix.length} digits entered). After +44, exactly 10 digits are required (e.g. +44 1234 567890).`
+      };
+    }
+
+    const normalized = "0" + digitsAfterPrefix;
+    if (!/^0[12378]\d{9}$/.test(normalized)) {
+      return {
+        isValid: false,
+        error: "Invalid UK phone number prefix. UK numbers must start with 01, 02, 03, 07, or +44 (e.g. +44 1234 567890)."
+      };
+    }
+
+    return { isValid: true, formatted: "+44 " + digitsAfterPrefix };
   }
 
-  // Reject non-numeric characters
-  if (!/^\d+$/.test(normalized)) {
-    return {
-      isValid: false,
-      error: "Phone number contains invalid characters. Please enter numbers only (e.g. +44 1234 567890)."
-    };
+  // 2. Domestic UK format starting with 0 -> EXACTLY 11 digits required
+  if (clean.startsWith("0")) {
+    if (!/^\d+$/.test(clean)) {
+      return {
+        isValid: false,
+        error: "Phone number contains invalid characters. Numbers only (e.g. 07123 456789)."
+      };
+    }
+
+    if (clean.length < 11) {
+      return {
+        isValid: false,
+        error: `UK phone number is incomplete (${clean.length} digits entered). A complete UK number starting with 0 must have exactly 11 digits (e.g. 07123 456789).`
+      };
+    }
+
+    if (clean.length > 11) {
+      return {
+        isValid: false,
+        error: `UK phone number has too many digits (${clean.length} digits entered). A standard UK phone number starting with 0 has exactly 11 digits.`
+      };
+    }
+
+    if (!/^0[12378]\d{9}$/.test(clean)) {
+      return {
+        isValid: false,
+        error: "Invalid UK phone number prefix. UK numbers must start with 01, 02, 03, 07, or 08 (e.g. 07123 456789)."
+      };
+    }
+
+    return { isValid: true, formatted: "+44 " + clean.slice(1) };
   }
 
-  // Length checks
-  if (normalized.length < 10) {
-    return {
-      isValid: false,
-      error: "Phone number is too short or incomplete. Please enter a full UK phone number (e.g. +44 1234 567890)."
-    };
-  }
-
-  if (normalized.length > 11) {
-    return {
-      isValid: false,
-      error: "Phone number is too long. Standard UK phone numbers are 10-11 digits (e.g. +44 1234 567890)."
-    };
-  }
-
-  // UK Telecoms Numbering Format (Ofcom standard):
-  // 1: Geographic area codes (e.g. 01484 Huddersfield) (10 or 11 digits: ^01\d{8,9}$)
-  // 2: Geographic major cities (e.g. 020 London) (11 digits: ^02\d{9}$)
-  // 3: Non-geographic UK-wide (11 digits: ^03\d{9}$)
-  // 7: UK Mobile numbers (07xxx xxxxxx) (11 digits: ^07\d{9}$)
-  // 8: Freephone & business rates (10 or 11 digits: ^08\d{8,9}$)
-  const UK_PHONE_REGEX = /^0(1\d{8,9}|2\d{9}|3\d{9}|7\d{9}|8\d{8,9})$/;
-
-  if (!UK_PHONE_REGEX.test(normalized)) {
-    return {
-      isValid: false,
-      error: "Invalid UK phone number. UK numbers must start with 01, 02, 03, 07, or +44 (e.g. +44 1234 567890)."
-    };
-  }
-
-  // Format nicely as international UK standard
-  let formatted = trimmed;
-  if (!formatted.startsWith("+44") && normalized.startsWith("0")) {
-    formatted = "+44 " + normalized.slice(1);
+  // 3. User entered raw 10 digits without prefix (e.g. 7949446368)
+  if (/^[12378]\d{9}$/.test(clean)) {
+    return { isValid: true, formatted: "+44 " + clean };
   }
 
   return {
-    isValid: true,
-    formatted
+    isValid: false,
+    error: "Please enter a valid UK phone number starting with +44 (10 digits) or 0 (11 digits, e.g. +44 1234 567890 or 07123 456789)."
   };
 }
