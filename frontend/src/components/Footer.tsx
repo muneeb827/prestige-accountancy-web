@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { siteConfig } from "@/data/siteData";
+import SmartEmailLink from "@/components/SmartEmailLink";
 import { 
   Phone, 
   Mail, 
@@ -58,16 +59,13 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#2B7EFE] shrink-0" />
-                <a 
-                  href={siteConfig.gmailComposeUrl} 
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <SmartEmailLink
                   className="hover:text-white transition-colors flex items-center gap-2 group"
-                  title="Compose email directly in Gmail"
+                  title="Compose email to Actvise"
                 >
                   <span>{siteConfig.email}</span>
-                  <span className="text-[10px] text-blue-300 bg-slate-800 border border-slate-700 px-1.5 py-0.5 rounded font-normal group-hover:border-[#2B7EFE]">Gmail</span>
-                </a>
+                  <span className="text-[10px] text-blue-300 bg-slate-800 border border-slate-700 px-1.5 py-0.5 rounded font-normal group-hover:border-[#2B7EFE]">Email</span>
+                </SmartEmailLink>
               </div>
             </div>
 

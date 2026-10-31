@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { siteConfig } from "@/data/siteData";
+import SmartEmailLink from "@/components/SmartEmailLink";
 import { validateUKPhoneNumber } from "@/lib/validation";
 import { 
   Phone, 
@@ -204,25 +205,19 @@ export default function ContactPage() {
                     <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500">
                       Email Inquiries
                     </h3>
-                    <a 
-                      href={siteConfig.gmailComposeUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <SmartEmailLink
                       className="text-sm font-bold text-slate-900 hover:text-[#00368C] block mt-0.5"
-                      title="Click to compose in Gmail"
+                      title="Send email to Actvise"
                     >
                       {siteConfig.email}
-                    </a>
-                    <a
-                      href={siteConfig.gmailComposeUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    </SmartEmailLink>
+                    <SmartEmailLink
                       className="inline-flex items-center gap-1.5 text-xs font-bold text-[#00368C] bg-blue-50 border border-blue-200 px-2.5 py-1 rounded-md mt-2 hover:bg-blue-100 transition-colors"
-                      title="Compose email directly in Gmail"
+                      title="Compose email"
                     >
                       <Mail className="w-3.5 h-3.5" />
-                      <span>Open in Gmail</span>
-                    </a>
+                      <span>Compose Email</span>
+                    </SmartEmailLink>
                   </div>
                 </div>
 

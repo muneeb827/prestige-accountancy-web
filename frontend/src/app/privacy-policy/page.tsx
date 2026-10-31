@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/data/siteData";
+import SmartEmailLink from "@/components/SmartEmailLink";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Actvise Accountancy Services Ltd",
@@ -50,7 +51,7 @@ export default function PrivacyPolicyPage() {
         <section className="space-y-3">
           <h2 className="text-xl font-bold text-slate-900">4. Contacting Our Data Controller</h2>
           <p>
-            If you have questions about your personal data or wish to exercise your rights under UK GDPR, please write to us at {siteConfig.address} or email <a href={siteConfig.gmailComposeUrl} target="_blank" rel="noopener noreferrer" className="text-[#00368C] font-semibold underline hover:text-[#2B7EFE]">{siteConfig.email}</a>.
+            If you have questions about your personal data or wish to exercise your rights under UK GDPR, please write to us at {siteConfig.address} or email <SmartEmailLink className="text-[#00368C] font-semibold underline hover:text-[#2B7EFE]">{siteConfig.email}</SmartEmailLink>.
           </p>
         </section>
       </div>
