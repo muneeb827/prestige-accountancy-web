@@ -13,7 +13,7 @@ interface SmartEmailLinkProps {
  * SmartEmailLink handles professional email routing seamlessly across devices:
  * 
  * 1. Mobile (Android & iOS):
- *    Directs to `mailto:info@actvise.co.uk?subject=...` which triggers the native Gmail
+ *    Defaults to `mailto:info@actvise.co.uk?subject=...` which triggers the native Gmail
  *    (or Apple Mail / Outlook) app directly in COMPOSE mode with To and Subject pre-filled.
  *    Avoids opening mobile web browser inbox (which doesn't support ?view=cm).
  * 
@@ -23,13 +23,21 @@ interface SmartEmailLinkProps {
  *    full Gmail Web Compose window.
  */
 export default function SmartEmailLink({ children, className, title }: SmartEmailLinkProps) {
-  const [isMobile, setIsMobile] = useState<boolean>(false);
+  const [href, setHref] = useState(siteConfig.mailtoUrl);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
     const mobileDetected = /Android|iPhone|iPad|iPod|webOS|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
     );
-    setIsMobile(mobileDetected);
+
+    if (!mobileDetected) {
+      setIsDesktop(true);
+      setHref(siteConfig.gmailComposeUrl);
+    } else {
+      setIsDesktop(false);
+      setHref(siteConfig.mailtoUrl);
+    }
   }, []);
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -48,14 +56,12 @@ export default function SmartEmailLink({ children, className, title }: SmartEmai
     }
   };
 
-  const currentHref = isMobile ? siteConfig.mailtoUrl : siteConfig.gmailComposeUrl;
-
   return (
     <a
-      href={currentHref}
+      href={href}
       onClick={handleClick}
-      target={isMobile ? undefined : "_blank"}
-      rel={isMobile ? undefined : "noopener noreferrer"}
+      target={isDesktop ? "_blank" : undefined}
+      rel={isDesktop ? "noopener noreferrer" : undefined}
       className={className}
       title={title || "Compose email to Actvise Accountancy"}
     >
